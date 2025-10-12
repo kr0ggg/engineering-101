@@ -466,5 +466,107 @@ This principle completes the SOLID foundation by building upon all the previous 
 
 Together, these principles create a robust foundation for building maintainable, testable, and extensible software systems.
 
+## Exercise 1: Design - Dependency Inversion Principle
+
+### Objective
+Design a solution that makes high-level modules depend on abstractions rather than concrete implementations, following the Dependency Inversion Principle.
+
+### Task
+Analyze the e-commerce system and design an architecture that inverts dependencies.
+
+1. **Identify Dependencies**: Examine the refactored code from previous exercises and identify all direct dependencies on concrete implementations
+2. **Design Abstractions**: Create interfaces or abstract classes for all external dependencies
+3. **Plan Dependency Injection**: Design how dependencies will be injected into high-level modules
+4. **Design IoC Container**: Plan a dependency injection container configuration
+
+### Deliverables
+- List of all direct dependencies identified
+- Interface designs for all external dependencies
+- Dependency injection architecture plan
+- IoC container configuration design
+
+### Getting Started
+1. Navigate to the `ecom-exercises` folder
+2. Choose your preferred language (C#, Java, Python, or TypeScript)
+3. Review your refactored code from all previous SOLID principle exercises
+4. Identify direct dependencies on concrete implementations
+5. Create your design without modifying any code
+
+---
+
+## Exercise 2: Implementation - Dependency Inversion Principle
+
+### Objective
+Implement your design from Exercise 1, ensuring that all existing unit tests continue to pass and high-level modules depend on abstractions.
+
+### Task
+Implement the dependency inversion architecture according to your design while maintaining system functionality.
+
+1. **Create Abstractions**: Implement the interfaces or abstract classes from your design
+2. **Implement Dependency Injection**: Modify classes to receive dependencies through constructor injection
+3. **Configure IoC Container**: Set up dependency injection container with proper mappings
+4. **Maintain Functionality**: Ensure all existing unit tests pass
+5. **Test with Mocks**: Verify that the system works with mock implementations
+
+### Success Criteria
+- All existing unit tests pass
+- The application runs without errors
+- High-level modules depend on abstractions, not concrete implementations
+- Dependencies can be easily swapped or mocked
+- The system maintains the same external behavior
+
+### Getting Started
+1. Use your design from Exercise 1 as a guide
+2. Start by creating the abstractions
+3. Implement dependency injection in existing classes
+4. Set up the IoC container configuration
+5. Run tests frequently to ensure you don't break existing functionality
+
+### Implementation Best Practices
+
+#### Git Workflow
+1. **Create a Feature Branch**: Start from main and create a new branch for your DIP refactoring
+   ```bash
+   git checkout main
+   git pull origin main
+   git checkout -b feature/dip-refactoring
+   ```
+
+2. **Commit Frequently**: Make small, focused commits as you refactor
+   ```bash
+   git add .
+   git commit -m "Create IDatabaseConnection interface"
+   git commit -m "Create IEmailService interface"
+   git commit -m "Implement dependency injection in OrderService"
+   git commit -m "Configure IoC container mappings"
+   git commit -m "Add mock implementations for testing"
+   ```
+
+3. **Test After Each Change**: Run tests after each refactoring step
+   ```bash
+   # Run tests to ensure nothing is broken
+   dotnet test  # or equivalent for your language
+   ```
+
+#### Industry Best Practices
+1. **Dependency Injection**: Use constructor injection for required dependencies
+2. **Interface Segregation**: Create focused interfaces for each dependency
+3. **IoC Container Configuration**: Use dependency injection containers for automatic resolution
+4. **Mock Testing**: Create mock implementations for unit testing
+5. **Configuration Management**: Externalize configuration for different environments
+6. **Service Locator Anti-pattern**: Avoid service locator pattern in favor of dependency injection
+7. **Circular Dependencies**: Avoid circular dependencies between modules
+8. **Lifetime Management**: Properly manage object lifetimes (singleton, transient, scoped)
+9. **Error Handling**: Handle dependency resolution failures gracefully
+10. **Performance**: Consider the performance impact of dependency injection
+
+### Learning Objectives
+After completing both exercises, you should be able to:
+- Identify direct dependencies that violate DIP
+- Design proper abstractions for external dependencies
+- Implement dependency injection effectively
+- Implement DIP while maintaining system functionality
+- Design loosely coupled systems
+
 **Congratulations!** You have now learned all five SOLID principles. These principles work together to create software that is maintainable, testable, and adaptable to change. Apply them thoughtfully in your projects to build better software.
 

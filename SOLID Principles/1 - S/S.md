@@ -371,5 +371,98 @@ The Single Responsibility Principle is the cornerstone of clean architecture. By
 
 This principle sets the foundation for the other SOLID principles. When classes have single responsibilities, they naturally become more extensible (Open/Closed Principle), substitutable (Liskov Substitution Principle), and focused (Interface Segregation Principle). The Single Responsibility Principle also makes it easier to apply dependency inversion, as smaller, focused classes have clearer dependencies.
 
+## Exercise 1: Design - Single Responsibility Principle
+
+### Objective
+Design a solution that separates the multiple responsibilities in the `EcommerceManager` class into focused, single-responsibility classes.
+
+### Task
+Analyze the `EcommerceManager` class in the `ecom-exercises` folder and create a design that follows the Single Responsibility Principle.
+
+1. **Identify Responsibilities**: Examine the `EcommerceManager` class and list all the different responsibilities it handles
+2. **Design Classes**: Create a class diagram or design document showing how you would separate these responsibilities into focused classes
+3. **Define Interfaces**: Design interfaces that define the contracts for each responsibility
+4. **Plan Dependencies**: Determine how the separated classes will interact and depend on each other
+
+### Deliverables
+- List of all responsibilities identified in `EcommerceManager`
+- Class diagram showing the separated responsibilities
+- Interface definitions for each responsibility
+- Dependency relationship diagram
+
+### Getting Started
+1. Navigate to the `ecom-exercises` folder
+2. Choose your preferred language (C#, Java, Python, or TypeScript)
+3. Examine the `EcommerceManager` class to understand its current responsibilities
+4. Create your design without modifying any code
+
+---
+
+## Exercise 2: Implementation - Single Responsibility Principle
+
+### Objective
+Implement your design from Exercise 1, ensuring that all existing unit tests continue to pass.
+
+### Task
+Refactor the `EcommerceManager` class according to your design while maintaining system functionality.
+
+1. **Create Classes**: Implement the focused, single-responsibility classes from your design
+2. **Implement Interfaces**: Create the interfaces and their implementations
+3. **Refactor EcommerceManager**: Modify the `EcommerceManager` to use the new separated classes
+4. **Maintain Functionality**: Ensure all existing unit tests pass
+5. **Verify Behavior**: Run the application to confirm it works as expected
+
+### Success Criteria
+- All existing unit tests pass
+- The application runs without errors
+- Each class has a single, well-defined responsibility
+- The system maintains the same external behavior
+
+### Getting Started
+1. Use your design from Exercise 1 as a guide
+2. Start implementing the classes one by one
+3. Run tests frequently to ensure you don't break existing functionality
+4. Refactor incrementally rather than all at once
+
+### Implementation Best Practices
+
+#### Git Workflow
+1. **Create a Feature Branch**: Start from main and create a new branch for your SRP refactoring
+   ```bash
+   git checkout main
+   git pull origin main
+   git checkout -b feature/srp-refactoring
+   ```
+
+2. **Commit Frequently**: Make small, focused commits as you refactor
+   ```bash
+   git add .
+   git commit -m "Extract ProductService from EcommerceManager"
+   git commit -m "Extract CartService from EcommerceManager"
+   git commit -m "Extract OrderService from EcommerceManager"
+   ```
+
+3. **Test After Each Change**: Run tests after each refactoring step
+   ```bash
+   # Run tests to ensure nothing is broken
+   dotnet test  # or equivalent for your language
+   ```
+
+#### Industry Best Practices
+1. **Incremental Refactoring**: Refactor one responsibility at a time rather than all at once
+2. **Test-Driven Refactoring**: Ensure all existing tests pass before and after each change
+3. **Single Responsibility Validation**: Ask "Does this class have only one reason to change?"
+4. **Dependency Analysis**: Identify and minimize dependencies between separated classes
+5. **Interface Design**: Create clear interfaces for each responsibility
+6. **Documentation**: Update class documentation to reflect new responsibilities
+7. **Code Review**: Have someone review your refactored code for clarity and correctness
+
+### Learning Objectives
+After completing both exercises, you should be able to:
+- Identify multiple responsibilities in a single class
+- Design focused, single-responsibility classes
+- Implement SRP while maintaining system functionality
+- Understand the benefits of SRP in practice
+
 **Next**: The [Open/Closed Principle](../2%20-%20O/O.md) builds upon SRP by ensuring that our single-responsibility classes can be extended without modification, enabling flexible and maintainable software evolution.
 

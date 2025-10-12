@@ -404,5 +404,105 @@ The Liskov Substitution Principle is crucial for maintaining the integrity of ob
 
 This principle builds upon the Open/Closed Principle by ensuring that the extensions we create (subclasses) can be safely substituted for their base classes. It also sets the foundation for the Interface Segregation Principle, as proper substitution requires well-defined, focused interfaces.
 
+## Exercise 1: Design - Liskov Substitution Principle
+
+### Objective
+Design inheritance hierarchies where subclasses can be substituted for their base classes without breaking functionality, following the Liskov Substitution Principle.
+
+### Task
+Analyze the e-commerce system and design proper inheritance relationships that honor LSP.
+
+1. **Identify Inheritance Opportunities**: Examine the refactored code from previous exercises and identify where inheritance relationships make sense
+2. **Design Base Classes**: Create abstract base classes or interfaces that define clear contracts
+3. **Plan Subclasses**: Design concrete implementations that honor the base class contracts
+4. **Validate Substitution**: Ensure that subclasses can be substituted for base classes without breaking functionality
+
+### Deliverables
+- Inheritance hierarchy design showing base classes and subclasses
+- Contract definitions for base classes (preconditions, postconditions, invariants)
+- Substitution validation plan
+- Examples of proper and improper inheritance relationships
+
+### Getting Started
+1. Navigate to the `ecom-exercises` folder
+2. Choose your preferred language (C#, Java, Python, or TypeScript)
+3. Review your refactored code from SRP and OCP exercises
+4. Identify where inheritance would be beneficial
+5. Create your design without modifying any code
+
+---
+
+## Exercise 2: Implementation - Liskov Substitution Principle
+
+### Objective
+Implement your design from Exercise 1, ensuring that all existing unit tests continue to pass and subclasses can be substituted for base classes.
+
+### Task
+Implement the inheritance hierarchies according to your design while maintaining system functionality.
+
+1. **Create Base Classes**: Implement the abstract base classes or interfaces from your design
+2. **Implement Subclasses**: Create concrete implementations that honor the base class contracts
+3. **Ensure Substitution**: Verify that subclasses can be substituted for base classes without breaking functionality
+4. **Maintain Functionality**: Ensure all existing unit tests pass
+5. **Test Polymorphism**: Verify that polymorphic behavior works correctly with all implementations
+
+### Success Criteria
+- All existing unit tests pass
+- The application runs without errors
+- Subclasses can be substituted for base classes without breaking functionality
+- Polymorphic behavior works correctly
+- The system maintains the same external behavior
+
+### Getting Started
+1. Use your design from Exercise 1 as a guide
+2. Start by implementing the base classes
+3. Create concrete implementations that honor the contracts
+4. Run tests frequently to ensure you don't break existing functionality
+5. Test substitution by using subclasses where base classes are expected
+
+### Implementation Best Practices
+
+#### Git Workflow
+1. **Create a Feature Branch**: Start from main and create a new branch for your LSP refactoring
+   ```bash
+   git checkout main
+   git pull origin main
+   git checkout -b feature/lsp-refactoring
+   ```
+
+2. **Commit Frequently**: Make small, focused commits as you refactor
+   ```bash
+   git add .
+   git commit -m "Create PaymentProcessor base class"
+   git commit -m "Implement CreditCardProcessor"
+   git commit -m "Implement PayPalProcessor"
+   git commit -m "Add substitution tests for PaymentProcessor"
+   git commit -m "Create ShippingCalculator hierarchy"
+   ```
+
+3. **Test After Each Change**: Run tests after each refactoring step
+   ```bash
+   # Run tests to ensure nothing is broken
+   dotnet test  # or equivalent for your language
+   ```
+
+#### Industry Best Practices
+1. **Contract Definition**: Clearly define preconditions, postconditions, and invariants for base classes
+2. **Substitution Testing**: Create tests that verify subclasses can substitute for base classes
+3. **Behavioral Compatibility**: Ensure subclasses maintain the same behavior as base classes
+4. **Exception Handling**: Subclasses should not throw exceptions that base classes don't throw
+5. **Return Type Covariance**: Use covariant return types where appropriate
+6. **Composition Over Inheritance**: Consider composition when inheritance violates LSP
+7. **Documentation**: Document the behavioral contracts that subclasses must honor
+8. **Refactoring Safety**: Use polymorphism safely without breaking existing functionality
+
+### Learning Objectives
+After completing both exercises, you should be able to:
+- Design inheritance hierarchies that honor LSP
+- Ensure subclasses can substitute for base classes
+- Implement LSP while maintaining system functionality
+- Identify and fix LSP violations
+- Use composition when inheritance is problematic
+
 **Next**: The [Interface Segregation Principle](../4%20-%20I/I.md) builds upon LSP by ensuring that clients only depend on the interfaces they actually use, creating more focused and maintainable designs.
 

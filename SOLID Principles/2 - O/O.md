@@ -399,5 +399,105 @@ The Open/Closed Principle is crucial for creating flexible and maintainable soft
 
 This principle works hand-in-hand with the Single Responsibility Principle. When classes have single responsibilities, they naturally become easier to extend without modification. The Open/Closed Principle also sets the foundation for the Liskov Substitution Principle, as the abstractions we create for extension must be substitutable.
 
+## Exercise 1: Design - Open/Closed Principle
+
+### Objective
+Design a solution that makes the e-commerce system extensible without modification, following the Open/Closed Principle.
+
+### Task
+Analyze the hard-coded business rules in the e-commerce system and design an extensible architecture.
+
+1. **Identify Hard-coded Rules**: Examine the code and find all hard-coded business logic (tax rates, shipping calculations, payment methods, discount codes, etc.)
+2. **Design Abstractions**: Create abstract base classes or interfaces that define contracts for extensible behavior
+3. **Plan Strategy Pattern**: Design how different implementations can be plugged in without modifying existing code
+4. **Design Configuration**: Plan how new business rules can be added through configuration rather than code changes
+
+### Deliverables
+- List of all hard-coded business rules identified
+- Abstract base classes or interfaces for extensible behavior
+- Strategy pattern implementation plan
+- Configuration design for new business rules
+
+### Getting Started
+1. Navigate to the `ecom-exercises` folder
+2. Choose your preferred language (C#, Java, Python, or TypeScript)
+3. Examine the code for hard-coded values and business logic
+4. Create your design without modifying any code
+
+---
+
+## Exercise 2: Implementation - Open/Closed Principle
+
+### Objective
+Implement your design from Exercise 1, ensuring that all existing unit tests continue to pass and the system can be extended without modification.
+
+### Task
+Refactor the hard-coded business rules according to your design while maintaining system functionality.
+
+1. **Create Abstractions**: Implement the abstract base classes or interfaces from your design
+2. **Implement Strategies**: Create concrete implementations for existing business rules
+3. **Refactor Hard-coded Logic**: Replace hard-coded values with strategy implementations
+4. **Add Configuration**: Implement configuration system for new business rules
+5. **Maintain Functionality**: Ensure all existing unit tests pass
+6. **Demonstrate Extensibility**: Add a new business rule without modifying existing code
+
+### Success Criteria
+- All existing unit tests pass
+- The application runs without errors
+- New business rules can be added without modifying existing code
+- The system maintains the same external behavior
+- Extensibility is demonstrated with a new implementation
+
+### Getting Started
+1. Use your design from Exercise 1 as a guide
+2. Start by creating the abstractions
+3. Implement existing business rules as concrete strategies
+4. Run tests frequently to ensure you don't break existing functionality
+5. Add a new business rule to demonstrate extensibility
+
+### Implementation Best Practices
+
+#### Git Workflow
+1. **Create a Feature Branch**: Start from main and create a new branch for your OCP refactoring
+   ```bash
+   git checkout main
+   git pull origin main
+   git checkout -b feature/ocp-refactoring
+   ```
+
+2. **Commit Frequently**: Make small, focused commits as you refactor
+   ```bash
+   git add .
+   git commit -m "Create TaxCalculator abstraction"
+   git commit -m "Implement StandardTaxCalculator"
+   git commit -m "Create ShippingCalculator abstraction"
+   git commit -m "Implement FixedShippingCalculator"
+   git commit -m "Add new ExpressShippingCalculator without modifying existing code"
+   ```
+
+3. **Test After Each Change**: Run tests after each refactoring step
+   ```bash
+   # Run tests to ensure nothing is broken
+   dotnet test  # or equivalent for your language
+   ```
+
+#### Industry Best Practices
+1. **Strategy Pattern Implementation**: Use the Strategy pattern to encapsulate different algorithms
+2. **Configuration-Driven Extensions**: Make new business rules configurable rather than hard-coded
+3. **Interface Segregation**: Create focused interfaces for each type of business rule
+4. **Factory Pattern**: Use factories to create appropriate strategy implementations
+5. **Validation**: Ensure new implementations don't break existing functionality
+6. **Documentation**: Document how to add new business rules without modifying existing code
+7. **Backward Compatibility**: Ensure existing behavior remains unchanged
+8. **Performance Considerations**: Consider the performance impact of strategy selection
+
+### Learning Objectives
+After completing both exercises, you should be able to:
+- Identify hard-coded business rules that violate OCP
+- Design extensible systems using abstractions
+- Apply the Strategy pattern effectively
+- Implement OCP while maintaining system functionality
+- Create systems that can be extended without modification
+
 **Next**: The [Liskov Substitution Principle](../3%20-%20L/L.md) builds upon OCP by ensuring that our extensible classes can be substituted for their base classes without breaking the system's correctness.
 

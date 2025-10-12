@@ -567,5 +567,105 @@ The Interface Segregation Principle is crucial for creating maintainable and fle
 
 This principle builds upon the Liskov Substitution Principle by ensuring that the interfaces we create are focused and cohesive. It also sets the foundation for the Dependency Inversion Principle, as well-designed interfaces are essential for proper dependency inversion.
 
+## Exercise 1: Design - Interface Segregation Principle
+
+### Objective
+Design focused, cohesive interfaces that don't force clients to depend on methods they don't use, following the Interface Segregation Principle.
+
+### Task
+Analyze the e-commerce system and design interfaces that follow ISP principles.
+
+1. **Identify Interface Needs**: Examine the refactored code from previous exercises and identify where interfaces are needed
+2. **Design Focused Interfaces**: Create small, cohesive interfaces with single responsibilities
+3. **Avoid Fat Interfaces**: Ensure interfaces don't force clients to implement unused methods
+4. **Plan Interface Composition**: Design how multiple small interfaces can be combined when needed
+
+### Deliverables
+- Interface design showing focused, cohesive interfaces
+- Analysis of client needs for each interface
+- Interface composition plan
+- Examples of fat interfaces to avoid
+
+### Getting Started
+1. Navigate to the `ecom-exercises` folder
+2. Choose your preferred language (C#, Java, Python, or TypeScript)
+3. Review your refactored code from SRP, OCP, and LSP exercises
+4. Identify where interfaces would be beneficial
+5. Create your design without modifying any code
+
+---
+
+## Exercise 2: Implementation - Interface Segregation Principle
+
+### Objective
+Implement your design from Exercise 1, ensuring that all existing unit tests continue to pass and clients only depend on the interfaces they actually use.
+
+### Task
+Implement the focused interfaces according to your design while maintaining system functionality.
+
+1. **Create Interfaces**: Implement the focused interfaces from your design
+2. **Refactor Classes**: Modify existing classes to implement only the interfaces they need
+3. **Ensure Segregation**: Verify that clients only depend on the functionality they use
+4. **Maintain Functionality**: Ensure all existing unit tests pass
+5. **Test Interface Usage**: Verify that clients can use only the functionality they require
+
+### Success Criteria
+- All existing unit tests pass
+- The application runs without errors
+- Clients only depend on the interfaces they actually use
+- Interfaces are focused and cohesive
+- The system maintains the same external behavior
+
+### Getting Started
+1. Use your design from Exercise 1 as a guide
+2. Start by creating the focused interfaces
+3. Refactor existing classes to implement only what they need
+4. Run tests frequently to ensure you don't break existing functionality
+5. Verify that clients can use only the functionality they require
+
+### Implementation Best Practices
+
+#### Git Workflow
+1. **Create a Feature Branch**: Start from main and create a new branch for your ISP refactoring
+   ```bash
+   git checkout main
+   git pull origin main
+   git checkout -b feature/isp-refactoring
+   ```
+
+2. **Commit Frequently**: Make small, focused commits as you refactor
+   ```bash
+   git add .
+   git commit -m "Create IProductReader interface"
+   git commit -m "Create IProductWriter interface"
+   git commit -m "Refactor ProductService to implement segregated interfaces"
+   git commit -m "Create ICartOperations interface"
+   git commit -m "Create ICartCalculations interface"
+   ```
+
+3. **Test After Each Change**: Run tests after each refactoring step
+   ```bash
+   # Run tests to ensure nothing is broken
+   dotnet test  # or equivalent for your language
+   ```
+
+#### Industry Best Practices
+1. **Interface Segregation**: Create small, focused interfaces with single responsibilities
+2. **Client-Specific Interfaces**: Design interfaces based on actual client needs
+3. **Interface Composition**: Combine multiple small interfaces when needed
+4. **Fat Interface Detection**: Identify interfaces that force clients to depend on unused methods
+5. **Dependency Minimization**: Ensure clients only depend on what they actually use
+6. **Interface Documentation**: Document the purpose and usage of each interface
+7. **Backward Compatibility**: Maintain compatibility when segregating existing interfaces
+8. **Testing Interfaces**: Create tests that verify interface segregation works correctly
+
+### Learning Objectives
+After completing both exercises, you should be able to:
+- Design focused, cohesive interfaces
+- Avoid fat interfaces that violate ISP
+- Implement ISP while maintaining system functionality
+- Use interface composition effectively
+- Ensure clients only depend on what they use
+
 **Next**: The [Dependency Inversion Principle](../5%20-%20D/D.md) builds upon ISP by ensuring that high-level modules depend on abstractions rather than concrete implementations, completing the SOLID principles foundation.
 
