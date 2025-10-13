@@ -1,4 +1,0 @@
-{
-  "tests/test_ecommerce_manager.py::TestEcommerceManager::test_add_to_cart_with_invalid_product_id_should_throw_exception": true,
-  "tests/test_ecommerce_manager.py::TestEcommerceManager::test_add_to_cart_with_zero_quantity_should_throw_exception": true
-}

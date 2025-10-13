@@ -1,9 +1,0 @@
-README.md
-pyproject.toml
-setup.py
-src/bounteous_ecom.egg-info/PKG-INFO
-src/bounteous_ecom.egg-info/SOURCES.txt
-src/bounteous_ecom.egg-info/dependency_links.txt
-src/bounteous_ecom.egg-info/requires.txt
-src/bounteous_ecom.egg-info/top_level.txt
-tests/test_ecommerce_manager.py
