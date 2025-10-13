@@ -1,0 +1,39 @@
+/Users/greg/Training/principles-of-software-engineering/SOLID Principles/ecom-exercises/CSharp/src/App/bin/Release/net9.0/App
+/Users/greg/Training/principles-of-software-engineering/SOLID Principles/ecom-exercises/CSharp/src/App/bin/Release/net9.0/App.deps.json
+/Users/greg/Training/principles-of-software-engineering/SOLID Principles/ecom-exercises/CSharp/src/App/bin/Release/net9.0/App.runtimeconfig.json
+/Users/greg/Training/principles-of-software-engineering/SOLID Principles/ecom-exercises/CSharp/src/App/bin/Release/net9.0/App.dll
+/Users/greg/Training/principles-of-software-engineering/SOLID Principles/ecom-exercises/CSharp/src/App/bin/Release/net9.0/App.pdb
+/Users/greg/Training/principles-of-software-engineering/SOLID Principles/ecom-exercises/CSharp/src/App/bin/Release/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/greg/Training/principles-of-software-engineering/SOLID Principles/ecom-exercises/CSharp/src/App/bin/Release/net9.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/greg/Training/principles-of-software-engineering/SOLID Principles/ecom-exercises/CSharp/src/App/bin/Release/net9.0/Npgsql.dll
+/Users/greg/Training/principles-of-software-engineering/SOLID Principles/ecom-exercises/CSharp/src/App/obj/Release/net9.0/App.csproj.AssemblyReference.cache
+/Users/greg/Training/principles-of-software-engineering/SOLID Principles/ecom-exercises/CSharp/src/App/obj/Release/net9.0/App.GeneratedMSBuildEditorConfig.editorconfig
+/Users/greg/Training/principles-of-software-engineering/SOLID Principles/ecom-exercises/CSharp/src/App/obj/Release/net9.0/App.AssemblyInfoInputs.cache
+/Users/greg/Training/principles-of-software-engineering/SOLID Principles/ecom-exercises/CSharp/src/App/obj/Release/net9.0/App.AssemblyInfo.cs
+/Users/greg/Training/principles-of-software-engineering/SOLID Principles/ecom-exercises/CSharp/src/App/obj/Release/net9.0/App.csproj.CoreCompileInputs.cache
+/Users/greg/Training/principles-of-software-engineering/SOLID Principles/ecom-exercises/CSharp/src/App/obj/Release/net9.0/App.csproj.Up2Date
+/Users/greg/Training/principles-of-software-engineering/SOLID Principles/ecom-exercises/CSharp/src/App/obj/Release/net9.0/App.dll
+/Users/greg/Training/principles-of-software-engineering/SOLID Principles/ecom-exercises/CSharp/src/App/obj/Release/net9.0/refint/App.dll
+/Users/greg/Training/principles-of-software-engineering/SOLID Principles/ecom-exercises/CSharp/src/App/obj/Release/net9.0/App.pdb
+/Users/greg/Training/principles-of-software-engineering/SOLID Principles/ecom-exercises/CSharp/src/App/obj/Release/net9.0/App.genruntimeconfig.cache
+/Users/greg/Training/principles-of-software-engineering/SOLID Principles/ecom-exercises/CSharp/src/App/obj/Release/net9.0/ref/App.dll
+/Users/greg/Training/principles-of-software-engineering/SOLID-Principles/ecom-exercises/Dotnet/src/App/bin/Release/net9.0/App
+/Users/greg/Training/principles-of-software-engineering/SOLID-Principles/ecom-exercises/Dotnet/src/App/bin/Release/net9.0/App.deps.json
+/Users/greg/Training/principles-of-software-engineering/SOLID-Principles/ecom-exercises/Dotnet/src/App/bin/Release/net9.0/App.runtimeconfig.json
+/Users/greg/Training/principles-of-software-engineering/SOLID-Principles/ecom-exercises/Dotnet/src/App/bin/Release/net9.0/App.dll
+/Users/greg/Training/principles-of-software-engineering/SOLID-Principles/ecom-exercises/Dotnet/src/App/bin/Release/net9.0/App.pdb
+/Users/greg/Training/principles-of-software-engineering/SOLID-Principles/ecom-exercises/Dotnet/src/App/bin/Release/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/greg/Training/principles-of-software-engineering/SOLID-Principles/ecom-exercises/Dotnet/src/App/bin/Release/net9.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/greg/Training/principles-of-software-engineering/SOLID-Principles/ecom-exercises/Dotnet/src/App/bin/Release/net9.0/Npgsql.dll
+/Users/greg/Training/principles-of-software-engineering/SOLID-Principles/ecom-exercises/Dotnet/src/App/obj/Release/net9.0/App.csproj.AssemblyReference.cache
+/Users/greg/Training/principles-of-software-engineering/SOLID-Principles/ecom-exercises/Dotnet/src/App/obj/Release/net9.0/App.GeneratedMSBuildEditorConfig.editorconfig
+/Users/greg/Training/principles-of-software-engineering/SOLID-Principles/ecom-exercises/Dotnet/src/App/obj/Release/net9.0/App.AssemblyInfoInputs.cache
+/Users/greg/Training/principles-of-software-engineering/SOLID-Principles/ecom-exercises/Dotnet/src/App/obj/Release/net9.0/App.AssemblyInfo.cs
+/Users/greg/Training/principles-of-software-engineering/SOLID-Principles/ecom-exercises/Dotnet/src/App/obj/Release/net9.0/App.csproj.CoreCompileInputs.cache
+/Users/greg/Training/principles-of-software-engineering/SOLID-Principles/ecom-exercises/Dotnet/src/App/obj/Release/net9.0/App.sourcelink.json
+/Users/greg/Training/principles-of-software-engineering/SOLID-Principles/ecom-exercises/Dotnet/src/App/obj/Release/net9.0/App.csproj.Up2Date
+/Users/greg/Training/principles-of-software-engineering/SOLID-Principles/ecom-exercises/Dotnet/src/App/obj/Release/net9.0/App.dll
+/Users/greg/Training/principles-of-software-engineering/SOLID-Principles/ecom-exercises/Dotnet/src/App/obj/Release/net9.0/refint/App.dll
+/Users/greg/Training/principles-of-software-engineering/SOLID-Principles/ecom-exercises/Dotnet/src/App/obj/Release/net9.0/App.pdb
+/Users/greg/Training/principles-of-software-engineering/SOLID-Principles/ecom-exercises/Dotnet/src/App/obj/Release/net9.0/App.genruntimeconfig.cache
+/Users/greg/Training/principles-of-software-engineering/SOLID-Principles/ecom-exercises/Dotnet/src/App/obj/Release/net9.0/ref/App.dll

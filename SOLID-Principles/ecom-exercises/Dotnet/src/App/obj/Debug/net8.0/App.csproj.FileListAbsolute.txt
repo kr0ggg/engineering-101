@@ -1,0 +1,5 @@
+/Users/greg/Training/principles-of-software-engineering/SOLID Principles/ecom-exercises/CSharp/src/App/obj/Debug/net8.0/App.csproj.AssemblyReference.cache
+/Users/greg/Training/principles-of-software-engineering/SOLID Principles/ecom-exercises/CSharp/src/App/obj/Debug/net8.0/App.GeneratedMSBuildEditorConfig.editorconfig
+/Users/greg/Training/principles-of-software-engineering/SOLID Principles/ecom-exercises/CSharp/src/App/obj/Debug/net8.0/App.AssemblyInfoInputs.cache
+/Users/greg/Training/principles-of-software-engineering/SOLID Principles/ecom-exercises/CSharp/src/App/obj/Debug/net8.0/App.AssemblyInfo.cs
+/Users/greg/Training/principles-of-software-engineering/SOLID Principles/ecom-exercises/CSharp/src/App/obj/Debug/net8.0/App.csproj.CoreCompileInputs.cache

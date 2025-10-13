@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "4ZaOMeKZrqc=",
+  "success": true,
+  "projectFilePath": "/Users/greg/Training/principles-of-software-engineering/SOLID-Principles/ecom-exercises/Dotnet/src/App/App.csproj",
+  "expectedPackageFiles": [
+    "/Users/greg/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.2/microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "/Users/greg/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.2/microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
+    "/Users/greg/.nuget/packages/npgsql/9.0.4/npgsql.9.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}
