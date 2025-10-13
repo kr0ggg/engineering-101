@@ -87,10 +87,70 @@ The Single Responsibility Principle is the foundation of clean code architecture
 
 ## How to Apply This Principle
 
-1. **Identify Responsibilities**: Analyze what your class is doing
-2. **Separate Concerns**: Split classes that handle multiple responsibilities
-3. **Use Composition**: Combine single-responsibility classes when needed
-4. **Apply the "One Reason to Change" Rule**: If you can think of multiple reasons why a class might change, it violates SRP
+### 1. Identify Responsibilities
+**What it means**: Carefully analyze each class to understand all the different things it's doing. Look for methods that serve different purposes or handle different aspects of functionality.
+
+**How to do it**: 
+- List all the methods in your class
+- Group methods by their purpose or the type of data they work with
+- Ask yourself: "What are all the different reasons this class might need to change?"
+- Look for methods that operate on different types of data or serve different business purposes
+
+**Example from our code samples**: In the violating `UserManager` class, we can identify four distinct responsibilities:
+- **Data persistence** (SaveUser method working with database connections)
+- **Communication** (SendEmail method handling SMTP operations) 
+- **Report generation** (GenerateReport method creating files)
+- **Validation** (ValidateUser method checking business rules)
+
+### 2. Separate Concerns
+**What it means**: Once you've identified multiple responsibilities, create separate classes for each distinct responsibility. Each class should have a single, well-defined purpose.
+
+**How to do it**:
+- Create a new class for each identified responsibility
+- Move related methods to their appropriate class
+- Ensure each class has a clear, single purpose
+- Give each class a descriptive name that reflects its single responsibility
+
+**Example from our code samples**: The refactored solution separates the `UserManager` into:
+- `UserRepository` - handles only data persistence operations
+- `EmailService` - handles only email communication
+- `ReportGenerator` - handles only report creation
+- `UserValidator` - handles only user validation logic
+
+### 3. Use Composition
+**What it means**: When you need functionality from multiple single-responsibility classes, combine them through composition rather than inheritance. This allows you to use multiple focused classes together while maintaining their individual responsibilities.
+
+**How to do it**:
+- Create a coordinator class that uses multiple single-responsibility classes
+- Inject dependencies through constructor or method parameters
+- Delegate specific operations to the appropriate specialized class
+- Keep the coordinator focused on orchestrating the workflow, not implementing the details
+
+**Example from our code samples**: The refactored `OrderProcessor` uses composition to coordinate multiple services:
+- It depends on `OrderRepository`, `PriceCalculator`, `EmailService`, `InventoryService`, and `InvoiceGenerator`
+- Each dependency handles one specific aspect of order processing
+- The `OrderProcessor` orchestrates the workflow without implementing any of the details
+
+### 4. Apply the "One Reason to Change" Rule
+**What it means**: This is the litmus test for SRP compliance. If you can identify multiple, unrelated reasons why a class might need to be modified, it violates the Single Responsibility Principle.
+
+**How to do it**:
+- For each class, ask: "What are all the possible reasons this class might need to change?"
+- If you can identify more than one reason, the class likely has multiple responsibilities
+- Each reason to change should be related to a single, cohesive responsibility
+- If reasons are unrelated (e.g., "database schema changes" and "email template updates"), split the class
+
+**Example from our code samples**: The violating `UserManager` class has multiple reasons to change:
+- Database schema changes (affects SaveUser)
+- Email service provider changes (affects SendEmail)
+- Report format changes (affects GenerateReport)
+- Validation rule changes (affects ValidateUser)
+
+The refactored solution ensures each class has only one reason to change:
+- `UserRepository` changes only when data persistence needs change
+- `EmailService` changes only when email communication needs change
+- `ReportGenerator` changes only when report generation needs change
+- `UserValidator` changes only when validation rules change
 
 ## Examples of Violations and Refactoring
 

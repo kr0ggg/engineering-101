@@ -99,11 +99,60 @@ The Open/Closed Principle is essential for creating maintainable and scalable so
 
 ## How to Apply This Principle
 
-1. **Use Abstraction**: Create interfaces or abstract classes that define contracts
-2. **Implement Polymorphism**: Use inheritance or composition to extend behavior
-3. **Apply Strategy Pattern**: Encapsulate algorithms in separate classes
-4. **Use Dependency Injection**: Inject dependencies to enable runtime behavior changes
-5. **Design for Extension**: Plan interfaces that can accommodate future requirements
+### 1. Use Abstraction
+**What it means**: Create interfaces or abstract classes that define stable contracts for behavior. These abstractions serve as extension points that can be implemented in different ways without modifying existing code.
+
+**How to do it**:
+- Identify areas where you have hard-coded business logic or conditional statements
+- Create abstract base classes or interfaces that define the contract for that behavior
+- Design abstractions to be stable and unlikely to change frequently
+- Ensure abstractions capture the essential behavior without implementation details
+
+**Example from our code samples**: In the violating `DiscountCalculator`, we have hard-coded customer type logic. The refactored solution creates a `DiscountStrategy` abstract base class that defines the contract for discount calculation. This abstraction is stable and can be extended with new discount types without modifying existing code.
+
+### 2. Implement Polymorphism
+**What it means**: Use inheritance or composition to create different implementations of your abstractions. This allows the same interface to behave differently based on the specific implementation being used.
+
+**How to do it**:
+- Create concrete classes that implement your abstractions
+- Each concrete class should represent a specific variation of the behavior
+- Use polymorphism to call methods on the abstraction rather than concrete types
+- Ensure all implementations honor the contract defined by the abstraction
+
+**Example from our code samples**: The refactored solution creates specific discount implementations (`RegularCustomerDiscount`, `PremiumCustomerDiscount`, `VIPCustomerDiscount`) that all implement the `DiscountStrategy` abstraction. The `DiscountCalculator` uses polymorphism to call `CalculateDiscount` on whatever strategy is provided, without knowing the specific implementation.
+
+### 3. Apply Strategy Pattern
+**What it means**: Encapsulate different algorithms or behaviors in separate classes that implement a common interface. This allows you to switch between different approaches at runtime without changing the code that uses them.
+
+**How to do it**:
+- Identify algorithms or behaviors that vary based on context
+- Create a strategy interface that defines the common contract
+- Implement each variation as a separate strategy class
+- Use composition to inject the appropriate strategy into the context
+
+**Example from our code samples**: The discount calculation is implemented using the Strategy pattern. Each customer type has its own discount strategy class, and the `Customer` object holds a reference to its specific strategy. This allows the same `DiscountCalculator` to work with any discount strategy without modification.
+
+### 4. Use Dependency Injection
+**What it means**: Instead of creating concrete objects directly, inject them as dependencies. This allows you to provide different implementations without changing the consuming code.
+
+**How to do it**:
+- Define dependencies as abstractions (interfaces or abstract classes)
+- Inject dependencies through constructors, setters, or method parameters
+- Use dependency injection containers to manage object creation and wiring
+- Configure different implementations for different environments or use cases
+
+**Example from our code samples**: The `Customer` class receives its `DiscountStrategy` as a dependency rather than determining it internally. This allows the same customer to use different discount strategies without changing the customer class or the discount calculator.
+
+### 5. Design for Extension
+**What it means**: Plan your interfaces and abstractions to accommodate future requirements. Design extension points that can handle new functionality without breaking existing implementations.
+
+**How to do it**:
+- Design interfaces with future extensibility in mind
+- Avoid making abstractions too specific to current requirements
+- Consider what types of extensions might be needed in the future
+- Use generic or parameterized types where appropriate
+
+**Example from our code samples**: The `DiscountStrategy` abstraction is designed to be easily extensible. When a new `CorporateCustomerDiscount` is needed, it can be added without modifying any existing code. The abstraction is generic enough to handle any type of discount calculation while being specific enough to provide a clear contract.
 
 ## Examples of Violations and Refactoring
 

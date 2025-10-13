@@ -110,11 +110,60 @@ The Dependency Inversion Principle is the capstone of the SOLID principles, crea
 
 ## How to Apply This Principle
 
-1. **Define Abstractions**: Create interfaces or abstract classes for dependencies
-2. **Inject Dependencies**: Use dependency injection to provide concrete implementations
-3. **Depend on Abstractions**: High-level modules should only depend on abstractions
-4. **Implement Abstractions**: Low-level modules should implement the abstractions
-5. **Use Dependency Injection Containers**: Leverage IoC containers for automatic dependency resolution
+### 1. Define Abstractions
+**What it means**: Create interfaces or abstract classes that represent the contracts for external dependencies. These abstractions should define what functionality is needed without specifying how it's implemented.
+
+**How to do it**:
+- Identify all external dependencies in your high-level modules (databases, email services, file systems, etc.)
+- Create interfaces that define the contracts for these dependencies
+- Design abstractions to be stable and unlikely to change frequently
+- Focus on the essential behavior rather than implementation details
+
+**Example from our code samples**: In the violating `OrderService`, we have direct dependencies on `SqlServerDatabase`, `SmtpEmailService`, and `FileLogger`. The refactored solution creates abstractions (`IOrderRepository`, `IEmailService`, `ILogger`) that define the contracts for these dependencies without specifying implementation details.
+
+### 2. Inject Dependencies
+**What it means**: Instead of creating concrete objects directly within your classes, receive them as dependencies through constructor injection, setter injection, or method parameters.
+
+**How to do it**:
+- Modify constructors to accept abstractions rather than creating concrete objects
+- Use dependency injection containers to manage object creation and wiring
+- Ensure dependencies are provided at the appropriate scope (singleton, transient, scoped)
+- Make dependencies explicit and visible in the class interface
+
+**Example from our code samples**: The refactored `OrderService` receives its dependencies through constructor injection (`IOrderRepository orderRepository`, `IEmailService emailService`, `ILogger logger`). This makes the dependencies explicit and allows different implementations to be provided without changing the `OrderService` class.
+
+### 3. Depend on Abstractions
+**What it means**: High-level modules should only reference abstractions, never concrete implementations. This creates loose coupling and makes the system more flexible.
+
+**How to do it**:
+- Use interfaces or abstract classes in method signatures and property declarations
+- Avoid importing concrete implementation classes in high-level modules
+- Use polymorphism to work with abstractions rather than specific types
+- Design your high-level modules to be independent of implementation details
+
+**Example from our code samples**: The refactored `OrderService` only depends on the abstractions (`IOrderRepository`, `IEmailService`, `ILogger`) and never directly references concrete implementations like `SqlServerDatabase` or `SmtpEmailService`. This allows the service to work with any implementation that satisfies the contracts.
+
+### 4. Implement Abstractions
+**What it means**: Low-level modules should implement the abstractions defined by high-level modules. This inverts the traditional dependency direction.
+
+**How to do it**:
+- Create concrete classes that implement the defined interfaces
+- Ensure implementations honor the contracts defined by the abstractions
+- Keep implementation details hidden behind the abstraction
+- Make implementations easily swappable and configurable
+
+**Example from our code samples**: The refactored solution includes multiple implementations of each abstraction (`SqlServerDatabase` and `OracleDatabase` implement `IOrderRepository`, `SmtpEmailService` and `SendGridEmailService` implement `IEmailService`). This demonstrates how different implementations can be swapped without affecting the high-level modules.
+
+### 5. Use Dependency Injection Containers
+**What it means**: Leverage IoC (Inversion of Control) containers to automatically manage dependency creation, wiring, and lifecycle management. This reduces boilerplate code and makes dependency management more systematic.
+
+**How to do it**:
+- Configure the container to map abstractions to concrete implementations
+- Use the container to resolve dependencies automatically
+- Configure different implementations for different environments (development, testing, production)
+- Use the container's lifecycle management features (singleton, transient, scoped)
+
+**Example from our code samples**: While not shown in the code samples, a typical IoC container configuration would map `IOrderRepository` to `SqlServerDatabase` in production and to a mock implementation in testing. This allows the same high-level modules to work in different environments without code changes.
 
 ## Examples of Violations and Refactoring
 

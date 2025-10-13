@@ -110,11 +110,60 @@ The Liskov Substitution Principle is essential for maintaining the integrity of 
 
 ## How to Apply This Principle
 
-1. **Maintain Contracts**: Subclasses must honor the contracts of their base classes
-2. **Preserve Invariants**: Subclasses must maintain the invariants of the base class
-3. **Avoid Weakening Preconditions**: Don't strengthen requirements for subclasses
-4. **Avoid Strengthening Postconditions**: Don't weaken guarantees made by base classes
-5. **Use Composition Over Inheritance**: When substitution is problematic, consider composition
+### 1. Maintain Contracts
+**What it means**: Subclasses must honor the contracts established by their base classes. This includes method signatures, return types, exception handling, and behavioral expectations.
+
+**How to do it**:
+- Ensure subclasses implement all methods from the base class with compatible signatures
+- Maintain the same return types or use covariant return types where appropriate
+- Don't change method parameters in ways that would break existing callers
+- Preserve the semantic meaning of method names and their intended behavior
+
+**Example from our code samples**: In the violating `Bird` example, the `Penguin` class throws an exception when `Fly()` is called, breaking the contract that all birds can fly. The refactored solution creates separate interfaces (`IFlyingBird` and `ISwimmingBird`) so that each subclass only implements contracts it can actually honor.
+
+### 2. Preserve Invariants
+**What it means**: Subclasses must maintain the same invariants (conditions that are always true) as their base classes. These are the fundamental properties that define the object's state and behavior.
+
+**How to do it**:
+- Identify the invariants that the base class maintains
+- Ensure subclasses don't violate these invariants in their implementations
+- Document invariants clearly so subclasses understand what they must preserve
+- Test invariants to ensure they hold for all subclasses
+
+**Example from our code samples**: In the violating `Rectangle`/`Square` example, the `Square` class changes the behavior of `setWidth()` and `setHeight()` methods, violating the invariant that these methods should only affect their respective dimensions. The refactored solution makes `Square` a separate class with its own `setSide()` method, preserving the invariants of both shapes.
+
+### 3. Avoid Weakening Preconditions
+**What it means**: Subclasses should not impose stricter requirements on their methods than the base class does. This would make the subclass less substitutable, not more.
+
+**How to do it**:
+- Don't add additional validation or requirements in subclass methods
+- Don't require additional parameters or more specific types
+- Don't impose stricter business rules than the base class
+- If you need stricter validation, consider composition instead of inheritance
+
+**Example from our code samples**: If a base class `PaymentProcessor` accepts any amount greater than zero, a subclass shouldn't require amounts to be above $10. This would make the subclass unusable in contexts where the base class is expected to handle smaller amounts.
+
+### 4. Avoid Strengthening Postconditions
+**What it means**: Subclasses should not weaken the guarantees made by base class methods. This would break the expectations of code that depends on the base class behavior.
+
+**How to do it**:
+- Don't reduce the functionality or capabilities promised by base class methods
+- Don't change return values in ways that would break existing code
+- Don't remove side effects that calling code might depend on
+- If you need different behavior, consider composition or a different inheritance hierarchy
+
+**Example from our code samples**: If a base class `Logger` guarantees that all messages will be written to a file, a subclass shouldn't only log messages above a certain priority level. This would break the contract and make the subclass unsuitable for contexts requiring all messages to be logged.
+
+### 5. Use Composition Over Inheritance
+**What it means**: When substitution becomes problematic or creates awkward inheritance relationships, consider using composition instead. This often leads to more flexible and maintainable designs.
+
+**How to do it**:
+- Identify when inheritance relationships don't naturally fit the "is-a" relationship
+- Use composition to combine behaviors from multiple sources
+- Create interfaces that define the capabilities you need
+- Implement these interfaces through composition rather than inheritance
+
+**Example from our code samples**: The refactored `Bird` solution uses composition by creating separate interfaces for different capabilities (`IFlyingBird`, `ISwimmingBird`). A `Penguin` implements `ISwimmingBird` and can be used wherever swimming behavior is needed, without forcing it to implement flying behavior it doesn't have.
 
 ## Examples of Violations and Refactoring
 

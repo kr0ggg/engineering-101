@@ -109,11 +109,60 @@ The Interface Segregation Principle is essential for creating maintainable and f
 
 ## How to Apply This Principle
 
-1. **Identify Client Needs**: Understand what each client actually requires
-2. **Split Large Interfaces**: Break down fat interfaces into smaller, focused ones
-3. **Use Composition**: Combine multiple small interfaces when needed
-4. **Avoid Empty Implementations**: Don't force clients to implement unused methods
-5. **Design for Specific Use Cases**: Create interfaces tailored to specific client needs
+### 1. Identify Client Needs
+**What it means**: Understand what each client actually requires from an interface. Different clients may need different subsets of functionality, and forcing them to depend on unused methods creates unnecessary coupling.
+
+**How to do it**:
+- Analyze each class that implements an interface to see which methods it actually uses
+- Group clients by their usage patterns to identify common needs
+- Look for clients that implement methods with empty bodies or throw "not implemented" exceptions
+- Consider the different contexts where the interface might be used
+
+**Example from our code samples**: In the violating `IWorker` interface, we can see that `BasicWorker` only needs basic functionality (Work, Eat, Sleep) but is forced to implement development methods (Code, Design, Test, Deploy) that it doesn't use. The refactored solution creates separate interfaces (`IBasicWorker`, `IDeveloper`, `ITester`, `IDevOps`) so clients only implement what they need.
+
+### 2. Split Large Interfaces
+**What it means**: Break down fat interfaces into smaller, focused interfaces that each serve a specific purpose. This prevents clients from being burdened with methods they don't need.
+
+**How to do it**:
+- Identify groups of related methods within a large interface
+- Create separate interfaces for each group of related functionality
+- Ensure each new interface has a single, well-defined responsibility
+- Use descriptive names that clearly indicate the interface's purpose
+
+**Example from our code samples**: The violating `MediaPlayer` interface combines audio and video functionality. The refactored solution splits it into `AudioPlayer` and `VideoPlayer` interfaces, allowing clients to implement only the functionality they need. A basic audio player no longer needs to implement video methods it can't support.
+
+### 3. Use Composition
+**What it means**: When clients need functionality from multiple interfaces, combine them through composition rather than creating one large interface. This allows clients to pick and choose exactly what they need.
+
+**How to do it**:
+- Create multiple small, focused interfaces
+- Allow classes to implement multiple interfaces when they need multiple capabilities
+- Use interface inheritance to build more complex interfaces from simpler ones
+- Design interfaces to be composable and work well together
+
+**Example from our code samples**: The refactored worker solution allows `FullStackDeveloper` to implement multiple interfaces (`IBasicWorker`, `IDeveloper`, `ITester`, `IDevOps`) to get all the functionality it needs, while `BasicWorker` only implements `IBasicWorker`. This composition approach gives clients exactly the capabilities they need without forcing unused dependencies.
+
+### 4. Avoid Empty Implementations
+**What it means**: Don't force clients to implement methods they don't need by providing empty implementations or throwing "not implemented" exceptions. This is a clear sign that the interface is too large.
+
+**How to do it**:
+- If you find yourself writing empty method implementations, the interface likely violates ISP
+- Look for methods that throw "NotImplementedException" or similar exceptions
+- Consider splitting the interface to eliminate the need for empty implementations
+- Design interfaces so that every method is meaningful for every implementing class
+
+**Example from our code samples**: The violating `BasicWorker` class throws "NotImplementedException" for development methods it can't perform. The refactored solution eliminates this problem by creating separate interfaces, so `BasicWorker` only implements methods it can actually perform.
+
+### 5. Design for Specific Use Cases
+**What it means**: Create interfaces tailored to specific client needs rather than trying to create one interface that serves all possible use cases. This leads to more focused and useful interfaces.
+
+**How to do it**:
+- Design interfaces from the client's perspective, not the implementer's perspective
+- Consider the specific scenarios where each interface will be used
+- Create interfaces that are cohesive and work well together
+- Avoid the temptation to add "just in case" methods to interfaces
+
+**Example from our code samples**: The refactored document processor solution creates specific interfaces (`DocumentReader`, `DocumentWriter`, `DocumentPrinter`, `DocumentScanner`, `DocumentFaxer`, `DocumentEmailer`) that each serve specific use cases. A basic printer only needs to implement the interfaces it can actually support, making the design much cleaner and more maintainable.
 
 ## Examples of Violations and Refactoring
 
