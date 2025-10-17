@@ -152,11 +152,45 @@ Domain entities are objects that have a distinct identity that persists over tim
 
 **Code Samples**: [C#](./code-samples/csharp/01-customer-entity.cs) | [Java](./code-samples/java/01-customer-entity.java) | [TypeScript](./code-samples/typescript/01-customer-entity.ts) | [Python](./code-samples/python/01-customer-entity.py)
 
+Entities must have a unique identity that distinguishes them from other entities, even if their attributes change over time. This identity should be:
+
+- **Immutable**: Once assigned, the identity should never change
+- **Unique**: No two entities should have the same identity
+- **Meaningful**: The identity should have business significance
+- **Stable**: The identity should persist throughout the entity's lifecycle
+
+In our e-commerce example, a `Customer` entity has a `CustomerId` that uniquely identifies each customer. Even if the customer changes their name, email, or address, they remain the same customer because their `CustomerId` doesn't change.
+
+**Key Design Principles:**
+- Use value objects for identity types (e.g., `CustomerId`, `OrderId`)
+- Make identity immutable and meaningful
+- Ensure identity uniqueness across the system
+- Use factory methods or services to generate identities
+
 #### Business Logic Encapsulation
 
 **Code Samples**: [C#](./code-samples/csharp/02-order-entity.cs)
 
-Entities should contain business logic related to their state and behavior.
+Entities should contain business logic related to their state and behavior. This encapsulation ensures that:
+
+- **Business rules are enforced** at the domain level
+- **Data integrity is maintained** through controlled access
+- **Complex operations are atomic** and consistent
+- **Business knowledge is centralized** in the domain
+
+In our e-commerce example, the `Order` entity encapsulates important business rules:
+
+- **Order State Management**: Only draft orders can be modified
+- **Item Management**: Adding items updates quantities and recalculates totals
+- **Order Confirmation**: Orders must have items before they can be confirmed
+- **Business Validation**: Quantity must be positive, products must exist
+
+**Key Design Principles:**
+- Keep business logic within entities, not in external services
+- Use private setters and controlled methods for state changes
+- Validate business rules before allowing state changes
+- Make operations atomic and consistent
+- Use domain events to communicate significant changes
 
 ## Value Objects
 
@@ -169,15 +203,53 @@ Value objects are objects that are defined by their attributes rather than their
 3. **Value Equality**: Two value objects are equal if they have the same attributes
 4. **Self-Validating**: Value objects validate their own state
 
+### When to Use Value Objects
+
+Value objects are ideal for representing:
+- **Quantities and Measurements**: Money, Distance, Weight, Temperature
+- **Descriptive Attributes**: Address, Email, Phone Number, Color
+- **Complex Types**: Date Range, Time Period, Geographic Coordinates
+- **Business Concepts**: Product Code, SKU, ISBN, Currency Code
+
 ### Value Object Design Principles
 
 #### Immutability
 
 **Code Samples**: [C#](./code-samples/csharp/03-money-value-object.cs) | [Java](./code-samples/java/02-money-value-object.java) | [TypeScript](./code-samples/typescript/02-money-value-object.ts) | [Python](./code-samples/python/02-money-value-object.py)
 
+Value objects should be immutable to ensure:
+- **Thread Safety**: Multiple threads can safely access the same value object
+- **Predictable Behavior**: Value objects cannot be unexpectedly modified
+- **Simplified Reasoning**: No need to track state changes over time
+- **Consistent Equality**: Equality comparisons remain valid
+
+In our e-commerce example, the `Money` value object represents monetary amounts with currency. Once created, the amount and currency cannot be changed, ensuring that monetary calculations are predictable and safe.
+
+**Key Design Principles:**
+- Make all properties read-only (getters only)
+- Validate input in the constructor
+- Return new instances for operations (don't modify existing ones)
+- Implement proper equality and hash code methods
+- Use factory methods for common values (e.g., `Money.Zero()`)
+
 #### Self-Validation
 
 **Code Samples**: [C#](./code-samples/csharp/04-email-address-value-object.cs)
+
+Value objects should validate their own state upon creation to ensure:
+- **Data Integrity**: Invalid data cannot enter the system
+- **Early Error Detection**: Problems are caught at the domain boundary
+- **Consistent Validation**: Same rules applied everywhere the value object is used
+- **Clear Error Messages**: Domain-specific validation messages
+
+In our e-commerce example, the `EmailAddress` value object validates that the email format is correct and normalizes it to lowercase, ensuring consistent email handling throughout the system.
+
+**Key Design Principles:**
+- Validate all input in the constructor
+- Throw meaningful exceptions for invalid data
+- Normalize data when appropriate (e.g., lowercase emails)
+- Use domain-specific validation rules
+- Consider using validation libraries for complex rules
 
 ## Domain Services
 
@@ -185,6 +257,7 @@ Domain services contain business logic that doesn't naturally belong to any enti
 
 ### When to Use Domain Services
 
+Domain services are appropriate when:
 1. **Cross-Entity Operations**: Operations that involve multiple entities
 2. **Complex Business Rules**: Rules that are too complex for a single entity
 3. **Stateless Operations**: Operations that don't maintain state
@@ -193,6 +266,25 @@ Domain services contain business logic that doesn't naturally belong to any enti
 ### Domain Service Design Principles
 
 **Code Samples**: [C#](./code-samples/csharp/05-pricing-service.cs) | [Java](./code-samples/java/03-inventory-service.java)
+
+Domain services should be:
+- **Stateless**: No instance variables that change over time
+- **Pure**: Same inputs always produce same outputs
+- **Focused**: Each service has a single, well-defined responsibility
+- **Domain-Specific**: Contain only business logic, not technical concerns
+
+In our e-commerce example, the `PricingService` calculates order totals by considering:
+- **Customer Type**: Premium customers get discounts
+- **Order Size**: Bulk orders receive additional discounts
+- **Geographic Location**: Tax rates vary by state/region
+- **Shipping Rules**: Free shipping thresholds and weight-based pricing
+
+**Key Design Principles:**
+- Keep services stateless and pure
+- Focus on business logic, not technical implementation
+- Use dependency injection for external dependencies
+- Make services testable with clear interfaces
+- Consider using interfaces for better testability
 
 ## Modules and Separation of Concerns
 
@@ -243,6 +335,21 @@ Domain/
 
 **Code Samples**: [C#](./code-samples/csharp/06-customer-module.cs)
 
+Modules should be organized around business capabilities rather than technical layers. In our e-commerce example:
+
+- **Customer Module**: Contains all customer-related domain objects and services
+- **Order Module**: Handles order processing and management
+- **Product Module**: Manages product catalog and inventory
+- **Shared Module**: Contains common value objects used across modules
+- **Services Module**: Contains cross-cutting domain services
+
+**Key Design Principles:**
+- Group related domain concepts together
+- Minimize dependencies between modules
+- Use interfaces to define module boundaries
+- Keep shared concepts in a common module
+- Avoid circular dependencies between modules
+
 ## Domain-Driven Design and Unit Testing
 
 Domain-Driven Design significantly improves the ability to write effective unit tests by creating a clear separation between business logic and technical concerns. This separation makes it easier to test business rules in isolation, leading to more reliable and maintainable test suites.
@@ -253,31 +360,80 @@ Domain-Driven Design significantly improves the ability to write effective unit 
 
 **Code Samples**: [C#](./code-samples/csharp/07-order-tests.cs) | [Java](./code-samples/java/04-order-tests.java)
 
-Domain objects contain pure business logic without external dependencies, making them ideal for unit testing.
+Domain objects contain pure business logic without external dependencies, making them ideal for unit testing. This means:
+- **No External Dependencies**: Tests don't need to mock databases, web services, or file systems
+- **Fast Execution**: Tests run quickly without I/O operations
+- **Deterministic Results**: Same inputs always produce same outputs
+- **Easy Setup**: Simple object creation and method calls
+
+In our e-commerce example, testing the `Order` entity's business rules is straightforward because the entity contains only domain logic. We can test scenarios like:
+- Adding items to a draft order
+- Preventing modifications to confirmed orders
+- Ensuring orders have items before confirmation
 
 #### 2. **Value Objects Enable Comprehensive Testing**
 
 **Code Samples**: [C#](./code-samples/csharp/08-money-tests.cs)
 
-Value objects are immutable and self-validating, making them perfect for thorough testing.
+Value objects are immutable and self-validating, making them perfect for thorough testing. This enables:
+- **Comprehensive Coverage**: Test all validation rules and edge cases
+- **Equality Testing**: Verify that value equality works correctly
+- **Immutability Testing**: Ensure objects cannot be modified after creation
+- **Edge Case Testing**: Test boundary conditions and invalid inputs
+
+In our e-commerce example, we can thoroughly test the `Money` value object by:
+- Testing arithmetic operations with same and different currencies
+- Verifying validation of negative amounts
+- Testing equality and hash code implementations
+- Ensuring immutability through all operations
 
 #### 3. **Domain Services Enable Focused Testing**
 
 **Code Samples**: [C#](./code-samples/csharp/09-pricing-service-tests.cs)
 
-Domain services can be tested independently with mocked dependencies.
+Domain services can be tested independently with mocked dependencies. This allows:
+- **Focused Testing**: Test complex business rules in isolation
+- **Mocked Dependencies**: Use test doubles for external services
+- **Scenario Testing**: Test various business scenarios and edge cases
+- **Integration Testing**: Test how multiple domain objects work together
+
+In our e-commerce example, the `PricingService` can be tested by:
+- Testing discount calculations for different customer types
+- Verifying bulk order discounts
+- Testing tax calculations for different regions
+- Ensuring shipping cost calculations are correct
 
 #### 4. **Testable Business Rules**
 
 **Code Samples**: [C#](./code-samples/csharp/07-order-tests.cs) (see business rule tests)
 
-Business rules are encapsulated in domain objects, making them easy to test.
+Business rules are encapsulated in domain objects, making them easy to test. This provides:
+- **Clear Test Intent**: Each test validates a specific business rule
+- **Readable Tests**: Tests express business requirements clearly
+- **Maintainable Tests**: Changes to business rules are reflected in tests
+- **Documentation**: Tests serve as living documentation of business rules
+
+In our e-commerce example, we can test business rules like:
+- Customers can only place orders when they are active
+- Orders cannot be modified once confirmed
+- Orders must have items before they can be confirmed
+- Email addresses must be valid before customer registration
 
 #### 5. **Isolated Testing with Dependency Injection**
 
 **Code Samples**: [C#](./code-samples/csharp/10-customer-service-tests.cs)
 
-Domain services can be tested with mocked dependencies.
+Domain services can be tested with mocked dependencies. This enables:
+- **Isolated Testing**: Test business logic without external dependencies
+- **Controlled Environment**: Use mocks to create predictable test scenarios
+- **Fast Tests**: No real database or service calls during testing
+- **Reliable Tests**: Tests don't fail due to external service issues
+
+In our e-commerce example, the `CustomerService` can be tested by:
+- Mocking the customer repository to control data access
+- Mocking the email service to verify welcome emails are sent
+- Testing customer registration with various scenarios
+- Verifying error handling when customers already exist
 
 ### Benefits of DDD for Unit Testing
 
@@ -310,9 +466,36 @@ Domain services can be tested with mocked dependencies.
 
 **Code Samples**: [C#](./code-samples/csharp/11-testing-anti-patterns.cs)
 
+#### 1. **Testing Infrastructure Concerns**
+Don't test database interactions, logging, or other technical concerns in domain tests. Focus on business logic instead.
+
+#### 2. **Testing Implementation Details**
+Don't test private fields, internal methods, or implementation-specific behavior. Test the public interface and behavior.
+
+#### 3. **Over-Mocking**
+Avoid mocking too many dependencies, which makes tests brittle and hard to understand. Mock only what's necessary.
+
+#### 4. **Testing Technical Framework Code**
+Don't test framework methods or third-party library functionality. Test your domain logic.
+
 ### Best Practices for DDD Unit Testing
 
 **Code Samples**: [C#](./code-samples/csharp/12-testing-best-practices.cs)
+
+#### 1. **Test Behavior, Not Implementation**
+Focus on what the domain object does, not how it does it. Test the observable behavior and outcomes.
+
+#### 2. **Use Descriptive Test Names**
+Test names should clearly express the scenario, action, and expected outcome. Make them readable to business stakeholders.
+
+#### 3. **Test Edge Cases and Business Rules**
+Ensure comprehensive coverage of business rules and boundary conditions. Test both happy paths and error scenarios.
+
+#### 4. **Keep Tests Simple and Focused**
+Each test should validate one concept or business rule. Avoid complex test setups and multiple assertions per test.
+
+#### 5. **Use Domain Language in Tests**
+Use business terminology in test names and assertions to make tests more readable and maintainable.
 
 ## Best Practices for Domain Modeling
 
@@ -320,19 +503,43 @@ Domain services can be tested with mocked dependencies.
 
 ### 1. Keep Domain Logic Pure
 
-Domain objects should not depend on external frameworks or infrastructure concerns.
+Domain objects should not depend on external frameworks or infrastructure concerns. This ensures:
+- **Testability**: Domain logic can be tested in isolation
+- **Portability**: Domain logic can be reused across different technical implementations
+- **Clarity**: Business rules are not obscured by technical details
+- **Maintainability**: Changes to technical infrastructure don't affect domain logic
 
 ### 2. Use Rich Domain Models
 
-Domain objects should contain both data and behavior.
+Domain objects should contain both data and behavior. This creates:
+- **Encapsulation**: Business rules are contained within the objects that own the data
+- **Cohesion**: Related data and behavior are kept together
+- **Expressiveness**: The domain model clearly expresses business concepts
+- **Maintainability**: Changes to business rules are localized to the appropriate objects
 
 ### 3. Validate at Domain Boundaries
 
-Domain objects should validate their state and enforce business rules.
+Domain objects should validate their state and enforce business rules. This provides:
+- **Data Integrity**: Invalid data cannot enter the system
+- **Early Error Detection**: Problems are caught at the domain boundary
+- **Consistent Validation**: Same rules applied everywhere the domain object is used
+- **Clear Error Messages**: Domain-specific validation messages
 
 ### 4. Use Value Objects for Complex Types
 
-Use value objects to represent complex concepts and ensure consistency.
+Use value objects to represent complex concepts and ensure consistency. This enables:
+- **Type Safety**: Compile-time checking of business rules
+- **Immutability**: Values cannot be accidentally modified
+- **Validation**: Complex validation rules are enforced at creation
+- **Expressiveness**: Business concepts are clearly represented in code
+
+### 5. Design for Testability
+
+Make domain objects easy to test by:
+- **Minimizing Dependencies**: Reduce external dependencies
+- **Clear Interfaces**: Provide well-defined public interfaces
+- **Pure Functions**: Use pure functions where possible
+- **Dependency Injection**: Use dependency injection for external services
 
 ## Summary
 
