@@ -4,39 +4,44 @@ This directory contains all Java code samples from the Domain-Driven Design cour
 
 ## 📚 Code Samples Overview
 
-### **Domain Entities**
-1. [Customer Entity](./01-customer-entity.md) - Basic entity with identity management
-
-### **Value Objects**
-2. [Money Value Object](./02-money-value-object.md) - Immutable monetary calculations
-
-### **Domain Services**
-3. [Inventory Service](./03-inventory-service.md) - Inventory management operations
-
-### **Unit Testing Examples**
-4. [Order Tests](./04-order-tests.md) - Testing domain entities (JUnit 5)
+1. [Customer Entity](./01-customer-entity.md)
+2. [Money Value Object](./02-money-value-object.md)
+3. [Order Entity](./03-order-entity.md)
+4. [EmailAddress Value Object](./04-email-address-value-object.md)
+5. [Pricing Service](./05-pricing-service.md)
+6. [Customer Module](./06-customer-module.md)
+7. [Order Tests](./07-order-tests.md)
+8. [Money Tests](./08-money-tests.md)
+9. [Pricing Service Tests](./09-pricing-service-tests.md)
+10. [Customer Service Tests](./10-customer-service-tests.md)
+11. [Testing Anti-Patterns](./11-testing-anti-patterns.md)
+12. [Testing Best Practices](./12-testing-best-practices.md)
+13. [Domain Modeling Best Practices](./13-domain-modeling-best-practices.md)
 
 ## 🎯 Learning Path
 
 ### **For Beginners**
 Start with entities and value objects to understand basic DDD concepts:
-1. Customer Entity → Money Value Object → Inventory Service
+1. Customer Entity → Money Value Object → EmailAddress Value Object
 
 ### **For Intermediate Developers**
 Focus on services and testing:
-1. Inventory Service → Order Tests
+1. Study Order Entity → Pricing Service → Customer Module
+2. Explore unit testing with JUnit 5 → Testing Best Practices
 
 ### **For Advanced Developers**
 Explore testing patterns and best practices:
-1. Order Tests → Compare with other language implementations
+1. Compare with C#, TypeScript, and Python implementations
+2. Explore Domain Modeling Best Practices
+3. Study Testing Anti-Patterns to avoid common mistakes
 
 ## 🛠️ Technologies Used
 
 - **Language**: Java
-- **Testing**: JUnit 5
+- **Testing**: JUnit 5 testing framework
 - **Mocking**: Mockito
-- **Patterns**: Domain-Driven Design, Repository Pattern
-- **Features**: BigDecimal for monetary calculations, Optional for null safety
+- **Patterns**: Domain-Driven Design, Repository Pattern, Factory Pattern, Specification Pattern
+- **Benefits**: Strong typing, Rich testing ecosystem, Mature ecosystem
 
 ## 📖 Related Documentation
 
@@ -59,9 +64,10 @@ By studying these samples, you'll learn:
 
 1. **Domain Entities**: How to model business concepts with identity in Java
 2. **Value Objects**: Creating immutable, self-validating objects with BigDecimal
-3. **Domain Services**: Handling complex business operations
-4. **Unit Testing**: Testing domain logic with JUnit 5 and Mockito
-5. **Java Best Practices**: Using Java-specific features effectively
+3. **Domain Services**: Implementing business logic in stateless services
+4. **Module Organization**: Structuring Java projects for maintainability
+5. **Unit Testing**: Testing domain logic with JUnit 5 framework
+6. **Testing Best Practices**: Writing effective tests for domain models
 
 ## 🚀 Getting Started
 
@@ -73,12 +79,14 @@ By studying these samples, you'll learn:
 
 ## ☕ Java-Specific Features Demonstrated
 
+- **JUnit 5 Testing**: Unit testing with annotations and assertions
+- **Mockito**: Powerful mocking framework for dependencies
+- **Final Fields**: Immutable objects with final fields
+- **Exception Handling**: Clear exception messages for business rules
+- **Collections**: Rich collection framework for managing data
+- **Optional**: Null safety for repository operations
 - **BigDecimal**: Precise decimal arithmetic for monetary calculations
-- **Objects.requireNonNull()**: Built-in null validation
-- **Final Fields**: Immutable instance variables
-- **JUnit 5**: Modern testing framework with lambda support
-- **Mockito**: Powerful mocking framework
-- **Exception Handling**: Proper use of Java exceptions
+- **Pattern Matching**: Modern Java features for type checking
 
 ---
 
