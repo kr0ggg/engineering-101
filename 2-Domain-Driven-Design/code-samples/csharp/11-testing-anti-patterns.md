@@ -1,4 +1,10 @@
-**Section**: [Best Practices for DDD Unit Testing](../../introduction-to-the-domain.md#best-practices-for-ddd-unit-testing)
+# Testing Anti-Patterns - C# Example (xUnit)
+
+**Section**: [Testing Anti-Patterns to Avoid](../../1-introduction-to-the-domain.md#testing-anti-patterns-to-avoid)
+
+**Navigation**: [← Previous: Customer Service Tests](./10-customer-service-tests.md) | [← Back to Introduction](../../1-introduction-to-the-domain.md) | [Next: Testing Best Practices →](./12-testing-best-practices.md)
+
+---
 
 // C# Example - Testing Anti-Patterns to Avoid (xUnit)
 // File: 2-Domain-Driven-Design/code-samples/csharp/11-testing-anti-patterns.cs

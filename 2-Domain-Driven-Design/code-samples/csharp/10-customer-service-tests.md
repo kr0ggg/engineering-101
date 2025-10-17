@@ -1,8 +1,8 @@
 # Customer Service Tests - C# Example (xUnit + Moq)
 
-**Section**: [Domain-Driven Design and Unit Testing - Isolated Testing](../introduction-to-the-domain.md#isolated-testing-with-dependency-injection)
+**Section**: [Domain-Driven Design and Unit Testing - Isolated Testing](../../1-introduction-to-the-domain.md#isolated-testing-with-dependency-injection)
 
-**Navigation**: [← Previous: Pricing Service Tests](./09-pricing-service-tests.md) | [← Back to Introduction](../introduction-to-the-domain.md) | [Next: Testing Anti-Patterns →](./11-testing-anti-patterns.md)
+**Navigation**: [← Previous: Pricing Service Tests](./09-pricing-service-tests.md) | [← Back to Introduction](../../1-introduction-to-the-domain.md) | [Next: Testing Anti-Patterns →](./11-testing-anti-patterns.md)
 
 ---
 

@@ -1,8 +1,8 @@
 # Customer Entity - Python Example
 
-**Section**: [Domain Entities - Identity Management](../introduction-to-the-domain.md#entity-design-principles)
+**Section**: [Domain Entities - Identity Management](../../1-introduction-to-the-domain.md#identity-management)
 
-**Navigation**: [← Back to Introduction](../introduction-to-the-domain.md) | [Next: Money Value Object →](./02-money-value-object.py)
+**Navigation**: [← Back to Introduction](../../1-introduction-to-the-domain.md) | [Next: Money Value Object →](./02-money-value-object.md)
 
 ---
 

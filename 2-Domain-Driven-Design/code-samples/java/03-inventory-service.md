@@ -1,8 +1,8 @@
 # Inventory Service - Java Example
 
-**Section**: [Domain Services](../introduction-to-the-domain.md#domain-services)
+**Section**: [Domain Services](../../1-introduction-to-the-domain.md#domain-services)
 
-**Navigation**: [← Previous: Money Value Object](./02-money-value-object.java) | [← Back to Introduction](../introduction-to-the-domain.md) | [Next: Order Tests →](./04-order-tests.java)
+**Navigation**: [← Previous: Money Value Object](./02-money-value-object.md) | [← Back to Introduction](../../1-introduction-to-the-domain.md) | [Next: Order Tests →](./04-order-tests.md)
 
 ---
 

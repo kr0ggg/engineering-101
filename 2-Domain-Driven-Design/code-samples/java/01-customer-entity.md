@@ -1,3 +1,11 @@
+# Customer Entity - Java Example
+
+**Section**: [Domain Entities - Identity Management](../../1-introduction-to-the-domain.md#identity-management)
+
+**Navigation**: [← Previous: N/A] | [← Back to Introduction](../../1-introduction-to-the-domain.md) | [Next: Money Value Object →](./02-money-value-object.md)
+
+---
+
 // Java Example - Customer Entity
 // File: 2-Domain-Driven-Design/code-samples/java/01-customer-entity.java
 

@@ -1,6 +1,6 @@
 # Customer Entity - C# Example
 
-**Section**: [Domain Entities - Identity Management](../../1-introduction-to-the-domain.md#entity-design-principles)
+**Section**: [Domain Entities - Identity Management](../../1-introduction-to-the-domain.md#identity-management)
 
 **Navigation**: [← Back to Introduction](../../1-introduction-to-the-domain.md) | [Next: Order Entity →](./02-order-entity.md)
 

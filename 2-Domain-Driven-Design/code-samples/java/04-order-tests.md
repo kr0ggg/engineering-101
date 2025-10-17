@@ -1,8 +1,8 @@
 # Order Tests - Java Example (JUnit 5)
 
-**Section**: [Domain-Driven Design and Unit Testing - Pure Domain Logic](../introduction-to-the-domain.md#pure-domain-logic-is-easily-testable)
+**Section**: [Domain-Driven Design and Unit Testing - Pure Domain Logic](../../1-introduction-to-the-domain.md#pure-domain-logic-is-easily-testable)
 
-**Navigation**: [← Previous: Inventory Service](./03-inventory-service.java) | [← Back to Introduction](../introduction-to-the-domain.md) | [← Back to Java Index](./README.md)
+**Navigation**: [← Previous: Inventory Service](./03-inventory-service.md) | [← Back to Introduction](../../1-introduction-to-the-domain.md) | [← Back to Java Index](./README.md)
 
 ---
 

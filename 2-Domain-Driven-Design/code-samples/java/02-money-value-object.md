@@ -1,8 +1,8 @@
 # Money Value Object - Java Example
 
-**Section**: [Value Objects - Immutability](../introduction-to-the-domain.md#immutability)
+**Section**: [Value Objects - Immutability](../../1-introduction-to-the-domain.md#immutability)
 
-**Navigation**: [← Previous: Customer Entity](./01-customer-entity.java) | [← Back to Introduction](../introduction-to-the-domain.md) | [Next: Inventory Service →](./03-inventory-service.java)
+**Navigation**: [← Previous: Customer Entity](./01-customer-entity.md) | [← Back to Introduction](../../1-introduction-to-the-domain.md) | [Next: Inventory Service →](./03-inventory-service.md)
 
 
 ```java

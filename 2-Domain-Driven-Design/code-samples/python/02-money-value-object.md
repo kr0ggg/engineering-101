@@ -1,8 +1,8 @@
 # Money Value Object - Python Example
 
-**Section**: [Value Objects - Immutability](../introduction-to-the-domain.md#immutability)
+**Section**: [Value Objects - Immutability](../../1-introduction-to-the-domain.md#immutability)
 
-**Navigation**: [← Previous: Customer Entity](./01-customer-entity.py) | [← Back to Introduction](../introduction-to-the-domain.md) | [← Back to Python Index](./README.md)
+**Navigation**: [← Previous: Customer Entity](./01-customer-entity.md) | [← Back to Introduction](../../1-introduction-to-the-domain.md) | [← Back to Python Index](./README.md)
 
 ---
 
