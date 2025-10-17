@@ -1,8 +1,8 @@
 # Order Tests - C# Example (xUnit)
 
-**Section**: [Domain-Driven Design and Unit Testing - Pure Domain Logic](../introduction-to-the-domain.md#pure-domain-logic-is-easily-testable)
+**Section**: [Domain-Driven Design and Unit Testing - Pure Domain Logic](../../1-introduction-to-the-domain.md#pure-domain-logic-is-easily-testable)
 
-**Navigation**: [← Previous: Customer Module](./06-customer-module.cs) | [← Back to Introduction](../introduction-to-the-domain.md) | [Next: Money Tests →](./08-money-tests.cs)
+**Navigation**: [← Previous: Customer Module](./06-customer-module.md) | [← Back to Introduction](../../1-introduction-to-the-domain.md) | [Next: Money Tests →](./08-money-tests.md)
 
 ---
 

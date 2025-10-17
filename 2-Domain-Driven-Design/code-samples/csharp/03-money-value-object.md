@@ -1,8 +1,8 @@
 # Money Value Object - C# Example
 
-**Section**: [Value Objects - Immutability](../introduction-to-the-domain.md#immutability)
+**Section**: [Value Objects - Immutability](../../1-introduction-to-the-domain.md#immutability)
 
-**Navigation**: [← Previous: Order Entity](./02-order-entity.cs) | [← Back to Introduction](../introduction-to-the-domain.md) | [Next: EmailAddress Value Object →](./04-email-address-value-object.cs)
+**Navigation**: [← Previous: Order Entity](./02-order-entity.md) | [← Back to Introduction](../../1-introduction-to-the-domain.md) | [Next: EmailAddress Value Object →](./04-email-address-value-object.md)
 
 ---
 

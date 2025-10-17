@@ -1,8 +1,8 @@
 # Customer Module - C# Example
 
-**Section**: [Modules and Separation of Concerns](../introduction-to-the-domain.md#module-implementation-example)
+**Section**: [Modules and Separation of Concerns](../../1-introduction-to-the-domain.md#module-implementation-example)
 
-**Navigation**: [← Previous: Pricing Service](./05-pricing-service.cs) | [← Back to Introduction](../introduction-to-the-domain.md) | [Next: Order Tests →](./07-order-tests.cs)
+**Navigation**: [← Previous: Pricing Service](./05-pricing-service.md) | [← Back to Introduction](../../1-introduction-to-the-domain.md) | [Next: Order Tests →](./07-order-tests.md)
 
 ---
 

@@ -2,7 +2,7 @@
 
 **Section**: [Best Practices for DDD Unit Testing](../introduction-to-the-domain.md#best-practices-for-ddd-unit-testing)
 
-**Navigation**: [← Previous: Testing Anti-Patterns](./11-testing-anti-patterns.cs) | [← Back to Introduction](../introduction-to-the-domain.md) | [Next: Domain Modeling Best Practices →](./13-domain-modeling-best-practices.cs)
+**Navigation**: [← Previous: Testing Anti-Patterns](./11-testing-anti-patterns.md) | [← Back to Introduction](../introduction-to-the-domain.md) | [Next: Domain Modeling Best Practices →](./13-domain-modeling-best-practices.md)
 
 ---
 

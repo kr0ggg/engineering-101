@@ -1,8 +1,8 @@
 # Order Entity with Business Logic - C# Example
 
-**Section**: [Domain Entities - Business Logic Encapsulation](../introduction-to-the-domain.md#business-logic-encapsulation)
+**Section**: [Domain Entities - Business Logic Encapsulation](../../1-introduction-to-the-domain.md#business-logic-encapsulation)
 
-**Navigation**: [← Previous: Customer Entity](./01-customer-entity.cs) | [← Back to Introduction](../introduction-to-the-domain.md) | [Next: Money Value Object →](./03-money-value-object.cs)
+**Navigation**: [← Previous: Customer Entity](./01-customer-entity.md) | [← Back to Introduction](../../1-introduction-to-the-domain.md) | [Next: Money Value Object →](./03-money-value-object.md)
 
 ---
 

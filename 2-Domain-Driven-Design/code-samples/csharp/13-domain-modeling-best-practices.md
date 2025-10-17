@@ -2,7 +2,7 @@
 
 **Section**: [Best Practices for Domain Modeling](../introduction-to-the-domain.md#best-practices-for-domain-modeling)
 
-**Navigation**: [← Previous: Testing Best Practices](./12-testing-best-practices.cs) | [← Back to Introduction](../introduction-to-the-domain.md) | [← Back to C# Index](./README.md)
+**Navigation**: [← Previous: Testing Best Practices](./12-testing-best-practices.md) | [← Back to Introduction](../introduction-to-the-domain.md) | [← Back to C# Index](./README.md)
 
 ---
 

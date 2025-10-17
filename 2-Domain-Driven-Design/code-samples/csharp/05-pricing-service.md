@@ -1,8 +1,8 @@
 # Pricing Service - C# Example
 
-**Section**: [Domain Services](../introduction-to-the-domain.md#domain-services)
+**Section**: [Domain Services](../../1-introduction-to-the-domain.md#domain-services)
 
-**Navigation**: [← Previous: EmailAddress Value Object](./04-email-address-value-object.cs) | [← Back to Introduction](../introduction-to-the-domain.md) | [Next: Customer Module →](./06-customer-module.cs)
+**Navigation**: [← Previous: EmailAddress Value Object](./04-email-address-value-object.md) | [← Back to Introduction](../../1-introduction-to-the-domain.md) | [Next: Customer Module →](./06-customer-module.md)
 
 ---
 

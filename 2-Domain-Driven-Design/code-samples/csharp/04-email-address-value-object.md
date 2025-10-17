@@ -1,8 +1,8 @@
 # EmailAddress Value Object - C# Example
 
-**Section**: [Value Objects - Self-Validation](../introduction-to-the-domain.md#self-validation)
+**Section**: [Value Objects - Self-Validation](../../1-introduction-to-the-domain.md#self-validation)
 
-**Navigation**: [← Previous: Money Value Object](./03-money-value-object.cs) | [← Back to Introduction](../introduction-to-the-domain.md) | [Next: Pricing Service →](./05-pricing-service.cs)
+**Navigation**: [← Previous: Money Value Object](./03-money-value-object.md) | [← Back to Introduction](../introduction-to-the-domain.md) | [Next: Pricing Service →](./05-pricing-service.md)
 
 ---
 

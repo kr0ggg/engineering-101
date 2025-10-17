@@ -1,8 +1,8 @@
 # Pricing Service Tests - C# Example (xUnit)
 
-**Section**: [Domain-Driven Design and Unit Testing - Domain Services](../introduction-to-the-domain.md#domain-services-enable-focused-testing)
+**Section**: [Domain-Driven Design and Unit Testing - Domain Services](../../1-introduction-to-the-domain.md#domain-services-enable-focused-testing)
 
-**Navigation**: [← Previous: Money Tests](./08-money-tests.cs) | [← Back to Introduction](../introduction-to-the-domain.md) | [Next: Customer Service Tests →](./10-customer-service-tests.cs)
+**Navigation**: [← Previous: Money Tests](./08-money-tests.md) | [← Back to Introduction](../../1-introduction-to-the-domain.md) | [Next: Customer Service Tests →](./10-customer-service-tests.md)
 
 ---
 

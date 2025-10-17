@@ -1,8 +1,8 @@
 # Money Tests - C# Example (xUnit)
 
-**Section**: [Domain-Driven Design and Unit Testing - Value Objects](../introduction-to-the-domain.md#value-objects-enable-comprehensive-testing)
+**Section**: [Domain-Driven Design and Unit Testing - Value Objects](../../1-introduction-to-the-domain.md#value-objects-enable-comprehensive-testing)
 
-**Navigation**: [← Previous: Order Tests](./07-order-tests.cs) | [← Back to Introduction](../introduction-to-the-domain.md) | [Next: EmailAddress Tests →](./09-email-address-tests.cs)
+**Navigation**: [← Previous: Order Tests](./07-order-tests.md) | [← Back to Introduction](../../1-introduction-to-the-domain.md) | [Next: Pricing Service Tests →](./09-pricing-service-tests.md)
 
 ---
 
