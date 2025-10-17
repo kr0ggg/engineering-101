@@ -76,6 +76,14 @@ public class EmailAddress
 
 ## Related Concepts
 
-- [Money Value Object](./03-money-value-object.cs) - Another value object example
-- [Customer Entity](./01-customer-entity.cs) - Uses EmailAddress
-- [Unit Testing](../introduction-to-the-domain.md#domain-driven-design-and-unit-testing) - Testing value object validation
+- [Money Value Object](./03-money-value-object.md) - Another value object example
+- [Customer Entity](./01-customer-entity.md) - Uses EmailAddress
+- [Unit Testing](../../1-introduction-to-the-domain.md#domain-driven-design-and-unit-testing) - Testing value object validation
+
+/*
+ * Navigation:
+ * Previous: 03-money-value-object.md
+ * Next: 05-pricing-service.md
+ *
+ * Back to: [Value Objects - Self-Validation](../../1-introduction-to-the-domain.md#self-validation)
+ */

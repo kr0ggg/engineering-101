@@ -128,8 +128,16 @@ public class PricingServiceTests
 
 ## Related Concepts
 
-- [Pricing Service](./05-pricing-service.cs) - The service being tested
-- [Order Entity](./02-order-entity.cs) - Used in pricing calculations
-- [Customer Entity](./01-customer-entity.cs) - Customer information for pricing
-- [Money Value Object](./03-money-value-object.cs) - Used for monetary calculations
-- [Domain Services](../introduction-to-the-domain.md#domain-services) - Domain service concepts
+- [Pricing Service](./05-pricing-service.md) - The service being tested
+- [Order Entity](./02-order-entity.md) - Used in pricing calculations
+- [Customer Entity](./01-customer-entity.md) - Customer information for pricing
+- [Money Value Object](./03-money-value-object.md) - Used for monetary calculations
+- [Domain Services](../../1-introduction-to-the-domain.md#domain-services) - Domain service concepts
+
+/*
+ * Navigation:
+ * Previous: 08-money-tests.md
+ * Next: 10-customer-service-tests.md
+ *
+ * Back to: [Domain-Driven Design and Unit Testing - Domain Services Enable Focused Testing](../../1-introduction-to-the-domain.md#domain-services-enable-focused-testing)
+ */

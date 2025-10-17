@@ -70,6 +70,14 @@ class Customer:
 
 ## Related Concepts
 
-- [Value Objects](../introduction-to-the-domain.md#value-objects) - EmailAddress and CustomerId
-- [Domain Services](../introduction-to-the-domain.md#domain-services) - Customer management operations
-- [Business Logic Encapsulation](../introduction-to-the-domain.md#business-logic-encapsulation) - Order Entity example
+- [Value Objects](../../1-introduction-to-the-domain.md#value-objects) - EmailAddress and CustomerId
+- [Domain Services](../../1-introduction-to-the-domain.md#domain-services) - Customer management operations
+- [Business Logic Encapsulation](../../1-introduction-to-the-domain.md#business-logic-encapsulation) - Order Entity example
+
+/*
+ * Navigation:
+ * Previous: N/A
+ * Next: 02-money-value-object.md
+ *
+ * Back to: [Domain Entities - Identity Management](../../1-introduction-to-the-domain.md#identity-management)
+ */

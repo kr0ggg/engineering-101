@@ -83,7 +83,15 @@ class Money:
 
 ## Related Concepts
 
-- [Customer Entity](./01-customer-entity.py) - Uses Money in domain operations
-- [Value Objects](../introduction-to-the-domain.md#value-objects) - Value object concepts
-- [Domain Services](../introduction-to-the-domain.md#domain-services) - Using Money in calculations
-- [Unit Testing](../introduction-to-the-domain.md#domain-driven-design-and-unit-testing) - Testing value objects
+- [Customer Entity](./01-customer-entity.md) - Uses Money in domain operations
+- [Value Objects](../../1-introduction-to-the-domain.md#value-objects) - Value object concepts
+- [Domain Services](../../1-introduction-to-the-domain.md#domain-services) - Using Money in calculations
+- [Unit Testing](../../1-introduction-to-the-domain.md#domain-driven-design-and-unit-testing) - Testing value objects
+
+/*
+ * Navigation:
+ * Previous: 01-customer-entity.md
+ * Next: N/A
+ *
+ * Back to: [Value Objects - Immutability](../../1-introduction-to-the-domain.md#immutability)
+ */

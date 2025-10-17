@@ -157,7 +157,15 @@ public class EmailAddressTests
 
 ## Related Concepts
 
-- [Money Value Object](./03-money-value-object.cs) - The value object being tested
-- [EmailAddress Value Object](./04-email-address-value-object.cs) - Another value object being tested
-- [Order Tests](./07-order-tests.cs) - Testing entities
-- [Value Objects](../introduction-to-the-domain.md#value-objects) - Value object concepts
+- [Money Value Object](./03-money-value-object.md) - The value object being tested
+- [EmailAddress Value Object](./04-email-address-value-object.md) - Another value object being tested
+- [Order Tests](./07-order-tests.md) - Testing entities
+- [Value Objects](../../1-introduction-to-the-domain.md#value-objects) - Value object concepts
+
+/*
+ * Navigation:
+ * Previous: 07-order-tests.md
+ * Next: 09-pricing-service-tests.md
+ *
+ * Back to: [Domain-Driven Design and Unit Testing - Value Objects Enable Comprehensive Testing](../../1-introduction-to-the-domain.md#value-objects-enable-comprehensive-testing)
+ */

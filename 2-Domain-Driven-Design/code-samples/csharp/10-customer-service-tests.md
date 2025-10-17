@@ -112,8 +112,16 @@ public class CustomerServiceTests
 
 ## Related Concepts
 
-- [Customer Module](./06-customer-module.cs) - The module being tested
-- [Customer Entity](./01-customer-entity.cs) - Entity used in service
-- [EmailAddress Value Object](./04-email-address-value-object.cs) - Value object used
-- [Dependency Injection](../introduction-to-the-domain.md#isolated-testing-with-dependency-injection) - DI concepts
-- [Unit Testing Best Practices](../introduction-to-the-domain.md#best-practices-for-ddd-unit-testing)
+- [Customer Module](./06-customer-module.md) - The module being tested
+- [Customer Entity](./01-customer-entity.md) - Entity used in service
+- [EmailAddress Value Object](./04-email-address-value-object.md) - Value object used
+- [Dependency Injection](../../1-introduction-to-the-domain.md#isolated-testing-with-dependency-injection) - DI concepts
+- [Unit Testing Best Practices](../../1-introduction-to-the-domain.md#best-practices-for-ddd-unit-testing)
+
+/*
+ * Navigation:
+ * Previous: 09-pricing-service-tests.md
+ * Next: 11-testing-anti-patterns.md
+ *
+ * Back to: [Domain-Driven Design and Unit Testing - Isolated Testing with Dependency Injection](../../1-introduction-to-the-domain.md#isolated-testing-with-dependency-injection)
+ */

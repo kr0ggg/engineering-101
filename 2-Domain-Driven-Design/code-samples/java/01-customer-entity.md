@@ -103,7 +103,7 @@ class EmailAddress {
 /*
  * Navigation:
  * Previous: N/A
- * Next: 02-money-value-object.java
+ * Next: 02-money-value-object.md
  *
  * Back to: [Domain Entities - Identity Management](../../1-introduction-to-the-domain.md#identity-management)
  */

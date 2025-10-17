@@ -124,8 +124,16 @@ public void Example_Test()
 
 ## Related Concepts
 
-- [Order Tests](./07-order-tests.cs) - Examples of good testing practices
-- [Money Tests](./08-money-tests.cs) - Value object testing examples
-- [Customer Service Tests](./10-customer-service-tests.cs) - Mocking best practices
-- [Testing Anti-Patterns](./11-testing-anti-patterns.cs) - What to avoid
-- [Unit Testing Benefits](../introduction-to-the-domain.md#benefits-of-ddd-for-unit-testing)
+- [Order Tests](./07-order-tests.md) - Examples of good testing practices
+- [Money Tests](./08-money-tests.md) - Value object testing examples
+- [Customer Service Tests](./10-customer-service-tests.md) - Mocking best practices
+- [Testing Anti-Patterns](./11-testing-anti-patterns.md) - What to avoid
+- [Unit Testing Benefits](../../1-introduction-to-the-domain.md#benefits-of-ddd-for-unit-testing)
+
+/*
+ * Navigation:
+ * Previous: 11-testing-anti-patterns.md
+ * Next: 13-domain-modeling-best-practices.md
+ *
+ * Back to: [Domain-Driven Design and Unit Testing - Best Practices for DDD Unit Testing](../../1-introduction-to-the-domain.md#best-practices-for-ddd-unit-testing)
+ */

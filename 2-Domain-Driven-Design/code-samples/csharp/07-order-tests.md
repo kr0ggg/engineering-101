@@ -84,7 +84,15 @@ public class OrderTests
 
 ## Related Concepts
 
-- [Order Entity](./02-order-entity.cs) - The entity being tested
-- [Money Tests](./08-money-tests.cs) - Testing value objects
-- [Customer Service Tests](./10-customer-service-tests.cs) - Testing with mocks
-- [Unit Testing Best Practices](../introduction-to-the-domain.md#best-practices-for-ddd-unit-testing)
+- [Order Entity](./02-order-entity.md) - The entity being tested
+- [Money Tests](./08-money-tests.md) - Testing value objects
+- [Customer Service Tests](./10-customer-service-tests.md) - Testing with mocks
+- [Unit Testing Best Practices](../../1-introduction-to-the-domain.md#best-practices-for-ddd-unit-testing)
+
+/*
+ * Navigation:
+ * Previous: 06-customer-module.md
+ * Next: 08-money-tests.md
+ *
+ * Back to: [Domain-Driven Design and Unit Testing - Pure Domain Logic is Easily Testable](../../1-introduction-to-the-domain.md#pure-domain-logic-is-easily-testable)
+ */

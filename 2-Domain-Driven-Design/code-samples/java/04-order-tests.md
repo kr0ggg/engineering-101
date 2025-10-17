@@ -87,7 +87,15 @@ class OrderTest {
 
 ## Related Concepts
 
-- [Customer Entity](./01-customer-entity.java) - Basic entity example
-- [Money Value Object](./02-money-value-object.java) - Value object used in tests
-- [Inventory Service](./03-inventory-service.java) - Domain service example
-- [Unit Testing Best Practices](../introduction-to-the-domain.md#best-practices-for-ddd-unit-testing)
+- [Customer Entity](./01-customer-entity.md) - Basic entity example
+- [Money Value Object](./02-money-value-object.md) - Value object used in tests
+- [Inventory Service](./03-inventory-service.md) - Domain service example
+- [Unit Testing Best Practices](../../1-introduction-to-the-domain.md#best-practices-for-ddd-unit-testing)
+
+/*
+ * Navigation:
+ * Previous: 03-inventory-service.md
+ * Next: N/A
+ *
+ * Back to: [Domain-Driven Design and Unit Testing - Pure Domain Logic is Easily Testable](../../1-introduction-to-the-domain.md#pure-domain-logic-is-easily-testable)
+ */

@@ -143,6 +143,14 @@ Customer/
 
 ## Related Concepts
 
-- [Customer Entity](./01-customer-entity.cs) - Basic customer entity
-- [EmailAddress Value Object](./04-email-address-value-object.cs) - Used in customer
-- [Unit Testing](../introduction-to-the-domain.md#domain-driven-design-and-unit-testing) - Testing customer operations
+- [Customer Entity](./01-customer-entity.md) - Basic customer entity
+- [EmailAddress Value Object](./04-email-address-value-object.md) - Used in customer
+- [Unit Testing](../../1-introduction-to-the-domain.md#domain-driven-design-and-unit-testing) - Testing customer operations
+
+/*
+ * Navigation:
+ * Previous: 05-pricing-service.md
+ * Next: 07-order-tests.md
+ *
+ * Back to: [Modules and Separation of Concerns - Module Implementation Example](../../1-introduction-to-the-domain.md#module-implementation-example)
+ */

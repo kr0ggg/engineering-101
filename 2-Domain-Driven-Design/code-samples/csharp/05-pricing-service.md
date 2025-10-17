@@ -114,7 +114,15 @@ public class PricingService
 
 ## Related Concepts
 
-- [Order Entity](./02-order-entity.cs) - Uses PricingService for calculations
-- [Customer Entity](./01-customer-entity.cs) - Customer information used in pricing
-- [Money Value Object](./03-money-value-object.cs) - Used for all monetary calculations
-- [Unit Testing](../introduction-to-the-domain.md#domain-driven-design-and-unit-testing) - Testing domain services
+- [Order Entity](./02-order-entity.md) - Uses PricingService for calculations
+- [Customer Entity](./01-customer-entity.md) - Customer information used in pricing
+- [Money Value Object](./03-money-value-object.md) - Used for all monetary calculations
+- [Unit Testing](../../1-introduction-to-the-domain.md#domain-driven-design-and-unit-testing) - Testing domain services
+
+/*
+ * Navigation:
+ * Previous: 04-email-address-value-object.md
+ * Next: 06-customer-module.md
+ *
+ * Back to: [Domain Services - Domain Service Design Principles](../../1-introduction-to-the-domain.md#domain-service-design-principles)
+ */

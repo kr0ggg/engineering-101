@@ -92,7 +92,15 @@ public class InventoryService {
 
 ## Related Concepts
 
-- [Money Value Object](./02-money-value-object.java) - Used for pricing calculations
-- [Order Tests](./04-order-tests.java) - Testing domain logic
-- [Domain Services](../introduction-to-the-domain.md#domain-services) - Domain service concepts
-- [Repository Pattern](../introduction-to-the-domain.md#modules-and-separation-of-concerns) - Data access pattern
+- [Money Value Object](./02-money-value-object.md) - Used for pricing calculations
+- [Order Tests](./04-order-tests.md) - Testing domain logic
+- [Domain Services](../../1-introduction-to-the-domain.md#domain-services) - Domain service concepts
+- [Repository Pattern](../../1-introduction-to-the-domain.md#modules-and-separation-of-concerns) - Data access pattern
+
+/*
+ * Navigation:
+ * Previous: 02-money-value-object.md
+ * Next: 04-order-tests.md
+ *
+ * Back to: [Domain Services - Domain Service Design Principles](../../1-introduction-to-the-domain.md#domain-service-design-principles)
+ */

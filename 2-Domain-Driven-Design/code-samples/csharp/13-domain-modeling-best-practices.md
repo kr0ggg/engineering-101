@@ -178,8 +178,16 @@ public class Customer
 
 ## Related Concepts
 
-- [Customer Entity](./01-customer-entity.cs) - Example of good entity design
-- [Order Entity](./02-order-entity.cs) - Rich domain model example
-- [Money Value Object](./03-money-value-object.cs) - Value object best practices
-- [EmailAddress Value Object](./04-email-address-value-object.cs) - Validation example
-- [Domain Modeling](../introduction-to-the-domain.md#best-practices-for-domain-modeling) - Domain modeling concepts
+- [Customer Entity](./01-customer-entity.md) - Example of good entity design
+- [Order Entity](./02-order-entity.md) - Rich domain model example
+- [Money Value Object](./03-money-value-object.md) - Value object best practices
+- [EmailAddress Value Object](./04-email-address-value-object.md) - Validation example
+- [Domain Modeling](../../1-introduction-to-the-domain.md#best-practices-for-domain-modeling) - Domain modeling concepts
+
+/*
+ * Navigation:
+ * Previous: 12-testing-best-practices.md
+ * Next: N/A
+ *
+ * Back to: [Best Practices for Domain Modeling](../../1-introduction-to-the-domain.md#best-practices-for-domain-modeling)
+ */
