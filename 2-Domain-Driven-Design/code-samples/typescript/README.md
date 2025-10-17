@@ -5,10 +5,10 @@ This directory contains all TypeScript code samples from the Domain-Driven Desig
 ## 📚 Code Samples Overview
 
 ### **Domain Entities**
-1. [Customer Entity](./01-customer-entity.ts) - Basic entity with identity management
+1. [Customer Entity](./01-customer-entity.md) - Basic entity with identity management
 
 ### **Value Objects**
-2. [Money Value Object](./02-money-value-object.ts) - Immutable monetary calculations
+2. [Money Value Object](./02-money-value-object.md) - Immutable monetary calculations
 
 ## 🎯 Learning Path
 
@@ -35,7 +35,7 @@ Compare TypeScript implementation with other languages:
 
 ## 📖 Related Documentation
 
-- [Main Introduction](../introduction-to-the-domain.md) - Complete DDD concepts
+- [Main Introduction](../../1-introduction-to-the-domain.md) - Complete DDD concepts
 - [C# Samples](../csharp/) - Same concepts in C#
 - [Java Samples](../java/) - Same concepts in Java
 - [Python Samples](../python/) - Same concepts in Python
@@ -59,7 +59,7 @@ By studying these samples, you'll learn:
 
 ## 🚀 Getting Started
 
-1. **Read the Main Introduction**: Start with [introduction-to-the-domain.md](../introduction-to-the-domain.md)
+1. **Read the Main Introduction**: Start with [1-introduction-to-the-domain.md](../../1-introduction-to-the-domain.md)
 2. **Choose Your Path**: Follow the learning path that matches your experience level
 3. **Study the Code**: Each sample includes detailed explanations and context
 4. **Practice**: Try implementing similar patterns in your own TypeScript projects
@@ -84,4 +84,4 @@ By studying these samples, you'll learn:
 
 ---
 
-**Navigation**: [← Back to Code Samples](../) | [← Back to Introduction](../introduction-to-the-domain.md)
+**Navigation**: [← Back to Code Samples](../) | [← Back to Introduction](../../1-introduction-to-the-domain.md)

@@ -5,10 +5,10 @@ This directory contains all Python code samples from the Domain-Driven Design co
 ## 📚 Code Samples Overview
 
 ### **Domain Entities**
-1. [Customer Entity](./01-customer-entity.py) - Basic entity with identity management
+1. [Customer Entity](./01-customer-entity.md) - Basic entity with identity management
 
 ### **Value Objects**
-2. [Money Value Object](./02-money-value-object.py) - Immutable monetary calculations
+2. [Money Value Object](./02-money-value-object.md) - Immutable monetary calculations
 
 ## 🎯 Learning Path
 
@@ -35,7 +35,7 @@ Compare Python implementation with other languages:
 
 ## 📖 Related Documentation
 
-- [Main Introduction](../introduction-to-the-domain.md) - Complete DDD concepts
+- [Main Introduction](../../1-introduction-to-the-domain.md) - Complete DDD concepts
 - [C# Samples](../csharp/) - Same concepts in C#
 - [Java Samples](../java/) - Same concepts in Java
 - [TypeScript Samples](../typescript/) - Same concepts in TypeScript
@@ -59,7 +59,7 @@ By studying these samples, you'll learn:
 
 ## 🚀 Getting Started
 
-1. **Read the Main Introduction**: Start with [introduction-to-the-domain.md](../introduction-to-the-domain.md)
+1. **Read the Main Introduction**: Start with [1-introduction-to-the-domain.md](../../1-introduction-to-the-domain.md)
 2. **Choose Your Path**: Follow the learning path that matches your experience level
 3. **Study the Code**: Each sample includes detailed explanations and context
 4. **Practice**: Try implementing similar patterns in your own Python projects
@@ -93,4 +93,4 @@ By studying these samples, you'll learn:
 
 ---
 
-**Navigation**: [← Back to Code Samples](../) | [← Back to Introduction](../introduction-to-the-domain.md)
+**Navigation**: [← Back to Code Samples](../) | [← Back to Introduction](../../1-introduction-to-the-domain.md)

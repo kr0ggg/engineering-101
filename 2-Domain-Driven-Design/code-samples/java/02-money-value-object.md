@@ -88,7 +88,15 @@ public class Money {
 
 ## Related Concepts
 
-- [Customer Entity](./01-customer-entity.java) - Uses Money in domain operations
-- [Inventory Service](./03-inventory-service.java) - Uses Money for pricing
-- [Domain Services](../introduction-to-the-domain.md#domain-services) - Using Money in calculations
-- [Unit Testing](../introduction-to-the-domain.md#domain-driven-design-and-unit-testing) - Testing value objects
+- [Customer Entity](./01-customer-entity.md) - Uses Money in domain operations
+- [Inventory Service](./03-inventory-service.md) - Uses Money for pricing
+- [Domain Services](../../1-introduction-to-the-domain.md#domain-services) - Using Money in calculations
+- [Unit Testing](../../1-introduction-to-the-domain.md#domain-driven-design-and-unit-testing) - Testing value objects
+
+/*
+ * Navigation:
+ * Previous: 01-customer-entity.md
+ * Next: 03-inventory-service.md
+ *
+ * Back to: [Value Objects - Immutability](../../1-introduction-to-the-domain.md#immutability)
+ */

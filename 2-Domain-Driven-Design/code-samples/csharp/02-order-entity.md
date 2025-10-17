@@ -84,6 +84,14 @@ public class Order
 
 ## Related Concepts
 
-- [Value Objects](../introduction-to-the-domain.md#value-objects) - Money, OrderId, CustomerId
-- [Domain Services](../introduction-to-the-domain.md#domain-services) - Complex order operations
-- [Unit Testing](../introduction-to-the-domain.md#domain-driven-design-and-unit-testing) - Testing business rules
+- [Value Objects](../../1-introduction-to-the-domain.md#value-objects) - Money, OrderId, CustomerId
+- [Domain Services](../../1-introduction-to-the-domain.md#domain-services) - Complex order operations
+- [Unit Testing](../../1-introduction-to-the-domain.md#domain-driven-design-and-unit-testing) - Testing business rules
+
+/*
+ * Navigation:
+ * Previous: 01-customer-entity.md
+ * Next: 03-money-value-object.md
+ *
+ * Back to: [Domain Entities - Business Logic Encapsulation](../../1-introduction-to-the-domain.md#business-logic-encapsulation)
+ */

@@ -38,6 +38,40 @@ DDD is built on several key philosophical principles:
 - More effective knowledge transfer
 - Reduced technical debt
 
+## Introduction to the Domain
+
+Before diving into the strategic design topics, it's essential to understand the fundamental concepts of expressing the domain in software. The domain is the heart of Domain-Driven Design, and learning how to model it effectively is crucial for building software that truly serves business needs.
+
+### [Introduction to the Domain](./1-introduction-to-the-domain.md)
+
+**The Foundation of Domain-Driven Design**
+
+This comprehensive introduction covers the essential concepts for expressing the domain in software, providing the foundation needed for all other DDD topics.
+
+**Key Concepts Covered:**
+- **Model-driven design** - How to reflect business reality in code
+- **Domain isolation** - Layered architecture and separation of concerns
+- **Domain entities** - Modeling business concepts with identity
+- **Value objects** - Immutable, self-validating domain concepts
+- **Domain services** - Complex business operations and calculations
+- **Modules and separation** - Organizing domain concepts effectively
+- **Unit testing** - How DDD improves testability and maintainability
+
+**What You'll Learn:**
+- How to identify and model domain entities and value objects
+- Techniques for encapsulating business logic in domain objects
+- Best practices for organizing domain code into modules
+- How to write effective unit tests for domain logic
+- Common pitfalls and how to avoid them
+
+**Prerequisites:** Basic understanding of object-oriented programming
+
+**Duration:** 2-3 hours of study and practice
+
+**Code Examples:** Available in C#, Java, TypeScript, and Python
+
+---
+
 ## The Strategic Design Topics
 
 Domain-Driven Design is typically organized into two main areas: **Strategic Design** and **Tactical Design**. This course focuses on the strategic aspects that provide the foundation for effective domain modeling.
@@ -101,11 +135,12 @@ Strategic patterns provide guidance on how to organize and structure domain-driv
 
 This course is designed to be taken in order, as each topic builds upon the previous ones:
 
-1. **Start with Bounded Contexts** - Understanding boundaries is fundamental to all other DDD concepts
-2. **Develop Ubiquitous Language** - Communication is essential for effective domain modeling
-3. **Build Domain Models** - The core concepts that drive your software design
-4. **Map Context Relationships** - Understanding how different parts of your system interact
-5. **Apply Strategic Patterns** - Organizing your system architecture around domain concepts
+1. **Start with Introduction to the Domain** - Learn the fundamental concepts of expressing the domain in software
+2. **Understand Bounded Contexts** - Understanding boundaries is fundamental to all other DDD concepts
+3. **Develop Ubiquitous Language** - Communication is essential for effective domain modeling
+4. **Build Domain Models** - The core concepts that drive your software design
+5. **Map Context Relationships** - Understanding how different parts of your system interact
+6. **Apply Strategic Patterns** - Organizing your system architecture around domain concepts
 
 ## Prerequisites
 
@@ -178,11 +213,11 @@ By the end of this course, you should be able to:
 
 ## Getting Started
 
-1. **Read the overview** of each topic to understand the scope
-2. **Start with Bounded Contexts** - the foundation of DDD
-3. **Work through each topic** in order, completing the exercises
-4. **Apply concepts** to real projects as you learn
-5. **Practice regularly** - DDD is a skill that improves with practice
+1. **Read the Introduction to the Domain** - Start with the fundamental concepts of domain modeling
+2. **Work through each strategic topic** in order, completing the exercises
+3. **Apply concepts** to real projects as you learn
+4. **Practice regularly** - DDD is a skill that improves with practice
+5. **Use the code examples** - Study implementations in your preferred programming language
 
 ## Common Challenges
 
@@ -217,4 +252,4 @@ Domain-Driven Design is not just a technical methodology—it's a way of thinkin
 
 The journey through DDD is one of continuous learning and improvement. Start with the fundamentals, practice regularly, and always keep the domain at the heart of your design decisions.
 
-**Ready to begin?** Start with [Bounded Contexts](./1-Bounded-Contexts/README.md) to understand the foundation of Domain-Driven Design.
+**Ready to begin?** Start with [Introduction to the Domain](./1-introduction-to-the-domain.md) to learn the fundamental concepts of expressing the domain in software.

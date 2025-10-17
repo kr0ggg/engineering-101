@@ -81,6 +81,14 @@ public class Money
 
 ## Related Concepts
 
-- [EmailAddress Value Object](./04-email-address-value-object.cs) - Another value object example
-- [Domain Services](../introduction-to-the-domain.md#domain-services) - Using Money in calculations
-- [Unit Testing](../introduction-to-the-domain.md#domain-driven-design-and-unit-testing) - Testing value objects
+- [EmailAddress Value Object](./04-email-address-value-object.md) - Another value object example
+- [Domain Services](../../1-introduction-to-the-domain.md#domain-services) - Using Money in calculations
+- [Unit Testing](../../1-introduction-to-the-domain.md#domain-driven-design-and-unit-testing) - Testing value objects
+
+/*
+ * Navigation:
+ * Previous: 02-order-entity.md
+ * Next: 04-email-address-value-object.md
+ *
+ * Back to: [Value Objects - Immutability](../../1-introduction-to-the-domain.md#immutability)
+ */

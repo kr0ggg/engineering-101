@@ -4,12 +4,6 @@
 
 This document contains comprehensive code examples in multiple programming languages. For easier navigation and focused learning, all code samples have been organized into individual files:
 
-- **[📁 All Code Samples](./code-samples/)** - Complete collection organized by language
-- **[🔷 C# Samples](./code-samples/csharp/)** - .NET with xUnit and Moq (13 examples)
-- **[☕ Java Samples](./code-samples/java/)** - Java with JUnit 5 and Mockito (4 examples)
-- **[🔷 TypeScript Samples](./code-samples/typescript/)** - TypeScript with strong typing (2 examples)
-- **[🐍 Python Samples](./code-samples/python/)** - Python with dataclasses and type hints (2 examples)
-
 Each code sample includes:
 - **Section Reference**: Link back to the specific section in this document
 - **Navigation**: Previous/Next links for easy movement
@@ -150,7 +144,7 @@ Domain entities are objects that have a distinct identity that persists over tim
 
 #### Identity Management
 
-**Code Samples**: [C#](./code-samples/csharp/01-customer-entity.cs) | [Java](./code-samples/java/01-customer-entity.java) | [TypeScript](./code-samples/typescript/01-customer-entity.ts) | [Python](./code-samples/python/01-customer-entity.py)
+**Code Samples**: [C#](./code-samples/csharp/01-customer-entity.md) | [Java](./code-samples/java/01-customer-entity.md) | [TypeScript](./code-samples/typescript/01-customer-entity.md) | [Python](./code-samples/python/01-customer-entity.md)
 
 Entities must have a unique identity that distinguishes them from other entities, even if their attributes change over time. This identity should be:
 
@@ -169,7 +163,7 @@ In our e-commerce example, a `Customer` entity has a `CustomerId` that uniquely 
 
 #### Business Logic Encapsulation
 
-**Code Samples**: [C#](./code-samples/csharp/02-order-entity.cs)
+**Code Samples**: [C#](./code-samples/csharp/02-order-entity.md)
 
 Entities should contain business logic related to their state and behavior. This encapsulation ensures that:
 
@@ -215,7 +209,7 @@ Value objects are ideal for representing:
 
 #### Immutability
 
-**Code Samples**: [C#](./code-samples/csharp/03-money-value-object.cs) | [Java](./code-samples/java/02-money-value-object.java) | [TypeScript](./code-samples/typescript/02-money-value-object.ts) | [Python](./code-samples/python/02-money-value-object.py)
+**Code Samples**: [C#](./code-samples/csharp/03-money-value-object.md) | [Java](./code-samples/java/02-money-value-object.md) | [TypeScript](./code-samples/typescript/02-money-value-object.md) | [Python](./code-samples/python/02-money-value-object.md)
 
 Value objects should be immutable to ensure:
 - **Thread Safety**: Multiple threads can safely access the same value object
@@ -234,7 +228,7 @@ In our e-commerce example, the `Money` value object represents monetary amounts 
 
 #### Self-Validation
 
-**Code Samples**: [C#](./code-samples/csharp/04-email-address-value-object.cs)
+**Code Samples**: [C#](./code-samples/csharp/04-email-address-value-object.md)
 
 Value objects should validate their own state upon creation to ensure:
 - **Data Integrity**: Invalid data cannot enter the system
@@ -265,7 +259,7 @@ Domain services are appropriate when:
 
 ### Domain Service Design Principles
 
-**Code Samples**: [C#](./code-samples/csharp/05-pricing-service.cs) | [Java](./code-samples/java/03-inventory-service.java)
+**Code Samples**: [C#](./code-samples/csharp/05-pricing-service.md) | [Java](./code-samples/java/03-inventory-service.md)
 
 Domain services should be:
 - **Stateless**: No instance variables that change over time
@@ -333,7 +327,7 @@ Domain/
 
 ### Module Implementation Example
 
-**Code Samples**: [C#](./code-samples/csharp/06-customer-module.cs)
+**Code Samples**: [C#](./code-samples/csharp/06-customer-module.md)
 
 Modules should be organized around business capabilities rather than technical layers. In our e-commerce example:
 
@@ -358,7 +352,7 @@ Domain-Driven Design significantly improves the ability to write effective unit 
 
 #### 1. **Pure Domain Logic is Easily Testable**
 
-**Code Samples**: [C#](./code-samples/csharp/07-order-tests.cs) | [Java](./code-samples/java/04-order-tests.java)
+**Code Samples**: [C#](./code-samples/csharp/07-order-tests.md) | [Java](./code-samples/java/04-order-tests.md)
 
 Domain objects contain pure business logic without external dependencies, making them ideal for unit testing. This means:
 - **No External Dependencies**: Tests don't need to mock databases, web services, or file systems
@@ -373,7 +367,7 @@ In our e-commerce example, testing the `Order` entity's business rules is straig
 
 #### 2. **Value Objects Enable Comprehensive Testing**
 
-**Code Samples**: [C#](./code-samples/csharp/08-money-tests.cs)
+**Code Samples**: [C#](./code-samples/csharp/08-money-tests.md)
 
 Value objects are immutable and self-validating, making them perfect for thorough testing. This enables:
 - **Comprehensive Coverage**: Test all validation rules and edge cases
@@ -389,7 +383,7 @@ In our e-commerce example, we can thoroughly test the `Money` value object by:
 
 #### 3. **Domain Services Enable Focused Testing**
 
-**Code Samples**: [C#](./code-samples/csharp/09-pricing-service-tests.cs)
+**Code Samples**: [C#](./code-samples/csharp/09-pricing-service-tests.md)
 
 Domain services can be tested independently with mocked dependencies. This allows:
 - **Focused Testing**: Test complex business rules in isolation
@@ -405,7 +399,7 @@ In our e-commerce example, the `PricingService` can be tested by:
 
 #### 4. **Testable Business Rules**
 
-**Code Samples**: [C#](./code-samples/csharp/07-order-tests.cs) (see business rule tests)
+**Code Samples**: [C#](./code-samples/csharp/07-order-tests.md) (see business rule tests)
 
 Business rules are encapsulated in domain objects, making them easy to test. This provides:
 - **Clear Test Intent**: Each test validates a specific business rule
@@ -421,7 +415,7 @@ In our e-commerce example, we can test business rules like:
 
 #### 5. **Isolated Testing with Dependency Injection**
 
-**Code Samples**: [C#](./code-samples/csharp/10-customer-service-tests.cs)
+**Code Samples**: [C#](./code-samples/csharp/10-customer-service-tests.md)
 
 Domain services can be tested with mocked dependencies. This enables:
 - **Isolated Testing**: Test business logic without external dependencies
@@ -464,7 +458,7 @@ In our e-commerce example, the `CustomerService` can be tested by:
 
 ### Testing Anti-Patterns to Avoid
 
-**Code Samples**: [C#](./code-samples/csharp/11-testing-anti-patterns.cs)
+**Code Samples**: [C#](./code-samples/csharp/11-testing-anti-patterns.md)
 
 #### 1. **Testing Infrastructure Concerns**
 Don't test database interactions, logging, or other technical concerns in domain tests. Focus on business logic instead.
@@ -480,7 +474,7 @@ Don't test framework methods or third-party library functionality. Test your dom
 
 ### Best Practices for DDD Unit Testing
 
-**Code Samples**: [C#](./code-samples/csharp/12-testing-best-practices.cs)
+**Code Samples**: [C#](./code-samples/csharp/12-testing-best-practices.md)
 
 #### 1. **Test Behavior, Not Implementation**
 Focus on what the domain object does, not how it does it. Test the observable behavior and outcomes.
@@ -499,7 +493,7 @@ Use business terminology in test names and assertions to make tests more readabl
 
 ## Best Practices for Domain Modeling
 
-**Code Samples**: [C#](./code-samples/csharp/13-domain-modeling-best-practices.cs)
+**Code Samples**: [C#](./code-samples/csharp/13-domain-modeling-best-practices.md)
 
 ### 1. Keep Domain Logic Pure
 

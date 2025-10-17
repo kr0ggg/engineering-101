@@ -8,24 +8,28 @@ This directory contains all code samples from the Domain-Driven Design course, o
 - **Framework**: .NET with xUnit and Moq
 - **Samples**: 13 comprehensive examples including entities, value objects, services, and testing
 - **Features**: Rich domain models, comprehensive unit testing, dependency injection
+- **File Format**: Markdown files with embedded C# code examples
 - **[View C# Samples →](./csharp/)**
 
 ### **Java**
 - **Framework**: Java with JUnit 5 and Mockito
 - **Samples**: 4 focused examples covering core DDD concepts
 - **Features**: BigDecimal for precision, strong typing, enterprise patterns
+- **File Format**: Markdown files with embedded Java code examples
 - **[View Java Samples →](./java/)**
 
 ### **TypeScript**
 - **Framework**: TypeScript with strong typing
 - **Samples**: 2 examples demonstrating type-safe domain modeling
 - **Features**: Type safety, access modifiers, module system
+- **File Format**: Markdown files with embedded TypeScript code examples
 - **[View TypeScript Samples →](./typescript/)**
 
 ### **Python**
 - **Framework**: Python 3.8+ with dataclasses and type hints
 - **Samples**: 2 examples showing Pythonic DDD patterns
 - **Features**: Dataclasses, Decimal precision, clean syntax
+- **File Format**: Markdown files with embedded Python code examples
 - **[View Python Samples →](./python/)**
 
 ## 🎯 Learning Paths
@@ -75,7 +79,7 @@ By studying these samples, you'll learn:
 
 ## 🚀 Getting Started
 
-1. **Read the Main Introduction**: Start with [introduction-to-the-domain.md](../introduction-to-the-domain.md)
+1. **Read the Main Introduction**: Start with [1-introduction-to-the-domain.md](../1-introduction-to-the-domain.md)
 2. **Choose Your Language**: Pick the language you're most comfortable with
 3. **Follow the Learning Path**: Use the learning path that matches your experience level
 4. **Study the Code**: Each sample includes detailed explanations and context
@@ -84,7 +88,7 @@ By studying these samples, you'll learn:
 
 ## 📖 Related Documentation
 
-- [Main Introduction](../introduction-to-the-domain.md) - Complete DDD concepts and theory
+- [Main Introduction](../1-introduction-to-the-domain.md) - Complete DDD concepts and theory
 - [Bounded Contexts](../1-Bounded-Contexts/README.md) - Context boundaries and organization
 - [Ubiquitous Language](../2-Ubiquitous-Language/README.md) - Domain language and terminology
 - [Domain Models](../3-Domain-Models/README.md) - Advanced domain modeling concepts
@@ -136,4 +140,4 @@ By studying these samples, you'll learn:
 
 ---
 
-**Navigation**: [← Back to Introduction](../introduction-to-the-domain.md) | [← Back to DDD Course](../0-README.md)
+**Navigation**: [← Back to Introduction](../1-introduction-to-the-domain.md) | [← Back to DDD Course](../0-README.md)
