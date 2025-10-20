@@ -1,0 +1,802 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/_next/static/css/6b40bd379144f5c8.css" crossorigin="" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/webpack-07dfb49dd72788a4.js" crossorigin=""/><script src="/_next/static/chunks/fd9d1056-e4950b334bc218cf.js" async="" crossorigin=""></script><script src="/_next/static/chunks/472-23f435a9c16afa13.js" async="" crossorigin=""></script><script src="/_next/static/chunks/main-app-efee19f0ce613ad9.js" async="" crossorigin=""></script><script src="/_next/static/chunks/326-c01c22be8dcac7b1.js" async=""></script><script src="/_next/static/chunks/app/docs/%5B...slug%5D/page-f5028c860b0f5f1d.js" async=""></script><title>Engineering 101</title><meta name="description" content="SOLID + DDD training site"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/><script src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js" crossorigin="" noModule=""></script></head><body class="antialiased"><div class="flex min-h-screen bg-gray-50"><aside class="sidebar"><div class="sidebar-nav"><a class="text-lg font-semibold text-gray-900 mb-4 block hover:text-blue-600" href="/">← Engineering 101</a><h2 class="text-lg font-semibold text-gray-900 mb-4">Course Content</h2><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/1-SOLID-Principles">1-SOLID-Principles</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/0-README">0-README</a></li><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/1-Single-class-reponsibility-principle">1-Single-class-reponsibility-principle</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/1-Single-class-reponsibility-principle/README">README</a></li></ul></div></li><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/2-Open-closed-principle">2-Open-closed-principle</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/2-Open-closed-principle/README">README</a></li></ul></div></li><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/3-Liskov-substitution-principle">3-Liskov-substitution-principle</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/3-Liskov-substitution-principle/README">README</a></li></ul></div></li><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/4-Interface-segregation-principle">4-Interface-segregation-principle</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/4-Interface-segregation-principle/README">README</a></li></ul></div></li><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/5-Dependency-segregation-principle">5-Dependency-segregation-principle</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/5-Dependency-segregation-principle/README">README</a></li></ul></div></li><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/reference-application">reference-application</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/reference-application/CI-README">CI-README</a></li><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/reference-application/Dotnet">Dotnet</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/reference-application/Dotnet/README">README</a></li></ul></div></li><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/reference-application/Java">Java</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/reference-application/Java/README">README</a></li></ul></div></li><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/reference-application/Python">Python</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/reference-application/Python/.pytest_cache">.pytest_cache</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/reference-application/Python/.pytest_cache/README">README</a></li></ul></div></li><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/reference-application/Python/README">README</a></li></ul></div></li><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/reference-application/README">README</a></li><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/reference-application/TypeScript">TypeScript</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/reference-application/TypeScript/README">README</a></li></ul></div></li></ul></div></li></ul></div></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design">2-Domain-Driven-Design</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/0-README">0-README</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/1-Bounded-Contexts">1-Bounded-Contexts</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/1-Bounded-Contexts/README">README</a></li></ul></div></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/1-introduction-to-the-domain">1-introduction-to-the-domain</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/2-Ubiquitous-Language">2-Ubiquitous-Language</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/2-Ubiquitous-Language/README">README</a></li></ul></div></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/3-Domain-Models">3-Domain-Models</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/3-Domain-Models/README">README</a></li></ul></div></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/4-Context-Mapping">4-Context-Mapping</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/4-Context-Mapping/README">README</a></li></ul></div></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/5-Strategic-Patterns">5-Strategic-Patterns</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/5-Strategic-Patterns/README">README</a></li></ul></div></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples">code-samples</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/README">README</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/csharp">csharp</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/csharp/02-order-entity">02-order-entity</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/csharp/03-money-value-object">03-money-value-object</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/csharp/04-email-address-value-object">04-email-address-value-object</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/csharp/05-pricing-service">05-pricing-service</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/csharp/06-customer-module">06-customer-module</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/csharp/07-order-tests">07-order-tests</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/csharp/08-money-tests">08-money-tests</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/csharp/09-pricing-service-tests">09-pricing-service-tests</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/csharp/11-testing-anti-patterns">11-testing-anti-patterns</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/csharp/12-testing-best-practices">12-testing-best-practices</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/csharp/13-domain-modeling-best-practices">13-domain-modeling-best-practices</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/csharp/README">README</a></li></ul></div></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/introduction-to-the-domain">introduction-to-the-domain</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/java">java</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/java/02-money-value-object">02-money-value-object</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/java/03-inventory-service">03-inventory-service</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/java/03-order-entity">03-order-entity</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/java/04-email-address-value-object">04-email-address-value-object</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/java/04-order-tests">04-order-tests</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/java/05-pricing-service">05-pricing-service</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/java/06-customer-module">06-customer-module</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/java/07-order-tests">07-order-tests</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/java/08-money-tests">08-money-tests</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/java/09-pricing-service-tests">09-pricing-service-tests</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/java/11-testing-anti-patterns">11-testing-anti-patterns</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/java/12-testing-best-practices">12-testing-best-practices</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/java/13-domain-modeling-best-practices">13-domain-modeling-best-practices</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/java/README">README</a></li></ul></div></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/python">python</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/python/02-money-value-object">02-money-value-object</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/python/03-order-entity">03-order-entity</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/python/04-email-address-value-object">04-email-address-value-object</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/python/05-pricing-service">05-pricing-service</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/python/06-customer-module">06-customer-module</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/python/07-order-tests">07-order-tests</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/python/08-money-tests">08-money-tests</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/python/09-pricing-service-tests">09-pricing-service-tests</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/python/11-testing-anti-patterns">11-testing-anti-patterns</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/python/12-testing-best-practices">12-testing-best-practices</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/python/13-domain-modeling-best-practices">13-domain-modeling-best-practices</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/python/README">README</a></li></ul></div></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/typescript">typescript</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/typescript/02-money-value-object">02-money-value-object</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/typescript/03-order-entity">03-order-entity</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/typescript/04-email-address-value-object">04-email-address-value-object</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/typescript/05-pricing-service">05-pricing-service</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/typescript/06-customer-module">06-customer-module</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/typescript/07-order-tests">07-order-tests</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/typescript/08-money-tests">08-money-tests</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/typescript/09-pricing-service-tests">09-pricing-service-tests</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/typescript/11-testing-anti-patterns">11-testing-anti-patterns</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/typescript/12-testing-best-practices">12-testing-best-practices</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/typescript/13-domain-modeling-best-practices">13-domain-modeling-best-practices</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/typescript/README">README</a></li></ul></div></li></ul></div></li></ul></div></li></ul></div></aside><main class="main-content"><div class="content-wrapper"><div class="page-header"><h1 class="page-title">03-order-entity</h1></div><div class="prose prose-lg max-w-none"><div><h1>Order Entity - Java Example</h1>
+<p><strong>Section</strong>: <a href="../../1-introduction-to-the-domain.md#business-logic-encapsulation">Business Logic Encapsulation</a></p>
+<p><strong>Navigation</strong>: <a href="./01-customer-entity.md">← Previous: Customer Entity</a> | <a href="../../1-introduction-to-the-domain.md">← Back to Introduction</a> | <a href="./README.md">← Back to Java Index</a></p>
+<hr>
+<pre><code class="language-java">// Java Example - Order Entity with Business Logic Encapsulation
+// File: 2-Domain-Driven-Design/code-samples/java/03-order-entity.java
+
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
+import java.util.UUID;
+
+// ✅ GOOD: Rich Domain Model with Behavior
+public enum OrderStatus {
+    DRAFT(&quot;Draft&quot;),
+    CONFIRMED(&quot;Confirmed&quot;),
+    SHIPPED(&quot;Shipped&quot;),
+    DELIVERED(&quot;Delivered&quot;),
+    CANCELLED(&quot;Cancelled&quot;);
+    
+    private final String value;
+    
+    OrderStatus(String value) {
+        this.value = value;
+    }
+    
+    public String getValue() {
+        return value;
+    }
+}
+
+// ✅ GOOD: Value Objects for Identity
+public class OrderId {
+    private final String value;
+    
+    private OrderId(String value) {
+        if (value == null || value.trim().isEmpty()) {
+            throw new IllegalArgumentException(&quot;Order ID cannot be null or empty&quot;);
+        }
+        this.value = value.trim();
+    }
+    
+    public static OrderId generate() {
+        return new OrderId(UUID.randomUUID().toString());
+    }
+    
+    public static OrderId of(String value) {
+        return new OrderId(value);
+    }
+    
+    public String getValue() {
+        return value;
+    }
+    
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        OrderId orderId = (OrderId) obj;
+        return Objects.equals(value, orderId.value);
+    }
+    
+    @Override
+    public int hashCode() {
+        return Objects.hash(value);
+    }
+    
+    @Override
+    public String toString() {
+        return value;
+    }
+}
+
+public class CustomerId {
+    private final String value;
+    
+    private CustomerId(String value) {
+        if (value == null || value.trim().isEmpty()) {
+            throw new IllegalArgumentException(&quot;Customer ID cannot be null or empty&quot;);
+        }
+        this.value = value.trim();
+    }
+    
+    public static CustomerId of(String value) {
+        return new CustomerId(value);
+    }
+    
+    public String getValue() {
+        return value;
+    }
+    
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        CustomerId customerId = (CustomerId) obj;
+        return Objects.equals(value, customerId.value);
+    }
+    
+    @Override
+    public int hashCode() {
+        return Objects.hash(value);
+    }
+    
+    @Override
+    public String toString() {
+        return value;
+    }
+}
+
+public class ProductId {
+    private final String value;
+    
+    private ProductId(String value) {
+        if (value == null || value.trim().isEmpty()) {
+            throw new IllegalArgumentException(&quot;Product ID cannot be null or empty&quot;);
+        }
+        this.value = value.trim();
+    }
+    
+    public static ProductId of(String value) {
+        return new ProductId(value);
+    }
+    
+    public String getValue() {
+        return value;
+    }
+    
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        ProductId productId = (ProductId) obj;
+        return Objects.equals(value, productId.value);
+    }
+    
+    @Override
+    public int hashCode() {
+        return Objects.hash(value);
+    }
+    
+    @Override
+    public String toString() {
+        return value;
+    }
+}
+
+// ✅ GOOD: Value Object for Money
+public class Money {
+    private final double amount;
+    private final String currency;
+    
+    private Money(double amount, String currency) {
+        if (amount &lt; 0) {
+            throw new IllegalArgumentException(&quot;Amount cannot be negative&quot;);
+        }
+        if (currency == null || currency.trim().isEmpty()) {
+            throw new IllegalArgumentException(&quot;Currency cannot be null or empty&quot;);
+        }
+        this.amount = amount;
+        this.currency = currency.trim();
+    }
+    
+    public static Money of(double amount, String currency) {
+        return new Money(amount, currency);
+    }
+    
+    public static Money zero(String currency) {
+        return new Money(0.0, currency);
+    }
+    
+    public Money add(Money other) {
+        if (!this.currency.equals(other.currency)) {
+            throw new IllegalArgumentException(&quot;Cannot add different currencies&quot;);
+        }
+        return new Money(this.amount + other.amount, this.currency);
+    }
+    
+    public Money subtract(Money other) {
+        if (!this.currency.equals(other.currency)) {
+            throw new IllegalArgumentException(&quot;Cannot subtract different currencies&quot;);
+        }
+        return new Money(this.amount - other.amount, this.currency);
+    }
+    
+    public Money multiply(double factor) {
+        if (factor &lt; 0) {
+            throw new IllegalArgumentException(&quot;Factor cannot be negative&quot;);
+        }
+        return new Money(this.amount * factor, this.currency);
+    }
+    
+    public double getAmount() {
+        return amount;
+    }
+    
+    public String getCurrency() {
+        return currency;
+    }
+    
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Money money = (Money) obj;
+        return Double.compare(money.amount, amount) == 0 &amp;&amp;
+               Objects.equals(currency, money.currency);
+    }
+    
+    @Override
+    public int hashCode() {
+        return Objects.hash(amount, currency);
+    }
+    
+    @Override
+    public String toString() {
+        return String.format(&quot;%s %.2f&quot;, currency, amount);
+    }
+}
+
+// ✅ GOOD: Value Object for Order Item
+public class OrderItem {
+    private final ProductId productId;
+    private final int quantity;
+    private final Money unitPrice;
+    
+    public OrderItem(ProductId productId, int quantity, Money unitPrice) {
+        if (productId == null) {
+            throw new IllegalArgumentException(&quot;Product ID cannot be null&quot;);
+        }
+        if (quantity &lt;= 0) {
+            throw new IllegalArgumentException(&quot;Quantity must be positive&quot;);
+        }
+        if (unitPrice == null) {
+            throw new IllegalArgumentException(&quot;Unit price cannot be null&quot;);
+        }
+        this.productId = productId;
+        this.quantity = quantity;
+        this.unitPrice = unitPrice;
+    }
+    
+    public ProductId getProductId() {
+        return productId;
+    }
+    
+    public int getQuantity() {
+        return quantity;
+    }
+    
+    public Money getUnitPrice() {
+        return unitPrice;
+    }
+    
+    public Money getTotalPrice() {
+        return unitPrice.multiply(quantity);
+    }
+    
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        OrderItem orderItem = (OrderItem) obj;
+        return quantity == orderItem.quantity &amp;&amp;
+               Objects.equals(productId, orderItem.productId) &amp;&amp;
+               Objects.equals(unitPrice, orderItem.unitPrice);
+    }
+    
+    @Override
+    public int hashCode() {
+        return Objects.hash(productId, quantity, unitPrice);
+    }
+    
+    @Override
+    public String toString() {
+        return String.format(&quot;OrderItem{productId=%s, quantity=%d, unitPrice=%s}&quot;,
+                productId, quantity, unitPrice);
+    }
+}
+
+// ✅ GOOD: Domain Entity with Rich Behavior
+public class Order {
+    private final OrderId id;
+    private final CustomerId customerId;
+    private final LocalDateTime createdAt;
+    private final List&lt;OrderItem&gt; items;
+    private OrderStatus status;
+    private LocalDateTime confirmedAt;
+    private LocalDateTime shippedAt;
+    
+    public Order(OrderId id, CustomerId customerId) {
+        this(id, customerId, LocalDateTime.now());
+    }
+    
+    public Order(OrderId id, CustomerId customerId, LocalDateTime createdAt) {
+        if (id == null) {
+            throw new IllegalArgumentException(&quot;Order ID cannot be null&quot;);
+        }
+        if (customerId == null) {
+            throw new IllegalArgumentException(&quot;Customer ID cannot be null&quot;);
+        }
+        if (createdAt == null) {
+            throw new IllegalArgumentException(&quot;Created at cannot be null&quot;);
+        }
+        
+        this.id = id;
+        this.customerId = customerId;
+        this.createdAt = createdAt;
+        this.items = new ArrayList&lt;&gt;();
+        this.status = OrderStatus.DRAFT;
+    }
+    
+    // ✅ Identity properties
+    public OrderId getId() {
+        return id;
+    }
+    
+    public CustomerId getCustomerId() {
+        return customerId;
+    }
+    
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
+    }
+    
+    public OrderStatus getStatus() {
+        return status;
+    }
+    
+    public List&lt;OrderItem&gt; getItems() {
+        return new ArrayList&lt;&gt;(items); // Return copy to maintain encapsulation
+    }
+    
+    public int getItemCount() {
+        return items.size();
+    }
+    
+    public Money getTotalAmount() {
+        if (items.isEmpty()) {
+            return Money.zero(&quot;USD&quot;);
+        }
+        
+        Money total = items.get(0).getTotalPrice();
+        for (int i = 1; i &lt; items.size(); i++) {
+            total = total.add(items.get(i).getTotalPrice());
+        }
+        return total;
+    }
+    
+    // ✅ Business Logic Encapsulation
+    public void addItem(ProductId productId, int quantity, Money unitPrice) {
+        if (status != OrderStatus.DRAFT) {
+            throw new IllegalStateException(&quot;Cannot modify confirmed order&quot;);
+        }
+        
+        if (quantity &lt;= 0) {
+            throw new IllegalArgumentException(&quot;Quantity must be positive&quot;);
+        }
+        
+        // Business rule: Check if item already exists
+        int existingItemIndex = findItemIndex(productId);
+        
+        if (existingItemIndex &gt;= 0) {
+            // Update existing item quantity
+            OrderItem existingItem = items.get(existingItemIndex);
+            int newQuantity = existingItem.getQuantity() + quantity;
+            OrderItem updatedItem = new OrderItem(productId, newQuantity, unitPrice);
+            items.set(existingItemIndex, updatedItem);
+        } else {
+            // Add new item
+            OrderItem newItem = new OrderItem(productId, quantity, unitPrice);
+            items.add(newItem);
+        }
+    }
+    
+    public void removeItem(ProductId productId) {
+        if (status != OrderStatus.DRAFT) {
+            throw new IllegalStateException(&quot;Cannot modify confirmed order&quot;);
+        }
+        
+        int itemIndex = findItemIndex(productId);
+        if (itemIndex &gt;= 0) {
+            items.remove(itemIndex);
+        } else {
+            throw new IllegalArgumentException(&quot;Item not found in order&quot;);
+        }
+    }
+    
+    public void updateItemQuantity(ProductId productId, int newQuantity) {
+        if (status != OrderStatus.DRAFT) {
+            throw new IllegalStateException(&quot;Cannot modify confirmed order&quot;);
+        }
+        
+        if (newQuantity &lt;= 0) {
+            throw new IllegalArgumentException(&quot;Quantity must be positive&quot;);
+        }
+        
+        int itemIndex = findItemIndex(productId);
+        if (itemIndex &gt;= 0) {
+            OrderItem existingItem = items.get(itemIndex);
+            OrderItem updatedItem = new OrderItem(productId, newQuantity, existingItem.getUnitPrice());
+            items.set(itemIndex, updatedItem);
+        } else {
+            throw new IllegalArgumentException(&quot;Item not found in order&quot;);
+        }
+    }
+    
+    public void confirm() {
+        if (status != OrderStatus.DRAFT) {
+            throw new IllegalStateException(&quot;Order is not in draft status&quot;);
+        }
+        
+        if (items.isEmpty()) {
+            throw new IllegalStateException(&quot;Cannot confirm empty order&quot;);
+        }
+        
+        // Business rule: Minimum order amount
+        if (getTotalAmount().getAmount() &lt; 10.0) {
+            throw new IllegalStateException(&quot;Order amount must be at least $10.00&quot;);
+        }
+        
+        this.status = OrderStatus.CONFIRMED;
+        this.confirmedAt = LocalDateTime.now();
+    }
+    
+    public void ship() {
+        if (status != OrderStatus.CONFIRMED) {
+            throw new IllegalStateException(&quot;Order must be confirmed before shipping&quot;);
+        }
+        
+        this.status = OrderStatus.SHIPPED;
+        this.shippedAt = LocalDateTime.now();
+    }
+    
+    public void deliver() {
+        if (status != OrderStatus.SHIPPED) {
+            throw new IllegalStateException(&quot;Order must be shipped before delivery&quot;);
+        }
+        
+        this.status = OrderStatus.DELIVERED;
+    }
+    
+    public void cancel() {
+        if (status == OrderStatus.SHIPPED || status == OrderStatus.DELIVERED) {
+            throw new IllegalStateException(&quot;Cannot cancel shipped or delivered order&quot;);
+        }
+        
+        this.status = OrderStatus.CANCELLED;
+    }
+    
+    // ✅ Business Rules as Methods
+    public boolean canBeModified() {
+        return status == OrderStatus.DRAFT;
+    }
+    
+    public boolean canBeConfirmed() {
+        return status == OrderStatus.DRAFT &amp;&amp; 
+               !items.isEmpty() &amp;&amp; 
+               getTotalAmount().getAmount() &gt;= 10.0;
+    }
+    
+    public boolean canBeShipped() {
+        return status == OrderStatus.CONFIRMED;
+    }
+    
+    public boolean canBeDelivered() {
+        return status == OrderStatus.SHIPPED;
+    }
+    
+    public boolean canBeCancelled() {
+        return status == OrderStatus.DRAFT || status == OrderStatus.CONFIRMED;
+    }
+    
+    // ✅ Helper methods
+    private int findItemIndex(ProductId productId) {
+        for (int i = 0; i &lt; items.size(); i++) {
+            if (items.get(i).getProductId().equals(productId)) {
+                return i;
+            }
+        }
+        return -1;
+    }
+    
+    public OrderItem getItemByProductId(ProductId productId) {
+        int itemIndex = findItemIndex(productId);
+        return itemIndex &gt;= 0 ? items.get(itemIndex) : null;
+    }
+    
+    public boolean hasItem(ProductId productId) {
+        return findItemIndex(productId) &gt;= 0;
+    }
+    
+    // ✅ Domain Events (simplified)
+    public List&lt;String&gt; getDomainEvents() {
+        List&lt;String&gt; events = new ArrayList&lt;&gt;();
+        if (status == OrderStatus.CONFIRMED) {
+            events.add(&quot;OrderConfirmed&quot;);
+        }
+        if (status == OrderStatus.SHIPPED) {
+            events.add(&quot;OrderShipped&quot;);
+        }
+        if (status == OrderStatus.DELIVERED) {
+            events.add(&quot;OrderDelivered&quot;);
+        }
+        if (status == OrderStatus.CANCELLED) {
+            events.add(&quot;OrderCancelled&quot;);
+        }
+        return events;
+    }
+    
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Order order = (Order) obj;
+        return Objects.equals(id, order.id);
+    }
+    
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
+    }
+    
+    @Override
+    public String toString() {
+        return String.format(&quot;Order{id=%s, customerId=%s, status=%s, items=%d, total=%s}&quot;,
+                id, customerId, status.getValue(), items.size(), getTotalAmount());
+    }
+}
+
+// ❌ BAD: Anemic Domain Model
+class BadOrder {
+    // ❌ Only data, no behavior
+    public String id;
+    public String customerId;
+    public List&lt;Object&gt; items;
+    public String status;
+    public double totalAmount;
+    public LocalDateTime createdAt;
+    
+    public BadOrder(String id, String customerId) {
+        this.id = id;
+        this.customerId = customerId;
+        this.items = new ArrayList&lt;&gt;();
+        this.status = &quot;Draft&quot;;
+        this.totalAmount = 0.0;
+        this.createdAt = LocalDateTime.now();
+    }
+    
+    // ❌ Business logic in external service
+    public void addItem(String productId, int quantity, double unitPrice) {
+        // Business logic should be in the domain object
+        if (!&quot;Draft&quot;.equals(status)) {
+            throw new IllegalArgumentException(&quot;Cannot modify confirmed order&quot;);
+        }
+        // ... rest of logic
+    }
+}
+
+// ✅ GOOD: Domain Service for Complex Business Logic
+class OrderPricingService {
+    // ✅ Stateless service - no instance variables
+    public Money calculateOrderTotal(Order order, Customer customer, Address shippingAddress) {
+        if (!customer.isActive()) {
+            throw new IllegalArgumentException(&quot;Cannot calculate pricing for inactive customer&quot;);
+        }
+        
+        // ✅ Pure function - same inputs always produce same outputs
+        Money total = order.getTotalAmount();
+        total = applyCustomerDiscount(total, customer);
+        total = applyBulkDiscount(total, order);
+        
+        Money tax = calculateTax(total, shippingAddress);
+        Money shipping = calculateShipping(order, shippingAddress);
+        
+        return total.add(tax).add(shipping);
+    }
+    
+    // ✅ Private methods for complex calculations
+    private Money applyCustomerDiscount(Money total, Customer customer) {
+        double discountRate = getCustomerDiscountRate(customer.getCustomerType());
+        Money discountAmount = total.multiply(discountRate);
+        return total.subtract(discountAmount);
+    }
+    
+    private double getCustomerDiscountRate(String customerType) {
+        switch (customerType) {
+            case &quot;VIP&quot;: return 0.15;
+            case &quot;Premium&quot;: return 0.10;
+            case &quot;Standard&quot;: return 0.05;
+            default: return 0.05;
+        }
+    }
+    
+    private Money applyBulkDiscount(Money total, Order order) {
+        if (total.getAmount() &gt;= 1000) {
+            return total.multiply(0.10);
+        } else if (total.getAmount() &gt;= 500) {
+            return total.multiply(0.05);
+        } else if (total.getAmount() &gt;= 100) {
+            return total.multiply(0.02);
+        }
+        return Money.zero(total.getCurrency());
+    }
+    
+    private Money calculateTax(Money amount, Address address) {
+        // Simplified tax calculation
+        if (&quot;US&quot;.equals(address.getCountry())) {
+            return amount.multiply(0.08);
+        }
+        return Money.zero(amount.getCurrency());
+    }
+    
+    private Money calculateShipping(Order order, Address address) {
+        // Simplified shipping calculation
+        if (&quot;US&quot;.equals(address.getCountry())) {
+            return Money.of(5.99, &quot;USD&quot;);
+        }
+        return Money.of(15.99, &quot;USD&quot;);
+    }
+}
+
+// ✅ GOOD: Factory for Complex Object Creation
+class OrderFactory {
+    public static Order createDraftOrder(CustomerId customerId) {
+        OrderId orderId = OrderId.generate();
+        return new Order(orderId, customerId);
+    }
+    
+    public static Order createOrderFromCart(CustomerId customerId, List&lt;CartItem&gt; cartItems) {
+        Order order = createDraftOrder(customerId);
+        
+        for (CartItem cartItem : cartItems) {
+            ProductId productId = ProductId.of(cartItem.getProductId());
+            Money unitPrice = Money.of(cartItem.getUnitPrice(), &quot;USD&quot;);
+            order.addItem(productId, cartItem.getQuantity(), unitPrice);
+        }
+        
+        return order;
+    }
+}
+
+// ✅ GOOD: Specification Pattern for Complex Business Rules
+class OrderSpecification {
+    public boolean canBeConfirmed(Order order) {
+        return order.getStatus() == OrderStatus.DRAFT &amp;&amp;
+               !order.getItems().isEmpty() &amp;&amp;
+               order.getTotalAmount().getAmount() &gt;= 10.0 &amp;&amp;
+               hasValidItems(order);
+    }
+    
+    public boolean canBeShipped(Order order) {
+        return order.getStatus() == OrderStatus.CONFIRMED &amp;&amp;
+               hasShippingAddress(order) &amp;&amp;
+               allItemsInStock(order);
+    }
+    
+    private boolean hasValidItems(Order order) {
+        return order.getItems().stream()
+                .allMatch(item -&gt; item.getQuantity() &gt; 0);
+    }
+    
+    private boolean hasShippingAddress(Order order) {
+        // Simplified - would check actual address
+        return true;
+    }
+    
+    private boolean allItemsInStock(Order order) {
+        // Simplified - would check inventory
+        return true;
+    }
+}
+
+// Example usage
+public class OrderExample {
+    public static void main(String[] args) {
+        // Create order
+        CustomerId customerId = CustomerId.of(&quot;customer-123&quot;);
+        Order order = OrderFactory.createDraftOrder(customerId);
+        
+        // Add items
+        ProductId product1 = ProductId.of(&quot;product-1&quot;);
+        ProductId product2 = ProductId.of(&quot;product-2&quot;);
+        
+        order.addItem(product1, 2, Money.of(15.99, &quot;USD&quot;));
+        order.addItem(product2, 1, Money.of(25.50, &quot;USD&quot;));
+        
+        System.out.println(&quot;Order created: &quot; + order);
+        System.out.println(&quot;Total amount: &quot; + order.getTotalAmount());
+        System.out.println(&quot;Can be confirmed: &quot; + order.canBeConfirmed());
+        
+        // Confirm order
+        order.confirm();
+        System.out.println(&quot;Order confirmed: &quot; + order);
+        System.out.println(&quot;Can be shipped: &quot; + order.canBeShipped());
+        
+        // Ship order
+        order.ship();
+        System.out.println(&quot;Order shipped: &quot; + order);
+        System.out.println(&quot;Can be delivered: &quot; + order.canBeDelivered());
+        
+        // Deliver order
+        order.deliver();
+        System.out.println(&quot;Order delivered: &quot; + order);
+    }
+}
+</code></pre>
+<h2>Key Concepts Demonstrated</h2>
+<h3>Business Logic Encapsulation</h3>
+<h4>1. <strong>Rich Domain Models</strong></h4>
+<ul>
+<li>✅ Domain objects contain both data and behavior</li>
+<li>✅ Business logic is encapsulated within the objects that own the data</li>
+<li>✅ Methods express business operations clearly</li>
+</ul>
+<h4>2. <strong>Business Rules as Methods</strong></h4>
+<ul>
+<li>✅ Business rules are expressed as methods on domain objects</li>
+<li>✅ Validation happens at the domain boundary</li>
+<li>✅ Clear error messages for business rule violations</li>
+</ul>
+<h4>3. <strong>State Management</strong></h4>
+<ul>
+<li>✅ Order status is managed through business operations</li>
+<li>✅ State transitions are controlled by business rules</li>
+<li>✅ Invalid state transitions are prevented</li>
+</ul>
+<h4>4. <strong>Domain Events</strong></h4>
+<ul>
+<li>✅ Significant business events are captured</li>
+<li>✅ Events can be used for integration and notifications</li>
+<li>✅ Domain events maintain consistency</li>
+</ul>
+<h3>Order Entity Design Principles</h3>
+<h4><strong>Identity Management</strong></h4>
+<ul>
+<li>✅ Order has a unique identity (OrderId)</li>
+<li>✅ Identity is immutable and generated</li>
+<li>✅ Identity distinguishes orders from each other</li>
+</ul>
+<h4><strong>Business Logic Encapsulation</strong></h4>
+<ul>
+<li>✅ Order contains all business rules for order management</li>
+<li>✅ Operations like addItem, confirm, ship are methods</li>
+<li>✅ Business rules prevent invalid operations</li>
+</ul>
+<h4><strong>State Management</strong></h4>
+<ul>
+<li>✅ Order status is managed through business operations</li>
+<li>✅ State transitions follow business rules</li>
+<li>✅ Invalid transitions are prevented</li>
+</ul>
+<h4><strong>Value Objects</strong></h4>
+<ul>
+<li>✅ OrderId, CustomerId, ProductId are value objects</li>
+<li>✅ Money is a value object with business operations</li>
+<li>✅ OrderItem is a value object representing order line items</li>
+</ul>
+<h3>Java Benefits for Domain Modeling</h3>
+<ul>
+<li><strong>Strong Typing</strong>: Compile-time type checking</li>
+<li><strong>Immutability</strong>: Final fields and immutable value objects</li>
+<li><strong>Encapsulation</strong>: Private fields with public methods</li>
+<li><strong>Method Chaining</strong>: Fluent interfaces for operations</li>
+<li><strong>Error Handling</strong>: Clear exception messages for business rules</li>
+<li><strong>Collections</strong>: Rich collection framework for managing items</li>
+</ul>
+<h3>Common Anti-Patterns to Avoid</h3>
+<h4><strong>Anemic Domain Model</strong></h4>
+<ul>
+<li>❌ Domain objects contain only data</li>
+<li>❌ Business logic in external services</li>
+<li>❌ No encapsulation of business rules</li>
+</ul>
+<h4><strong>Primitive Obsession</strong></h4>
+<ul>
+<li>❌ Using primitives instead of domain types</li>
+<li>❌ No type safety for business concepts</li>
+<li>❌ Scattered validation logic</li>
+</ul>
+<h4><strong>God Object</strong></h4>
+<ul>
+<li>❌ Single object with too many responsibilities</li>
+<li>❌ Hard to understand and maintain</li>
+<li>❌ Violates Single Responsibility Principle</li>
+</ul>
+<h2>Related Concepts</h2>
+<ul>
+<li><a href="./01-customer-entity.md">Customer Entity</a> - Basic entity design</li>
+<li><a href="./02-money-value-object.md">Money Value Object</a> - Value object example</li>
+<li><a href="./04-email-address-value-object.md">EmailAddress Value Object</a> - Validation example</li>
+<li><a href="../../1-introduction-to-the-domain.md#business-logic-encapsulation">Business Logic Encapsulation</a> - Business logic concepts</li>
+</ul>
+<p>/*</p>
+<ul>
+<li>Navigation:</li>
+<li>Previous: 01-customer-entity.md</li>
+<li>Next: 04-email-address-value-object.md</li>
+<li></li>
+<li>Back to: <a href="../../1-introduction-to-the-domain.md#business-logic-encapsulation">Business Logic Encapsulation</a><br> */</li>
+</ul>
+</div></div></div></main></div><script src="/_next/static/chunks/webpack-07dfb49dd72788a4.js" crossorigin="" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0]);self.__next_f.push([2,null])</script><script>self.__next_f.push([1,"1:HL[\"/_next/static/css/6b40bd379144f5c8.css\",\"style\",{\"crossOrigin\":\"\"}]\n0:\"$L2\"\n"])</script><script>self.__next_f.push([1,"3:I[3728,[],\"\"]\n5:I[9928,[],\"\"]\n6:I[6954,[],\"\"]\n7:I[7264,[],\"\"]\n9:I[8326,[\"326\",\"static/chunks/326-c01c22be8dcac7b1.js\",\"687\",\"static/chunks/app/docs/%5B...slug%5D/page-f5028c860b0f5f1d.js\"],\"\"]\na:T67d8,"])</script><script>self.__next_f.push([1,"\u003ch1\u003eOrder Entity - Java Example\u003c/h1\u003e\n\u003cp\u003e\u003cstrong\u003eSection\u003c/strong\u003e: \u003ca href=\"../../1-introduction-to-the-domain.md#business-logic-encapsulation\"\u003eBusiness Logic Encapsulation\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eNavigation\u003c/strong\u003e: \u003ca href=\"./01-customer-entity.md\"\u003e← Previous: Customer Entity\u003c/a\u003e | \u003ca href=\"../../1-introduction-to-the-domain.md\"\u003e← Back to Introduction\u003c/a\u003e | \u003ca href=\"./README.md\"\u003e← Back to Java Index\u003c/a\u003e\u003c/p\u003e\n\u003chr\u003e\n\u003cpre\u003e\u003ccode class=\"language-java\"\u003e// Java Example - Order Entity with Business Logic Encapsulation\n// File: 2-Domain-Driven-Design/code-samples/java/03-order-entity.java\n\nimport java.time.LocalDateTime;\nimport java.util.ArrayList;\nimport java.util.List;\nimport java.util.Objects;\nimport java.util.UUID;\n\n// ✅ GOOD: Rich Domain Model with Behavior\npublic enum OrderStatus {\n    DRAFT(\u0026quot;Draft\u0026quot;),\n    CONFIRMED(\u0026quot;Confirmed\u0026quot;),\n    SHIPPED(\u0026quot;Shipped\u0026quot;),\n    DELIVERED(\u0026quot;Delivered\u0026quot;),\n    CANCELLED(\u0026quot;Cancelled\u0026quot;);\n    \n    private final String value;\n    \n    OrderStatus(String value) {\n        this.value = value;\n    }\n    \n    public String getValue() {\n        return value;\n    }\n}\n\n// ✅ GOOD: Value Objects for Identity\npublic class OrderId {\n    private final String value;\n    \n    private OrderId(String value) {\n        if (value == null || value.trim().isEmpty()) {\n            throw new IllegalArgumentException(\u0026quot;Order ID cannot be null or empty\u0026quot;);\n        }\n        this.value = value.trim();\n    }\n    \n    public static OrderId generate() {\n        return new OrderId(UUID.randomUUID().toString());\n    }\n    \n    public static OrderId of(String value) {\n        return new OrderId(value);\n    }\n    \n    public String getValue() {\n        return value;\n    }\n    \n    @Override\n    public boolean equals(Object obj) {\n        if (this == obj) return true;\n        if (obj == null || getClass() != obj.getClass()) return false;\n        OrderId orderId = (OrderId) obj;\n        return Objects.equals(value, orderId.value);\n    }\n    \n    @Override\n    public int hashCode() {\n        return Objects.hash(value);\n    }\n    \n    @Override\n    public String toString() {\n        return value;\n    }\n}\n\npublic class CustomerId {\n    private final String value;\n    \n    private CustomerId(String value) {\n        if (value == null || value.trim().isEmpty()) {\n            throw new IllegalArgumentException(\u0026quot;Customer ID cannot be null or empty\u0026quot;);\n        }\n        this.value = value.trim();\n    }\n    \n    public static CustomerId of(String value) {\n        return new CustomerId(value);\n    }\n    \n    public String getValue() {\n        return value;\n    }\n    \n    @Override\n    public boolean equals(Object obj) {\n        if (this == obj) return true;\n        if (obj == null || getClass() != obj.getClass()) return false;\n        CustomerId customerId = (CustomerId) obj;\n        return Objects.equals(value, customerId.value);\n    }\n    \n    @Override\n    public int hashCode() {\n        return Objects.hash(value);\n    }\n    \n    @Override\n    public String toString() {\n        return value;\n    }\n}\n\npublic class ProductId {\n    private final String value;\n    \n    private ProductId(String value) {\n        if (value == null || value.trim().isEmpty()) {\n            throw new IllegalArgumentException(\u0026quot;Product ID cannot be null or empty\u0026quot;);\n        }\n        this.value = value.trim();\n    }\n    \n    public static ProductId of(String value) {\n        return new ProductId(value);\n    }\n    \n    public String getValue() {\n        return value;\n    }\n    \n    @Override\n    public boolean equals(Object obj) {\n        if (this == obj) return true;\n        if (obj == null || getClass() != obj.getClass()) return false;\n        ProductId productId = (ProductId) obj;\n        return Objects.equals(value, productId.value);\n    }\n    \n    @Override\n    public int hashCode() {\n        return Objects.hash(value);\n    }\n    \n    @Override\n    public String toString() {\n        return value;\n    }\n}\n\n// ✅ GOOD: Value Object for Money\npublic class Money {\n    private final double amount;\n    private final String currency;\n    \n    private Money(double amount, String currency) {\n        if (amount \u0026lt; 0) {\n            throw new IllegalArgumentException(\u0026quot;Amount cannot be negative\u0026quot;);\n        }\n        if (currency == null || currency.trim().isEmpty()) {\n            throw new IllegalArgumentException(\u0026quot;Currency cannot be null or empty\u0026quot;);\n        }\n        this.amount = amount;\n        this.currency = currency.trim();\n    }\n    \n    public static Money of(double amount, String currency) {\n        return new Money(amount, currency);\n    }\n    \n    public static Money zero(String currency) {\n        return new Money(0.0, currency);\n    }\n    \n    public Money add(Money other) {\n        if (!this.currency.equals(other.currency)) {\n            throw new IllegalArgumentException(\u0026quot;Cannot add different currencies\u0026quot;);\n        }\n        return new Money(this.amount + other.amount, this.currency);\n    }\n    \n    public Money subtract(Money other) {\n        if (!this.currency.equals(other.currency)) {\n            throw new IllegalArgumentException(\u0026quot;Cannot subtract different currencies\u0026quot;);\n        }\n        return new Money(this.amount - other.amount, this.currency);\n    }\n    \n    public Money multiply(double factor) {\n        if (factor \u0026lt; 0) {\n            throw new IllegalArgumentException(\u0026quot;Factor cannot be negative\u0026quot;);\n        }\n        return new Money(this.amount * factor, this.currency);\n    }\n    \n    public double getAmount() {\n        return amount;\n    }\n    \n    public String getCurrency() {\n        return currency;\n    }\n    \n    @Override\n    public boolean equals(Object obj) {\n        if (this == obj) return true;\n        if (obj == null || getClass() != obj.getClass()) return false;\n        Money money = (Money) obj;\n        return Double.compare(money.amount, amount) == 0 \u0026amp;\u0026amp;\n               Objects.equals(currency, money.currency);\n    }\n    \n    @Override\n    public int hashCode() {\n        return Objects.hash(amount, currency);\n    }\n    \n    @Override\n    public String toString() {\n        return String.format(\u0026quot;%s %.2f\u0026quot;, currency, amount);\n    }\n}\n\n// ✅ GOOD: Value Object for Order Item\npublic class OrderItem {\n    private final ProductId productId;\n    private final int quantity;\n    private final Money unitPrice;\n    \n    public OrderItem(ProductId productId, int quantity, Money unitPrice) {\n        if (productId == null) {\n            throw new IllegalArgumentException(\u0026quot;Product ID cannot be null\u0026quot;);\n        }\n        if (quantity \u0026lt;= 0) {\n            throw new IllegalArgumentException(\u0026quot;Quantity must be positive\u0026quot;);\n        }\n        if (unitPrice == null) {\n            throw new IllegalArgumentException(\u0026quot;Unit price cannot be null\u0026quot;);\n        }\n        this.productId = productId;\n        this.quantity = quantity;\n        this.unitPrice = unitPrice;\n    }\n    \n    public ProductId getProductId() {\n        return productId;\n    }\n    \n    public int getQuantity() {\n        return quantity;\n    }\n    \n    public Money getUnitPrice() {\n        return unitPrice;\n    }\n    \n    public Money getTotalPrice() {\n        return unitPrice.multiply(quantity);\n    }\n    \n    @Override\n    public boolean equals(Object obj) {\n        if (this == obj) return true;\n        if (obj == null || getClass() != obj.getClass()) return false;\n        OrderItem orderItem = (OrderItem) obj;\n        return quantity == orderItem.quantity \u0026amp;\u0026amp;\n               Objects.equals(productId, orderItem.productId) \u0026amp;\u0026amp;\n               Objects.equals(unitPrice, orderItem.unitPrice);\n    }\n    \n    @Override\n    public int hashCode() {\n        return Objects.hash(productId, quantity, unitPrice);\n    }\n    \n    @Override\n    public String toString() {\n        return String.format(\u0026quot;OrderItem{productId=%s, quantity=%d, unitPrice=%s}\u0026quot;,\n                productId, quantity, unitPrice);\n    }\n}\n\n// ✅ GOOD: Domain Entity with Rich Behavior\npublic class Order {\n    private final OrderId id;\n    private final CustomerId customerId;\n    private final LocalDateTime createdAt;\n    private final List\u0026lt;OrderItem\u0026gt; items;\n    private OrderStatus status;\n    private LocalDateTime confirmedAt;\n    private LocalDateTime shippedAt;\n    \n    public Order(OrderId id, CustomerId customerId) {\n        this(id, customerId, LocalDateTime.now());\n    }\n    \n    public Order(OrderId id, CustomerId customerId, LocalDateTime createdAt) {\n        if (id == null) {\n            throw new IllegalArgumentException(\u0026quot;Order ID cannot be null\u0026quot;);\n        }\n        if (customerId == null) {\n            throw new IllegalArgumentException(\u0026quot;Customer ID cannot be null\u0026quot;);\n        }\n        if (createdAt == null) {\n            throw new IllegalArgumentException(\u0026quot;Created at cannot be null\u0026quot;);\n        }\n        \n        this.id = id;\n        this.customerId = customerId;\n        this.createdAt = createdAt;\n        this.items = new ArrayList\u0026lt;\u0026gt;();\n        this.status = OrderStatus.DRAFT;\n    }\n    \n    // ✅ Identity properties\n    public OrderId getId() {\n        return id;\n    }\n    \n    public CustomerId getCustomerId() {\n        return customerId;\n    }\n    \n    public LocalDateTime getCreatedAt() {\n        return createdAt;\n    }\n    \n    public OrderStatus getStatus() {\n        return status;\n    }\n    \n    public List\u0026lt;OrderItem\u0026gt; getItems() {\n        return new ArrayList\u0026lt;\u0026gt;(items); // Return copy to maintain encapsulation\n    }\n    \n    public int getItemCount() {\n        return items.size();\n    }\n    \n    public Money getTotalAmount() {\n        if (items.isEmpty()) {\n            return Money.zero(\u0026quot;USD\u0026quot;);\n        }\n        \n        Money total = items.get(0).getTotalPrice();\n        for (int i = 1; i \u0026lt; items.size(); i++) {\n            total = total.add(items.get(i).getTotalPrice());\n        }\n        return total;\n    }\n    \n    // ✅ Business Logic Encapsulation\n    public void addItem(ProductId productId, int quantity, Money unitPrice) {\n        if (status != OrderStatus.DRAFT) {\n            throw new IllegalStateException(\u0026quot;Cannot modify confirmed order\u0026quot;);\n        }\n        \n        if (quantity \u0026lt;= 0) {\n            throw new IllegalArgumentException(\u0026quot;Quantity must be positive\u0026quot;);\n        }\n        \n        // Business rule: Check if item already exists\n        int existingItemIndex = findItemIndex(productId);\n        \n        if (existingItemIndex \u0026gt;= 0) {\n            // Update existing item quantity\n            OrderItem existingItem = items.get(existingItemIndex);\n            int newQuantity = existingItem.getQuantity() + quantity;\n            OrderItem updatedItem = new OrderItem(productId, newQuantity, unitPrice);\n            items.set(existingItemIndex, updatedItem);\n        } else {\n            // Add new item\n            OrderItem newItem = new OrderItem(productId, quantity, unitPrice);\n            items.add(newItem);\n        }\n    }\n    \n    public void removeItem(ProductId productId) {\n        if (status != OrderStatus.DRAFT) {\n            throw new IllegalStateException(\u0026quot;Cannot modify confirmed order\u0026quot;);\n        }\n        \n        int itemIndex = findItemIndex(productId);\n        if (itemIndex \u0026gt;= 0) {\n            items.remove(itemIndex);\n        } else {\n            throw new IllegalArgumentException(\u0026quot;Item not found in order\u0026quot;);\n        }\n    }\n    \n    public void updateItemQuantity(ProductId productId, int newQuantity) {\n        if (status != OrderStatus.DRAFT) {\n            throw new IllegalStateException(\u0026quot;Cannot modify confirmed order\u0026quot;);\n        }\n        \n        if (newQuantity \u0026lt;= 0) {\n            throw new IllegalArgumentException(\u0026quot;Quantity must be positive\u0026quot;);\n        }\n        \n        int itemIndex = findItemIndex(productId);\n        if (itemIndex \u0026gt;= 0) {\n            OrderItem existingItem = items.get(itemIndex);\n            OrderItem updatedItem = new OrderItem(productId, newQuantity, existingItem.getUnitPrice());\n            items.set(itemIndex, updatedItem);\n        } else {\n            throw new IllegalArgumentException(\u0026quot;Item not found in order\u0026quot;);\n        }\n    }\n    \n    public void confirm() {\n        if (status != OrderStatus.DRAFT) {\n            throw new IllegalStateException(\u0026quot;Order is not in draft status\u0026quot;);\n        }\n        \n        if (items.isEmpty()) {\n            throw new IllegalStateException(\u0026quot;Cannot confirm empty order\u0026quot;);\n        }\n        \n        // Business rule: Minimum order amount\n        if (getTotalAmount().getAmount() \u0026lt; 10.0) {\n            throw new IllegalStateException(\u0026quot;Order amount must be at least $10.00\u0026quot;);\n        }\n        \n        this.status = OrderStatus.CONFIRMED;\n        this.confirmedAt = LocalDateTime.now();\n    }\n    \n    public void ship() {\n        if (status != OrderStatus.CONFIRMED) {\n            throw new IllegalStateException(\u0026quot;Order must be confirmed before shipping\u0026quot;);\n        }\n        \n        this.status = OrderStatus.SHIPPED;\n        this.shippedAt = LocalDateTime.now();\n    }\n    \n    public void deliver() {\n        if (status != OrderStatus.SHIPPED) {\n            throw new IllegalStateException(\u0026quot;Order must be shipped before delivery\u0026quot;);\n        }\n        \n        this.status = OrderStatus.DELIVERED;\n    }\n    \n    public void cancel() {\n        if (status == OrderStatus.SHIPPED || status == OrderStatus.DELIVERED) {\n            throw new IllegalStateException(\u0026quot;Cannot cancel shipped or delivered order\u0026quot;);\n        }\n        \n        this.status = OrderStatus.CANCELLED;\n    }\n    \n    // ✅ Business Rules as Methods\n    public boolean canBeModified() {\n        return status == OrderStatus.DRAFT;\n    }\n    \n    public boolean canBeConfirmed() {\n        return status == OrderStatus.DRAFT \u0026amp;\u0026amp; \n               !items.isEmpty() \u0026amp;\u0026amp; \n               getTotalAmount().getAmount() \u0026gt;= 10.0;\n    }\n    \n    public boolean canBeShipped() {\n        return status == OrderStatus.CONFIRMED;\n    }\n    \n    public boolean canBeDelivered() {\n        return status == OrderStatus.SHIPPED;\n    }\n    \n    public boolean canBeCancelled() {\n        return status == OrderStatus.DRAFT || status == OrderStatus.CONFIRMED;\n    }\n    \n    // ✅ Helper methods\n    private int findItemIndex(ProductId productId) {\n        for (int i = 0; i \u0026lt; items.size(); i++) {\n            if (items.get(i).getProductId().equals(productId)) {\n                return i;\n            }\n        }\n        return -1;\n    }\n    \n    public OrderItem getItemByProductId(ProductId productId) {\n        int itemIndex = findItemIndex(productId);\n        return itemIndex \u0026gt;= 0 ? items.get(itemIndex) : null;\n    }\n    \n    public boolean hasItem(ProductId productId) {\n        return findItemIndex(productId) \u0026gt;= 0;\n    }\n    \n    // ✅ Domain Events (simplified)\n    public List\u0026lt;String\u0026gt; getDomainEvents() {\n        List\u0026lt;String\u0026gt; events = new ArrayList\u0026lt;\u0026gt;();\n        if (status == OrderStatus.CONFIRMED) {\n            events.add(\u0026quot;OrderConfirmed\u0026quot;);\n        }\n        if (status == OrderStatus.SHIPPED) {\n            events.add(\u0026quot;OrderShipped\u0026quot;);\n        }\n        if (status == OrderStatus.DELIVERED) {\n            events.add(\u0026quot;OrderDelivered\u0026quot;);\n        }\n        if (status == OrderStatus.CANCELLED) {\n            events.add(\u0026quot;OrderCancelled\u0026quot;);\n        }\n        return events;\n    }\n    \n    @Override\n    public boolean equals(Object obj) {\n        if (this == obj) return true;\n        if (obj == null || getClass() != obj.getClass()) return false;\n        Order order = (Order) obj;\n        return Objects.equals(id, order.id);\n    }\n    \n    @Override\n    public int hashCode() {\n        return Objects.hash(id);\n    }\n    \n    @Override\n    public String toString() {\n        return String.format(\u0026quot;Order{id=%s, customerId=%s, status=%s, items=%d, total=%s}\u0026quot;,\n                id, customerId, status.getValue(), items.size(), getTotalAmount());\n    }\n}\n\n// ❌ BAD: Anemic Domain Model\nclass BadOrder {\n    // ❌ Only data, no behavior\n    public String id;\n    public String customerId;\n    public List\u0026lt;Object\u0026gt; items;\n    public String status;\n    public double totalAmount;\n    public LocalDateTime createdAt;\n    \n    public BadOrder(String id, String customerId) {\n        this.id = id;\n        this.customerId = customerId;\n        this.items = new ArrayList\u0026lt;\u0026gt;();\n        this.status = \u0026quot;Draft\u0026quot;;\n        this.totalAmount = 0.0;\n        this.createdAt = LocalDateTime.now();\n    }\n    \n    // ❌ Business logic in external service\n    public void addItem(String productId, int quantity, double unitPrice) {\n        // Business logic should be in the domain object\n        if (!\u0026quot;Draft\u0026quot;.equals(status)) {\n            throw new IllegalArgumentException(\u0026quot;Cannot modify confirmed order\u0026quot;);\n        }\n        // ... rest of logic\n    }\n}\n\n// ✅ GOOD: Domain Service for Complex Business Logic\nclass OrderPricingService {\n    // ✅ Stateless service - no instance variables\n    public Money calculateOrderTotal(Order order, Customer customer, Address shippingAddress) {\n        if (!customer.isActive()) {\n            throw new IllegalArgumentException(\u0026quot;Cannot calculate pricing for inactive customer\u0026quot;);\n        }\n        \n        // ✅ Pure function - same inputs always produce same outputs\n        Money total = order.getTotalAmount();\n        total = applyCustomerDiscount(total, customer);\n        total = applyBulkDiscount(total, order);\n        \n        Money tax = calculateTax(total, shippingAddress);\n        Money shipping = calculateShipping(order, shippingAddress);\n        \n        return total.add(tax).add(shipping);\n    }\n    \n    // ✅ Private methods for complex calculations\n    private Money applyCustomerDiscount(Money total, Customer customer) {\n        double discountRate = getCustomerDiscountRate(customer.getCustomerType());\n        Money discountAmount = total.multiply(discountRate);\n        return total.subtract(discountAmount);\n    }\n    \n    private double getCustomerDiscountRate(String customerType) {\n        switch (customerType) {\n            case \u0026quot;VIP\u0026quot;: return 0.15;\n            case \u0026quot;Premium\u0026quot;: return 0.10;\n            case \u0026quot;Standard\u0026quot;: return 0.05;\n            default: return 0.05;\n        }\n    }\n    \n    private Money applyBulkDiscount(Money total, Order order) {\n        if (total.getAmount() \u0026gt;= 1000) {\n            return total.multiply(0.10);\n        } else if (total.getAmount() \u0026gt;= 500) {\n            return total.multiply(0.05);\n        } else if (total.getAmount() \u0026gt;= 100) {\n            return total.multiply(0.02);\n        }\n        return Money.zero(total.getCurrency());\n    }\n    \n    private Money calculateTax(Money amount, Address address) {\n        // Simplified tax calculation\n        if (\u0026quot;US\u0026quot;.equals(address.getCountry())) {\n            return amount.multiply(0.08);\n        }\n        return Money.zero(amount.getCurrency());\n    }\n    \n    private Money calculateShipping(Order order, Address address) {\n        // Simplified shipping calculation\n        if (\u0026quot;US\u0026quot;.equals(address.getCountry())) {\n            return Money.of(5.99, \u0026quot;USD\u0026quot;);\n        }\n        return Money.of(15.99, \u0026quot;USD\u0026quot;);\n    }\n}\n\n// ✅ GOOD: Factory for Complex Object Creation\nclass OrderFactory {\n    public static Order createDraftOrder(CustomerId customerId) {\n        OrderId orderId = OrderId.generate();\n        return new Order(orderId, customerId);\n    }\n    \n    public static Order createOrderFromCart(CustomerId customerId, List\u0026lt;CartItem\u0026gt; cartItems) {\n        Order order = createDraftOrder(customerId);\n        \n        for (CartItem cartItem : cartItems) {\n            ProductId productId = ProductId.of(cartItem.getProductId());\n            Money unitPrice = Money.of(cartItem.getUnitPrice(), \u0026quot;USD\u0026quot;);\n            order.addItem(productId, cartItem.getQuantity(), unitPrice);\n        }\n        \n        return order;\n    }\n}\n\n// ✅ GOOD: Specification Pattern for Complex Business Rules\nclass OrderSpecification {\n    public boolean canBeConfirmed(Order order) {\n        return order.getStatus() == OrderStatus.DRAFT \u0026amp;\u0026amp;\n               !order.getItems().isEmpty() \u0026amp;\u0026amp;\n               order.getTotalAmount().getAmount() \u0026gt;= 10.0 \u0026amp;\u0026amp;\n               hasValidItems(order);\n    }\n    \n    public boolean canBeShipped(Order order) {\n        return order.getStatus() == OrderStatus.CONFIRMED \u0026amp;\u0026amp;\n               hasShippingAddress(order) \u0026amp;\u0026amp;\n               allItemsInStock(order);\n    }\n    \n    private boolean hasValidItems(Order order) {\n        return order.getItems().stream()\n                .allMatch(item -\u0026gt; item.getQuantity() \u0026gt; 0);\n    }\n    \n    private boolean hasShippingAddress(Order order) {\n        // Simplified - would check actual address\n        return true;\n    }\n    \n    private boolean allItemsInStock(Order order) {\n        // Simplified - would check inventory\n        return true;\n    }\n}\n\n// Example usage\npublic class OrderExample {\n    public static void main(String[] args) {\n        // Create order\n        CustomerId customerId = CustomerId.of(\u0026quot;customer-123\u0026quot;);\n        Order order = OrderFactory.createDraftOrder(customerId);\n        \n        // Add items\n        ProductId product1 = ProductId.of(\u0026quot;product-1\u0026quot;);\n        ProductId product2 = ProductId.of(\u0026quot;product-2\u0026quot;);\n        \n        order.addItem(product1, 2, Money.of(15.99, \u0026quot;USD\u0026quot;));\n        order.addItem(product2, 1, Money.of(25.50, \u0026quot;USD\u0026quot;));\n        \n        System.out.println(\u0026quot;Order created: \u0026quot; + order);\n        System.out.println(\u0026quot;Total amount: \u0026quot; + order.getTotalAmount());\n        System.out.println(\u0026quot;Can be confirmed: \u0026quot; + order.canBeConfirmed());\n        \n        // Confirm order\n        order.confirm();\n        System.out.println(\u0026quot;Order confirmed: \u0026quot; + order);\n        System.out.println(\u0026quot;Can be shipped: \u0026quot; + order.canBeShipped());\n        \n        // Ship order\n        order.ship();\n        System.out.println(\u0026quot;Order shipped: \u0026quot; + order);\n        System.out.println(\u0026quot;Can be delivered: \u0026quot; + order.canBeDelivered());\n        \n        // Deliver order\n        order.deliver();\n        System.out.println(\u0026quot;Order delivered: \u0026quot; + order);\n    }\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch2\u003eKey Concepts Demonstrated\u003c/h2\u003e\n\u003ch3\u003eBusiness Logic Encapsulation\u003c/h3\u003e\n\u003ch4\u003e1. \u003cstrong\u003eRich Domain Models\u003c/strong\u003e\u003c/h4\u003e\n\u003cul\u003e\n\u003cli\u003e✅ Domain objects contain both data and behavior\u003c/li\u003e\n\u003cli\u003e✅ Business logic is encapsulated within the objects that own the data\u003c/li\u003e\n\u003cli\u003e✅ Methods express business operations clearly\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch4\u003e2. \u003cstrong\u003eBusiness Rules as Methods\u003c/strong\u003e\u003c/h4\u003e\n\u003cul\u003e\n\u003cli\u003e✅ Business rules are expressed as methods on domain objects\u003c/li\u003e\n\u003cli\u003e✅ Validation happens at the domain boundary\u003c/li\u003e\n\u003cli\u003e✅ Clear error messages for business rule violations\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch4\u003e3. \u003cstrong\u003eState Management\u003c/strong\u003e\u003c/h4\u003e\n\u003cul\u003e\n\u003cli\u003e✅ Order status is managed through business operations\u003c/li\u003e\n\u003cli\u003e✅ State transitions are controlled by business rules\u003c/li\u003e\n\u003cli\u003e✅ Invalid state transitions are prevented\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch4\u003e4. \u003cstrong\u003eDomain Events\u003c/strong\u003e\u003c/h4\u003e\n\u003cul\u003e\n\u003cli\u003e✅ Significant business events are captured\u003c/li\u003e\n\u003cli\u003e✅ Events can be used for integration and notifications\u003c/li\u003e\n\u003cli\u003e✅ Domain events maintain consistency\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003eOrder Entity Design Principles\u003c/h3\u003e\n\u003ch4\u003e\u003cstrong\u003eIdentity Management\u003c/strong\u003e\u003c/h4\u003e\n\u003cul\u003e\n\u003cli\u003e✅ Order has a unique identity (OrderId)\u003c/li\u003e\n\u003cli\u003e✅ Identity is immutable and generated\u003c/li\u003e\n\u003cli\u003e✅ Identity distinguishes orders from each other\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch4\u003e\u003cstrong\u003eBusiness Logic Encapsulation\u003c/strong\u003e\u003c/h4\u003e\n\u003cul\u003e\n\u003cli\u003e✅ Order contains all business rules for order management\u003c/li\u003e\n\u003cli\u003e✅ Operations like addItem, confirm, ship are methods\u003c/li\u003e\n\u003cli\u003e✅ Business rules prevent invalid operations\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch4\u003e\u003cstrong\u003eState Management\u003c/strong\u003e\u003c/h4\u003e\n\u003cul\u003e\n\u003cli\u003e✅ Order status is managed through business operations\u003c/li\u003e\n\u003cli\u003e✅ State transitions follow business rules\u003c/li\u003e\n\u003cli\u003e✅ Invalid transitions are prevented\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch4\u003e\u003cstrong\u003eValue Objects\u003c/strong\u003e\u003c/h4\u003e\n\u003cul\u003e\n\u003cli\u003e✅ OrderId, CustomerId, ProductId are value objects\u003c/li\u003e\n\u003cli\u003e✅ Money is a value object with business operations\u003c/li\u003e\n\u003cli\u003e✅ OrderItem is a value object representing order line items\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003eJava Benefits for Domain Modeling\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eStrong Typing\u003c/strong\u003e: Compile-time type checking\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eImmutability\u003c/strong\u003e: Final fields and immutable value objects\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eEncapsulation\u003c/strong\u003e: Private fields with public methods\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eMethod Chaining\u003c/strong\u003e: Fluent interfaces for operations\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eError Handling\u003c/strong\u003e: Clear exception messages for business rules\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eCollections\u003c/strong\u003e: Rich collection framework for managing items\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003eCommon Anti-Patterns to Avoid\u003c/h3\u003e\n\u003ch4\u003e\u003cstrong\u003eAnemic Domain Model\u003c/strong\u003e\u003c/h4\u003e\n\u003cul\u003e\n\u003cli\u003e❌ Domain objects contain only data\u003c/li\u003e\n\u003cli\u003e❌ Business logic in external services\u003c/li\u003e\n\u003cli\u003e❌ No encapsulation of business rules\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch4\u003e\u003cstrong\u003ePrimitive Obsession\u003c/strong\u003e\u003c/h4\u003e\n\u003cul\u003e\n\u003cli\u003e❌ Using primitives instead of domain types\u003c/li\u003e\n\u003cli\u003e❌ No type safety for business concepts\u003c/li\u003e\n\u003cli\u003e❌ Scattered validation logic\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch4\u003e\u003cstrong\u003eGod Object\u003c/strong\u003e\u003c/h4\u003e\n\u003cul\u003e\n\u003cli\u003e❌ Single object with too many responsibilities\u003c/li\u003e\n\u003cli\u003e❌ Hard to understand and maintain\u003c/li\u003e\n\u003cli\u003e❌ Violates Single Responsibility Principle\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003eRelated Concepts\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"./01-customer-entity.md\"\u003eCustomer Entity\u003c/a\u003e - Basic entity design\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"./02-money-value-object.md\"\u003eMoney Value Object\u003c/a\u003e - Value object example\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"./04-email-address-value-object.md\"\u003eEmailAddress Value Object\u003c/a\u003e - Validation example\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"../../1-introduction-to-the-domain.md#business-logic-encapsulation\"\u003eBusiness Logic Encapsulation\u003c/a\u003e - Business logic concepts\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e/*\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eNavigation:\u003c/li\u003e\n\u003cli\u003ePrevious: 01-customer-entity.md\u003c/li\u003e\n\u003cli\u003eNext: 04-email-address-value-object.md\u003c/li\u003e\n\u003cli\u003e\u003c/li\u003e\n\u003cli\u003eBack to: \u003ca href=\"../../1-introduction-to-the-domain.md#business-logic-encapsulation\"\u003eBusiness Logic Encapsulation\u003c/a\u003e\u003cbr\u003e */\u003c/li\u003e\n\u003c/ul\u003e\n"])</script><script>self.__next_f.push([1,"2:[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/6b40bd379144f5c8.css\",\"precedence\":\"next\",\"crossOrigin\":\"\"}]],[\"$\",\"$L3\",null,{\"buildId\":\"Mi_IUBpRsd6BRYXmSnup_\",\"assetPrefix\":\"\",\"initialCanonicalUrl\":\"/docs/2-Domain-Driven-Design/code-samples/java/03-order-entity\",\"initialTree\":[\"\",{\"children\":[\"docs\",{\"children\":[[\"slug\",\"2-Domain-Driven-Design/code-samples/java/03-order-entity\",\"c\"],{\"children\":[\"__PAGE__?{\\\"slug\\\":[\\\"2-Domain-Driven-Design\\\",\\\"code-samples\\\",\\\"java\\\",\\\"03-order-entity\\\"]}\",{}]}]}]},\"$undefined\",\"$undefined\",true],\"initialHead\":[false,\"$L4\"],\"globalErrorComponent\":\"$5\",\"children\":[null,[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[[\"$\",\"head\",null,{\"children\":[[\"$\",\"link\",null,{\"rel\":\"preconnect\",\"href\":\"https://fonts.googleapis.com\"}],[\"$\",\"link\",null,{\"rel\":\"preconnect\",\"href\":\"https://fonts.gstatic.com\",\"crossOrigin\":\"anonymous\"}],[\"$\",\"link\",null,{\"href\":\"https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700\u0026display=swap\",\"rel\":\"stylesheet\"}]]}],[\"$\",\"body\",null,{\"className\":\"antialiased\",\"children\":[\"$\",\"$L6\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\"],\"loading\":\"$undefined\",\"loadingStyles\":\"$undefined\",\"hasLoading\":false,\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"template\":[\"$\",\"$L7\",null,{}],\"templateStyles\":\"$undefined\",\"notFound\":[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":\"404\"}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],\"notFoundStyles\":[],\"childProp\":{\"current\":[\"$\",\"$L6\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"docs\",\"children\"],\"loading\":\"$undefined\",\"loadingStyles\":\"$undefined\",\"hasLoading\":false,\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"template\":[\"$\",\"$L7\",null,{}],\"templateStyles\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\",\"childProp\":{\"current\":[\"$\",\"$L6\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"docs\",\"children\",[\"slug\",\"2-Domain-Driven-Design/code-samples/java/03-order-entity\",\"c\"],\"children\"],\"loading\":\"$undefined\",\"loadingStyles\":\"$undefined\",\"hasLoading\":false,\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"template\":[\"$\",\"$L7\",null,{}],\"templateStyles\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\",\"childProp\":{\"current\":[\"$L8\",[\"$\",\"div\",null,{\"className\":\"flex min-h-screen bg-gray-50\",\"children\":[[\"$\",\"aside\",null,{\"className\":\"sidebar\",\"children\":[\"$\",\"div\",null,{\"className\":\"sidebar-nav\",\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/\",\"className\":\"text-lg font-semibold text-gray-900 mb-4 block hover:text-blue-600\",\"children\":\"← Engineering 101\"}],[\"$\",\"h2\",null,{\"className\":\"text-lg font-semibold text-gray-900 mb-4\",\"children\":\"Course Content\"}],[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/1-SOLID-Principles\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles\",\"className\":\"sidebar-item\",\"children\":\"1-SOLID-Principles\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/1-SOLID-Principles/0-README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/0-README\",\"className\":\"sidebar-item\",\"children\":\"0-README\"}],false]}],[\"$\",\"li\",\"/docs/1-SOLID-Principles/1-Single-class-reponsibility-principle\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/1-Single-class-reponsibility-principle\",\"className\":\"sidebar-item\",\"children\":\"1-Single-class-reponsibility-principle\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/1-SOLID-Principles/1-Single-class-reponsibility-principle/README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/1-Single-class-reponsibility-principle/README\",\"className\":\"sidebar-item\",\"children\":\"README\"}],false]}]]}]}]]}],[\"$\",\"li\",\"/docs/1-SOLID-Principles/2-Open-closed-principle\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/2-Open-closed-principle\",\"className\":\"sidebar-item\",\"children\":\"2-Open-closed-principle\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/1-SOLID-Principles/2-Open-closed-principle/README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/2-Open-closed-principle/README\",\"className\":\"sidebar-item\",\"children\":\"README\"}],false]}]]}]}]]}],[\"$\",\"li\",\"/docs/1-SOLID-Principles/3-Liskov-substitution-principle\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/3-Liskov-substitution-principle\",\"className\":\"sidebar-item\",\"children\":\"3-Liskov-substitution-principle\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/1-SOLID-Principles/3-Liskov-substitution-principle/README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/3-Liskov-substitution-principle/README\",\"className\":\"sidebar-item\",\"children\":\"README\"}],false]}]]}]}]]}],[\"$\",\"li\",\"/docs/1-SOLID-Principles/4-Interface-segregation-principle\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/4-Interface-segregation-principle\",\"className\":\"sidebar-item\",\"children\":\"4-Interface-segregation-principle\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/1-SOLID-Principles/4-Interface-segregation-principle/README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/4-Interface-segregation-principle/README\",\"className\":\"sidebar-item\",\"children\":\"README\"}],false]}]]}]}]]}],[\"$\",\"li\",\"/docs/1-SOLID-Principles/5-Dependency-segregation-principle\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/5-Dependency-segregation-principle\",\"className\":\"sidebar-item\",\"children\":\"5-Dependency-segregation-principle\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/1-SOLID-Principles/5-Dependency-segregation-principle/README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/5-Dependency-segregation-principle/README\",\"className\":\"sidebar-item\",\"children\":\"README\"}],false]}]]}]}]]}],[\"$\",\"li\",\"/docs/1-SOLID-Principles/reference-application\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/reference-application\",\"className\":\"sidebar-item\",\"children\":\"reference-application\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/1-SOLID-Principles/reference-application/CI-README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/reference-application/CI-README\",\"className\":\"sidebar-item\",\"children\":\"CI-README\"}],false]}],[\"$\",\"li\",\"/docs/1-SOLID-Principles/reference-application/Dotnet\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/reference-application/Dotnet\",\"className\":\"sidebar-item\",\"children\":\"Dotnet\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/1-SOLID-Principles/reference-application/Dotnet/README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/reference-application/Dotnet/README\",\"className\":\"sidebar-item\",\"children\":\"README\"}],false]}]]}]}]]}],[\"$\",\"li\",\"/docs/1-SOLID-Principles/reference-application/Java\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/reference-application/Java\",\"className\":\"sidebar-item\",\"children\":\"Java\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/1-SOLID-Principles/reference-application/Java/README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/reference-application/Java/README\",\"className\":\"sidebar-item\",\"children\":\"README\"}],false]}]]}]}]]}],[\"$\",\"li\",\"/docs/1-SOLID-Principles/reference-application/Python\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/reference-application/Python\",\"className\":\"sidebar-item\",\"children\":\"Python\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/1-SOLID-Principles/reference-application/Python/.pytest_cache\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/reference-application/Python/.pytest_cache\",\"className\":\"sidebar-item\",\"children\":\".pytest_cache\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/1-SOLID-Principles/reference-application/Python/.pytest_cache/README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/reference-application/Python/.pytest_cache/README\",\"className\":\"sidebar-item\",\"children\":\"README\"}],false]}]]}]}]]}],[\"$\",\"li\",\"/docs/1-SOLID-Principles/reference-application/Python/README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/reference-application/Python/README\",\"className\":\"sidebar-item\",\"children\":\"README\"}],false]}]]}]}]]}],[\"$\",\"li\",\"/docs/1-SOLID-Principles/reference-application/README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/reference-application/README\",\"className\":\"sidebar-item\",\"children\":\"README\"}],false]}],[\"$\",\"li\",\"/docs/1-SOLID-Principles/reference-application/TypeScript\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/reference-application/TypeScript\",\"className\":\"sidebar-item\",\"children\":\"TypeScript\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/1-SOLID-Principles/reference-application/TypeScript/README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/reference-application/TypeScript/README\",\"className\":\"sidebar-item\",\"children\":\"README\"}],false]}]]}]}]]}]]}]}]]}]]}]}]]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design\",\"className\":\"sidebar-item\",\"children\":\"2-Domain-Driven-Design\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/0-README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/0-README\",\"className\":\"sidebar-item\",\"children\":\"0-README\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/1-Bounded-Contexts\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/1-Bounded-Contexts\",\"className\":\"sidebar-item\",\"children\":\"1-Bounded-Contexts\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/1-Bounded-Contexts/README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/1-Bounded-Contexts/README\",\"className\":\"sidebar-item\",\"children\":\"README\"}],false]}]]}]}]]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/1-introduction-to-the-domain\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/1-introduction-to-the-domain\",\"className\":\"sidebar-item\",\"children\":\"1-introduction-to-the-domain\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/2-Ubiquitous-Language\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/2-Ubiquitous-Language\",\"className\":\"sidebar-item\",\"children\":\"2-Ubiquitous-Language\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/2-Ubiquitous-Language/README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/2-Ubiquitous-Language/README\",\"className\":\"sidebar-item\",\"children\":\"README\"}],false]}]]}]}]]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/3-Domain-Models\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/3-Domain-Models\",\"className\":\"sidebar-item\",\"children\":\"3-Domain-Models\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/3-Domain-Models/README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/3-Domain-Models/README\",\"className\":\"sidebar-item\",\"children\":\"README\"}],false]}]]}]}]]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/4-Context-Mapping\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/4-Context-Mapping\",\"className\":\"sidebar-item\",\"children\":\"4-Context-Mapping\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/4-Context-Mapping/README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/4-Context-Mapping/README\",\"className\":\"sidebar-item\",\"children\":\"README\"}],false]}]]}]}]]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/5-Strategic-Patterns\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/5-Strategic-Patterns\",\"className\":\"sidebar-item\",\"children\":\"5-Strategic-Patterns\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/5-Strategic-Patterns/README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/5-Strategic-Patterns/README\",\"className\":\"sidebar-item\",\"children\":\"README\"}],false]}]]}]}]]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples\",\"className\":\"sidebar-item\",\"children\":\"code-samples\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/README\",\"className\":\"sidebar-item\",\"children\":\"README\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/csharp\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/csharp\",\"className\":\"sidebar-item\",\"children\":\"csharp\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/csharp/02-order-entity\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/csharp/02-order-entity\",\"className\":\"sidebar-item\",\"children\":\"02-order-entity\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/csharp/03-money-value-object\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/csharp/03-money-value-object\",\"className\":\"sidebar-item\",\"children\":\"03-money-value-object\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/csharp/04-email-address-value-object\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/csharp/04-email-address-value-object\",\"className\":\"sidebar-item\",\"children\":\"04-email-address-value-object\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/csharp/05-pricing-service\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/csharp/05-pricing-service\",\"className\":\"sidebar-item\",\"children\":\"05-pricing-service\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/csharp/06-customer-module\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/csharp/06-customer-module\",\"className\":\"sidebar-item\",\"children\":\"06-customer-module\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/csharp/07-order-tests\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/csharp/07-order-tests\",\"className\":\"sidebar-item\",\"children\":\"07-order-tests\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/csharp/08-money-tests\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/csharp/08-money-tests\",\"className\":\"sidebar-item\",\"children\":\"08-money-tests\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/csharp/09-pricing-service-tests\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/csharp/09-pricing-service-tests\",\"className\":\"sidebar-item\",\"children\":\"09-pricing-service-tests\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/csharp/11-testing-anti-patterns\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/csharp/11-testing-anti-patterns\",\"className\":\"sidebar-item\",\"children\":\"11-testing-anti-patterns\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/csharp/12-testing-best-practices\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/csharp/12-testing-best-practices\",\"className\":\"sidebar-item\",\"children\":\"12-testing-best-practices\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/csharp/13-domain-modeling-best-practices\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/csharp/13-domain-modeling-best-practices\",\"className\":\"sidebar-item\",\"children\":\"13-domain-modeling-best-practices\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/csharp/README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/csharp/README\",\"className\":\"sidebar-item\",\"children\":\"README\"}],false]}]]}]}]]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/introduction-to-the-domain\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/introduction-to-the-domain\",\"className\":\"sidebar-item\",\"children\":\"introduction-to-the-domain\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/java\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/java\",\"className\":\"sidebar-item\",\"children\":\"java\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/java/02-money-value-object\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/java/02-money-value-object\",\"className\":\"sidebar-item\",\"children\":\"02-money-value-object\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/java/03-inventory-service\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/java/03-inventory-service\",\"className\":\"sidebar-item\",\"children\":\"03-inventory-service\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/java/03-order-entity\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/java/03-order-entity\",\"className\":\"sidebar-item\",\"children\":\"03-order-entity\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/java/04-email-address-value-object\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/java/04-email-address-value-object\",\"className\":\"sidebar-item\",\"children\":\"04-email-address-value-object\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/java/04-order-tests\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/java/04-order-tests\",\"className\":\"sidebar-item\",\"children\":\"04-order-tests\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/java/05-pricing-service\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/java/05-pricing-service\",\"className\":\"sidebar-item\",\"children\":\"05-pricing-service\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/java/06-customer-module\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/java/06-customer-module\",\"className\":\"sidebar-item\",\"children\":\"06-customer-module\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/java/07-order-tests\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/java/07-order-tests\",\"className\":\"sidebar-item\",\"children\":\"07-order-tests\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/java/08-money-tests\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/java/08-money-tests\",\"className\":\"sidebar-item\",\"children\":\"08-money-tests\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/java/09-pricing-service-tests\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/java/09-pricing-service-tests\",\"className\":\"sidebar-item\",\"children\":\"09-pricing-service-tests\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/java/11-testing-anti-patterns\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/java/11-testing-anti-patterns\",\"className\":\"sidebar-item\",\"children\":\"11-testing-anti-patterns\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/java/12-testing-best-practices\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/java/12-testing-best-practices\",\"className\":\"sidebar-item\",\"children\":\"12-testing-best-practices\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/java/13-domain-modeling-best-practices\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/java/13-domain-modeling-best-practices\",\"className\":\"sidebar-item\",\"children\":\"13-domain-modeling-best-practices\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/java/README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/java/README\",\"className\":\"sidebar-item\",\"children\":\"README\"}],false]}]]}]}]]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/python\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/python\",\"className\":\"sidebar-item\",\"children\":\"python\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/python/02-money-value-object\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/python/02-money-value-object\",\"className\":\"sidebar-item\",\"children\":\"02-money-value-object\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/python/03-order-entity\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/python/03-order-entity\",\"className\":\"sidebar-item\",\"children\":\"03-order-entity\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/python/04-email-address-value-object\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/python/04-email-address-value-object\",\"className\":\"sidebar-item\",\"children\":\"04-email-address-value-object\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/python/05-pricing-service\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/python/05-pricing-service\",\"className\":\"sidebar-item\",\"children\":\"05-pricing-service\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/python/06-customer-module\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/python/06-customer-module\",\"className\":\"sidebar-item\",\"children\":\"06-customer-module\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/python/07-order-tests\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/python/07-order-tests\",\"className\":\"sidebar-item\",\"children\":\"07-order-tests\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/python/08-money-tests\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/python/08-money-tests\",\"className\":\"sidebar-item\",\"children\":\"08-money-tests\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/python/09-pricing-service-tests\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/python/09-pricing-service-tests\",\"className\":\"sidebar-item\",\"children\":\"09-pricing-service-tests\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/python/11-testing-anti-patterns\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/python/11-testing-anti-patterns\",\"className\":\"sidebar-item\",\"children\":\"11-testing-anti-patterns\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/python/12-testing-best-practices\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/python/12-testing-best-practices\",\"className\":\"sidebar-item\",\"children\":\"12-testing-best-practices\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/python/13-domain-modeling-best-practices\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/python/13-domain-modeling-best-practices\",\"className\":\"sidebar-item\",\"children\":\"13-domain-modeling-best-practices\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/python/README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/python/README\",\"className\":\"sidebar-item\",\"children\":\"README\"}],false]}]]}]}]]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/typescript\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/typescript\",\"className\":\"sidebar-item\",\"children\":\"typescript\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/typescript/02-money-value-object\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/typescript/02-money-value-object\",\"className\":\"sidebar-item\",\"children\":\"02-money-value-object\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/typescript/03-order-entity\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/typescript/03-order-entity\",\"className\":\"sidebar-item\",\"children\":\"03-order-entity\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/typescript/04-email-address-value-object\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/typescript/04-email-address-value-object\",\"className\":\"sidebar-item\",\"children\":\"04-email-address-value-object\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/typescript/05-pricing-service\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/typescript/05-pricing-service\",\"className\":\"sidebar-item\",\"children\":\"05-pricing-service\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/typescript/06-customer-module\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/typescript/06-customer-module\",\"className\":\"sidebar-item\",\"children\":\"06-customer-module\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/typescript/07-order-tests\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/typescript/07-order-tests\",\"className\":\"sidebar-item\",\"children\":\"07-order-tests\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/typescript/08-money-tests\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/typescript/08-money-tests\",\"className\":\"sidebar-item\",\"children\":\"08-money-tests\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/typescript/09-pricing-service-tests\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/typescript/09-pricing-service-tests\",\"className\":\"sidebar-item\",\"children\":\"09-pricing-service-tests\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/typescript/11-testing-anti-patterns\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/typescript/11-testing-anti-patterns\",\"className\":\"sidebar-item\",\"children\":\"11-testing-anti-patterns\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/typescript/12-testing-best-practices\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/typescript/12-testing-best-practices\",\"className\":\"sidebar-item\",\"children\":\"12-testing-best-practices\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/typescript/13-domain-modeling-best-practices\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/typescript/13-domain-modeling-best-practices\",\"className\":\"sidebar-item\",\"children\":\"13-domain-modeling-best-practices\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/typescript/README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/typescript/README\",\"className\":\"sidebar-item\",\"children\":\"README\"}],false]}]]}]}]]}]]}]}]]}]]}]}]]}]]}]]}]}],[\"$\",\"main\",null,{\"className\":\"main-content\",\"children\":[\"$\",\"div\",null,{\"className\":\"content-wrapper\",\"children\":[[\"$\",\"div\",null,{\"className\":\"page-header\",\"children\":[\"$\",\"h1\",null,{\"className\":\"page-title\",\"children\":\"03-order-entity\"}]}],[\"$\",\"div\",null,{\"className\":\"prose prose-lg max-w-none\",\"children\":[\"$\",\"div\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"$a\"}}]}]]}]}]]}],null],\"segment\":\"__PAGE__?{\\\"slug\\\":[\\\"2-Domain-Driven-Design\\\",\\\"code-samples\\\",\\\"java\\\",\\\"03-order-entity\\\"]}\"},\"styles\":[]}],\"segment\":[\"slug\",\"2-Domain-Driven-Design/code-samples/java/03-order-entity\",\"c\"]},\"styles\":[]}],\"segment\":\"docs\"},\"styles\":[]}]}]]}],null]}]]\n"])</script><script>self.__next_f.push([1,"4:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"title\",\"1\",{\"children\":\"Engineering 101\"}],[\"$\",\"meta\",\"2\",{\"name\":\"description\",\"content\":\"SOLID + DDD training site\"}],[\"$\",\"meta\",\"3\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\n8:null\n"])</script></body></html>

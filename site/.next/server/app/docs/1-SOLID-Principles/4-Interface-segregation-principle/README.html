@@ -1,0 +1,784 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/_next/static/css/6b40bd379144f5c8.css" crossorigin="" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/webpack-07dfb49dd72788a4.js" crossorigin=""/><script src="/_next/static/chunks/fd9d1056-e4950b334bc218cf.js" async="" crossorigin=""></script><script src="/_next/static/chunks/472-23f435a9c16afa13.js" async="" crossorigin=""></script><script src="/_next/static/chunks/main-app-efee19f0ce613ad9.js" async="" crossorigin=""></script><script src="/_next/static/chunks/326-c01c22be8dcac7b1.js" async=""></script><script src="/_next/static/chunks/app/docs/%5B...slug%5D/page-f5028c860b0f5f1d.js" async=""></script><title>Engineering 101</title><meta name="description" content="SOLID + DDD training site"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/><script src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js" crossorigin="" noModule=""></script></head><body class="antialiased"><div class="flex min-h-screen bg-gray-50"><aside class="sidebar"><div class="sidebar-nav"><a class="text-lg font-semibold text-gray-900 mb-4 block hover:text-blue-600" href="/">← Engineering 101</a><h2 class="text-lg font-semibold text-gray-900 mb-4">Course Content</h2><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/1-SOLID-Principles">1-SOLID-Principles</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/0-README">0-README</a></li><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/1-Single-class-reponsibility-principle">1-Single-class-reponsibility-principle</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/1-Single-class-reponsibility-principle/README">README</a></li></ul></div></li><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/2-Open-closed-principle">2-Open-closed-principle</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/2-Open-closed-principle/README">README</a></li></ul></div></li><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/3-Liskov-substitution-principle">3-Liskov-substitution-principle</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/3-Liskov-substitution-principle/README">README</a></li></ul></div></li><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/4-Interface-segregation-principle">4-Interface-segregation-principle</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/4-Interface-segregation-principle/README">README</a></li></ul></div></li><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/5-Dependency-segregation-principle">5-Dependency-segregation-principle</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/5-Dependency-segregation-principle/README">README</a></li></ul></div></li><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/reference-application">reference-application</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/reference-application/CI-README">CI-README</a></li><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/reference-application/Dotnet">Dotnet</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/reference-application/Dotnet/README">README</a></li></ul></div></li><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/reference-application/Java">Java</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/reference-application/Java/README">README</a></li></ul></div></li><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/reference-application/Python">Python</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/reference-application/Python/.pytest_cache">.pytest_cache</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/reference-application/Python/.pytest_cache/README">README</a></li></ul></div></li><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/reference-application/Python/README">README</a></li></ul></div></li><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/reference-application/README">README</a></li><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/reference-application/TypeScript">TypeScript</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/1-SOLID-Principles/reference-application/TypeScript/README">README</a></li></ul></div></li></ul></div></li></ul></div></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design">2-Domain-Driven-Design</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/0-README">0-README</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/1-Bounded-Contexts">1-Bounded-Contexts</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/1-Bounded-Contexts/README">README</a></li></ul></div></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/1-introduction-to-the-domain">1-introduction-to-the-domain</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/2-Ubiquitous-Language">2-Ubiquitous-Language</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/2-Ubiquitous-Language/README">README</a></li></ul></div></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/3-Domain-Models">3-Domain-Models</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/3-Domain-Models/README">README</a></li></ul></div></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/4-Context-Mapping">4-Context-Mapping</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/4-Context-Mapping/README">README</a></li></ul></div></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/5-Strategic-Patterns">5-Strategic-Patterns</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/5-Strategic-Patterns/README">README</a></li></ul></div></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples">code-samples</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/README">README</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/csharp">csharp</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/csharp/02-order-entity">02-order-entity</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/csharp/03-money-value-object">03-money-value-object</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/csharp/04-email-address-value-object">04-email-address-value-object</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/csharp/05-pricing-service">05-pricing-service</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/csharp/06-customer-module">06-customer-module</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/csharp/07-order-tests">07-order-tests</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/csharp/08-money-tests">08-money-tests</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/csharp/09-pricing-service-tests">09-pricing-service-tests</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/csharp/11-testing-anti-patterns">11-testing-anti-patterns</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/csharp/12-testing-best-practices">12-testing-best-practices</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/csharp/13-domain-modeling-best-practices">13-domain-modeling-best-practices</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/csharp/README">README</a></li></ul></div></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/introduction-to-the-domain">introduction-to-the-domain</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/java">java</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/java/02-money-value-object">02-money-value-object</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/java/03-inventory-service">03-inventory-service</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/java/03-order-entity">03-order-entity</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/java/04-email-address-value-object">04-email-address-value-object</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/java/04-order-tests">04-order-tests</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/java/05-pricing-service">05-pricing-service</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/java/06-customer-module">06-customer-module</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/java/07-order-tests">07-order-tests</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/java/08-money-tests">08-money-tests</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/java/09-pricing-service-tests">09-pricing-service-tests</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/java/11-testing-anti-patterns">11-testing-anti-patterns</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/java/12-testing-best-practices">12-testing-best-practices</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/java/13-domain-modeling-best-practices">13-domain-modeling-best-practices</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/java/README">README</a></li></ul></div></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/python">python</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/python/02-money-value-object">02-money-value-object</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/python/03-order-entity">03-order-entity</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/python/04-email-address-value-object">04-email-address-value-object</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/python/05-pricing-service">05-pricing-service</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/python/06-customer-module">06-customer-module</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/python/07-order-tests">07-order-tests</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/python/08-money-tests">08-money-tests</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/python/09-pricing-service-tests">09-pricing-service-tests</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/python/11-testing-anti-patterns">11-testing-anti-patterns</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/python/12-testing-best-practices">12-testing-best-practices</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/python/13-domain-modeling-best-practices">13-domain-modeling-best-practices</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/python/README">README</a></li></ul></div></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/typescript">typescript</a><div class="ml-4 mt-1"><ul class="space-y-1"><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/typescript/02-money-value-object">02-money-value-object</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/typescript/03-order-entity">03-order-entity</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/typescript/04-email-address-value-object">04-email-address-value-object</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/typescript/05-pricing-service">05-pricing-service</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/typescript/06-customer-module">06-customer-module</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/typescript/07-order-tests">07-order-tests</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/typescript/08-money-tests">08-money-tests</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/typescript/09-pricing-service-tests">09-pricing-service-tests</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/typescript/11-testing-anti-patterns">11-testing-anti-patterns</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/typescript/12-testing-best-practices">12-testing-best-practices</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/typescript/13-domain-modeling-best-practices">13-domain-modeling-best-practices</a></li><li><a class="sidebar-item" href="/docs/2-Domain-Driven-Design/code-samples/typescript/README">README</a></li></ul></div></li></ul></div></li></ul></div></li></ul></div></aside><main class="main-content"><div class="content-wrapper"><div class="page-header"><h1 class="page-title">README</h1></div><div class="prose prose-lg max-w-none"><div><h1>Interface Segregation Principle (ISP)</h1>
+<h2>Name</h2>
+<p><strong>Interface Segregation Principle</strong> - The &quot;I&quot; in SOLID</p>
+<h2>Goal of the Principle</h2>
+<p>Clients should not be forced to depend on interfaces they do not use. Interfaces should be focused and cohesive, containing only the methods that are relevant to their specific clients. This prevents clients from being burdened with unnecessary dependencies.</p>
+<h2>Theoretical Foundation</h2>
+<h3>Dependency Minimization Theory</h3>
+<p>The Interface Segregation Principle is based on the fundamental software engineering principle that dependencies should be minimized. Every dependency represents a potential point of failure and a constraint on system evolution. By ensuring clients only depend on what they actually use, we minimize these risks.</p>
+<h3>Interface Design Principles</h3>
+<p>ISP formalizes several key interface design concepts:</p>
+<ul>
+<li><strong>Cohesion</strong>: Interface methods should be related and work toward a common purpose</li>
+<li><strong>Minimal Interface</strong>: Interfaces should contain only essential methods</li>
+<li><strong>Client-Specific Design</strong>: Interfaces should be designed from the client&#39;s perspective</li>
+<li><strong>Composition over Inheritance</strong>: Multiple small interfaces are better than one large interface</li>
+</ul>
+<h3>Coupling Theory</h3>
+<p>The principle directly addresses coupling theory by ensuring that:</p>
+<ul>
+<li>Clients are only coupled to functionality they actually use</li>
+<li>Changes to unused interface methods don&#39;t affect clients</li>
+<li>System components remain loosely coupled</li>
+<li>Dependencies are explicit and intentional</li>
+</ul>
+<h3>Information Hiding</h3>
+<p>ISP supports information hiding by ensuring that clients are not exposed to implementation details they don&#39;t need. This reduces the cognitive load on developers and makes systems easier to understand and maintain.</p>
+<h3>Design Patterns Foundation</h3>
+<p>ISP is the theoretical foundation for several design patterns:</p>
+<ul>
+<li><strong>Adapter Pattern</strong>: Adapting interfaces to client needs</li>
+<li><strong>Facade Pattern</strong>: Providing simplified interfaces to complex subsystems</li>
+<li><strong>Proxy Pattern</strong>: Controlling access to interfaces</li>
+<li><strong>Decorator Pattern</strong>: Adding behavior without changing interfaces</li>
+</ul>
+<h2>Consequences of Violating ISP</h2>
+<h3>Unique ISP-Specific Issues</h3>
+<p><strong>Interface Pollution</strong></p>
+<ul>
+<li>Clients implementing methods they don&#39;t need (often as empty implementations)</li>
+<li>Confusion about which methods are actually required</li>
+<li>Difficulty understanding the true purpose of interfaces</li>
+<li>Reduced code clarity and maintainability</li>
+</ul>
+<p><strong>Unnecessary Dependencies</strong></p>
+<ul>
+<li>Changes to unused methods affect clients unnecessarily</li>
+<li>Clients become coupled to implementation details they don&#39;t need</li>
+<li>System becomes more fragile and harder to maintain</li>
+<li>Dependencies become unclear and difficult to track</li>
+</ul>
+<p><strong>Testing and Flexibility Problems</strong></p>
+<ul>
+<li>Clients must mock methods they don&#39;t use</li>
+<li>Test setup becomes more complex</li>
+<li>Mock objects become bloated and hard to maintain</li>
+<li>Clients cannot easily switch between different implementations</li>
+</ul>
+<h2>Impact on Static Code Analysis</h2>
+<h3>ISP-Specific Metrics</h3>
+<p><strong>Interface Complexity Reduction</strong></p>
+<ul>
+<li>Smaller, focused interfaces reduce cognitive complexity</li>
+<li>Better interface cohesion metrics in static analysis tools</li>
+<li>Reduced coupling metrics through focused dependencies</li>
+</ul>
+<p><strong>Dependency Analysis Enhancement</strong></p>
+<ul>
+<li>Tools can identify unnecessary interface dependencies</li>
+<li>Detection of fat interfaces with unused methods</li>
+<li>Recognition of proper interface segregation</li>
+</ul>
+<h3>ISP-Specific Tool Benefits</h3>
+<p><strong>ESLint/TSLint (JavaScript/TypeScript)</strong></p>
+<ul>
+<li>Better &quot;no-unused-vars&quot; compliance in interfaces</li>
+<li>Better &quot;max-lines-per-function&quot; in interface methods</li>
+</ul>
+<p><strong>Checkstyle (Java)</strong></p>
+<ul>
+<li>Better &quot;InterfaceIsType&quot; compliance</li>
+<li>Improved &quot;MethodLength&quot; in interface implementations</li>
+</ul>
+<p><strong>FxCop/StyleCop (.NET)</strong></p>
+<ul>
+<li>Fewer &quot;CA1500&quot; (Avoid excessive class coupling) violations</li>
+</ul>
+<h3>ISP-Specific Detection</h3>
+<p><strong>ISP Violation Detection</strong></p>
+<ul>
+<li>Detection of fat interfaces with too many methods</li>
+<li>Identification of clients implementing unused interface methods</li>
+<li>Recognition of interfaces that could be split</li>
+<li>Detection of unnecessary interface dependencies</li>
+</ul>
+<p><strong>Interface Analysis</strong></p>
+<ul>
+<li>Analysis of interface method usage patterns</li>
+<li>Detection of proper interface segregation</li>
+<li>Recognition of focused, cohesive interfaces</li>
+</ul>
+<h2>Role in Improving Software Quality</h2>
+<p>The Interface Segregation Principle is essential for creating maintainable and flexible software systems. It ensures that:</p>
+<ul>
+<li><strong>Focused Interfaces</strong>: Each interface has a single, well-defined purpose</li>
+<li><strong>Reduced Coupling</strong>: Clients only depend on what they actually use</li>
+<li><strong>Better Maintainability</strong>: Changes to unused methods don&#39;t affect clients</li>
+<li><strong>Improved Testability</strong>: Clients can be tested with minimal, focused interfaces</li>
+<li><strong>Enhanced Flexibility</strong>: Clients can choose exactly what functionality they need</li>
+</ul>
+<h2>How to Apply This Principle</h2>
+<h3>1. Identify Client Needs</h3>
+<p><strong>What it means</strong>: Understand what each client actually requires from an interface. Different clients may need different subsets of functionality, and forcing them to depend on unused methods creates unnecessary coupling.</p>
+<p><strong>How to do it</strong>:</p>
+<ul>
+<li>Analyze each class that implements an interface to see which methods it actually uses</li>
+<li>Group clients by their usage patterns to identify common needs</li>
+<li>Look for clients that implement methods with empty bodies or throw &quot;not implemented&quot; exceptions</li>
+<li>Consider the different contexts where the interface might be used</li>
+</ul>
+<p><strong>Example from our code samples</strong>: In the violating <code>IWorker</code> interface, we can see that <code>BasicWorker</code> only needs basic functionality (Work, Eat, Sleep) but is forced to implement development methods (Code, Design, Test, Deploy) that it doesn&#39;t use. The refactored solution creates separate interfaces (<code>IBasicWorker</code>, <code>IDeveloper</code>, <code>ITester</code>, <code>IDevOps</code>) so clients only implement what they need.</p>
+<h3>2. Split Large Interfaces</h3>
+<p><strong>What it means</strong>: Break down fat interfaces into smaller, focused interfaces that each serve a specific purpose. This prevents clients from being burdened with methods they don&#39;t need.</p>
+<p><strong>How to do it</strong>:</p>
+<ul>
+<li>Identify groups of related methods within a large interface</li>
+<li>Create separate interfaces for each group of related functionality</li>
+<li>Ensure each new interface has a single, well-defined responsibility</li>
+<li>Use descriptive names that clearly indicate the interface&#39;s purpose</li>
+</ul>
+<p><strong>Example from our code samples</strong>: The violating <code>MediaPlayer</code> interface combines audio and video functionality. The refactored solution splits it into <code>AudioPlayer</code> and <code>VideoPlayer</code> interfaces, allowing clients to implement only the functionality they need. A basic audio player no longer needs to implement video methods it can&#39;t support.</p>
+<h3>3. Use Composition</h3>
+<p><strong>What it means</strong>: When clients need functionality from multiple interfaces, combine them through composition rather than creating one large interface. This allows clients to pick and choose exactly what they need.</p>
+<p><strong>How to do it</strong>:</p>
+<ul>
+<li>Create multiple small, focused interfaces</li>
+<li>Allow classes to implement multiple interfaces when they need multiple capabilities</li>
+<li>Use interface inheritance to build more complex interfaces from simpler ones</li>
+<li>Design interfaces to be composable and work well together</li>
+</ul>
+<p><strong>Example from our code samples</strong>: The refactored worker solution allows <code>FullStackDeveloper</code> to implement multiple interfaces (<code>IBasicWorker</code>, <code>IDeveloper</code>, <code>ITester</code>, <code>IDevOps</code>) to get all the functionality it needs, while <code>BasicWorker</code> only implements <code>IBasicWorker</code>. This composition approach gives clients exactly the capabilities they need without forcing unused dependencies.</p>
+<h3>4. Avoid Empty Implementations</h3>
+<p><strong>What it means</strong>: Don&#39;t force clients to implement methods they don&#39;t need by providing empty implementations or throwing &quot;not implemented&quot; exceptions. This is a clear sign that the interface is too large.</p>
+<p><strong>How to do it</strong>:</p>
+<ul>
+<li>If you find yourself writing empty method implementations, the interface likely violates ISP</li>
+<li>Look for methods that throw &quot;NotImplementedException&quot; or similar exceptions</li>
+<li>Consider splitting the interface to eliminate the need for empty implementations</li>
+<li>Design interfaces so that every method is meaningful for every implementing class</li>
+</ul>
+<p><strong>Example from our code samples</strong>: The violating <code>BasicWorker</code> class throws &quot;NotImplementedException&quot; for development methods it can&#39;t perform. The refactored solution eliminates this problem by creating separate interfaces, so <code>BasicWorker</code> only implements methods it can actually perform.</p>
+<h3>5. Design for Specific Use Cases</h3>
+<p><strong>What it means</strong>: Create interfaces tailored to specific client needs rather than trying to create one interface that serves all possible use cases. This leads to more focused and useful interfaces.</p>
+<p><strong>How to do it</strong>:</p>
+<ul>
+<li>Design interfaces from the client&#39;s perspective, not the implementer&#39;s perspective</li>
+<li>Consider the specific scenarios where each interface will be used</li>
+<li>Create interfaces that are cohesive and work well together</li>
+<li>Avoid the temptation to add &quot;just in case&quot; methods to interfaces</li>
+</ul>
+<p><strong>Example from our code samples</strong>: The refactored document processor solution creates specific interfaces (<code>DocumentReader</code>, <code>DocumentWriter</code>, <code>DocumentPrinter</code>, <code>DocumentScanner</code>, <code>DocumentFaxer</code>, <code>DocumentEmailer</code>) that each serve specific use cases. A basic printer only needs to implement the interfaces it can actually support, making the design much cleaner and more maintainable.</p>
+<h2>Examples of Violations and Refactoring</h2>
+<h3>C# Example</h3>
+<p><strong>Violating ISP:</strong></p>
+<pre><code class="language-csharp">// Fat interface that forces clients to depend on unused methods
+public interface IWorker
+{
+    void Work();
+    void Eat();
+    void Sleep();
+    void Code();
+    void Design();
+    void Test();
+    void Deploy();
+}
+
+// Client that only needs basic worker functionality
+public class BasicWorker : IWorker
+{
+    public void Work()
+    {
+        Console.WriteLine(&quot;Basic worker working...&quot;);
+    }
+    
+    public void Eat()
+    {
+        Console.WriteLine(&quot;Basic worker eating...&quot;);
+    }
+    
+    public void Sleep()
+    {
+        Console.WriteLine(&quot;Basic worker sleeping...&quot;);
+    }
+    
+    // Forced to implement unused methods
+    public void Code()
+    {
+        throw new NotImplementedException(&quot;Basic worker can&#39;t code!&quot;);
+    }
+    
+    public void Design()
+    {
+        throw new NotImplementedException(&quot;Basic worker can&#39;t design!&quot;);
+    }
+    
+    public void Test()
+    {
+        throw new NotImplementedException(&quot;Basic worker can&#39;t test!&quot;);
+    }
+    
+    public void Deploy()
+    {
+        throw new NotImplementedException(&quot;Basic worker can&#39;t deploy!&quot;);
+    }
+}
+
+// Client that only needs development functionality
+public class Developer : IWorker
+{
+    public void Work()
+    {
+        Console.WriteLine(&quot;Developer working...&quot;);
+    }
+    
+    public void Eat()
+    {
+        Console.WriteLine(&quot;Developer eating...&quot;);
+    }
+    
+    public void Sleep()
+    {
+        Console.WriteLine(&quot;Developer sleeping...&quot;);
+    }
+    
+    public void Code()
+    {
+        Console.WriteLine(&quot;Developer coding...&quot;);
+    }
+    
+    public void Design()
+    {
+        Console.WriteLine(&quot;Developer designing...&quot;);
+    }
+    
+    public void Test()
+    {
+        Console.WriteLine(&quot;Developer testing...&quot;);
+    }
+    
+    public void Deploy()
+    {
+        Console.WriteLine(&quot;Developer deploying...&quot;);
+    }
+}
+</code></pre>
+<p><strong>Refactored - Applying ISP:</strong></p>
+<pre><code class="language-csharp">// Segregated interfaces - each focused on specific functionality
+public interface IBasicWorker
+{
+    void Work();
+    void Eat();
+    void Sleep();
+}
+
+public interface IDeveloper
+{
+    void Code();
+    void Design();
+}
+
+public interface ITester
+{
+    void Test();
+}
+
+public interface IDevOps
+{
+    void Deploy();
+}
+
+// Clients only implement what they need
+public class BasicWorker : IBasicWorker
+{
+    public void Work()
+    {
+        Console.WriteLine(&quot;Basic worker working...&quot;);
+    }
+    
+    public void Eat()
+    {
+        Console.WriteLine(&quot;Basic worker eating...&quot;);
+    }
+    
+    public void Sleep()
+    {
+        Console.WriteLine(&quot;Basic worker sleeping...&quot;);
+    }
+}
+
+public class Developer : IBasicWorker, IDeveloper
+{
+    public void Work()
+    {
+        Console.WriteLine(&quot;Developer working...&quot;);
+    }
+    
+    public void Eat()
+    {
+        Console.WriteLine(&quot;Developer eating...&quot;);
+    }
+    
+    public void Sleep()
+    {
+        Console.WriteLine(&quot;Developer sleeping...&quot;);
+    }
+    
+    public void Code()
+    {
+        Console.WriteLine(&quot;Developer coding...&quot;);
+    }
+    
+    public void Design()
+    {
+        Console.WriteLine(&quot;Developer designing...&quot;);
+    }
+}
+
+public class FullStackDeveloper : IBasicWorker, IDeveloper, ITester, IDevOps
+{
+    public void Work()
+    {
+        Console.WriteLine(&quot;Full-stack developer working...&quot;);
+    }
+    
+    public void Eat()
+    {
+        Console.WriteLine(&quot;Full-stack developer eating...&quot;);
+    }
+    
+    public void Sleep()
+    {
+        Console.WriteLine(&quot;Full-stack developer sleeping...&quot;);
+    }
+    
+    public void Code()
+    {
+        Console.WriteLine(&quot;Full-stack developer coding...&quot;);
+    }
+    
+    public void Design()
+    {
+        Console.WriteLine(&quot;Full-stack developer designing...&quot;);
+    }
+    
+    public void Test()
+    {
+        Console.WriteLine(&quot;Full-stack developer testing...&quot;);
+    }
+    
+    public void Deploy()
+    {
+        Console.WriteLine(&quot;Full-stack developer deploying...&quot;);
+    }
+}
+</code></pre>
+<h3>Java Example</h3>
+<p><strong>Violating ISP:</strong></p>
+<pre><code class="language-java">// Fat interface that forces clients to depend on unused methods
+public interface MediaPlayer {
+    void playAudio();
+    void playVideo();
+    void playAudioFromCD();
+    void playVideoFromDVD();
+    void playAudioFromUSB();
+    void playVideoFromUSB();
+}
+
+// Client that only needs audio functionality
+public class AudioPlayer implements MediaPlayer {
+    @Override
+    public void playAudio() {
+        System.out.println(&quot;Playing audio...&quot;);
+    }
+    
+    @Override
+    public void playVideo() {
+        throw new UnsupportedOperationException(&quot;Audio player can&#39;t play video!&quot;);
+    }
+    
+    @Override
+    public void playAudioFromCD() {
+        System.out.println(&quot;Playing audio from CD...&quot;);
+    }
+    
+    @Override
+    public void playVideoFromDVD() {
+        throw new UnsupportedOperationException(&quot;Audio player can&#39;t play video from DVD!&quot;);
+    }
+    
+    @Override
+    public void playAudioFromUSB() {
+        System.out.println(&quot;Playing audio from USB...&quot;);
+    }
+    
+    @Override
+    public void playVideoFromUSB() {
+        throw new UnsupportedOperationException(&quot;Audio player can&#39;t play video from USB!&quot;);
+    }
+}
+</code></pre>
+<p><strong>Refactored - Applying ISP:</strong></p>
+<pre><code class="language-java">// Segregated interfaces - each focused on specific functionality
+public interface AudioPlayer {
+    void playAudio();
+    void playAudioFromCD();
+    void playAudioFromUSB();
+}
+
+public interface VideoPlayer {
+    void playVideo();
+    void playVideoFromDVD();
+    void playVideoFromUSB();
+}
+
+// Clients only implement what they need
+public class BasicAudioPlayer implements AudioPlayer {
+    @Override
+    public void playAudio() {
+        System.out.println(&quot;Playing audio...&quot;);
+    }
+    
+    @Override
+    public void playAudioFromCD() {
+        System.out.println(&quot;Playing audio from CD...&quot;);
+    }
+    
+    @Override
+    public void playAudioFromUSB() {
+        System.out.println(&quot;Playing audio from USB...&quot;);
+    }
+}
+
+public class BasicVideoPlayer implements VideoPlayer {
+    @Override
+    public void playVideo() {
+        System.out.println(&quot;Playing video...&quot;);
+    }
+    
+    @Override
+    public void playVideoFromDVD() {
+        System.out.println(&quot;Playing video from DVD...&quot;);
+    }
+    
+    @Override
+    public void playVideoFromUSB() {
+        System.out.println(&quot;Playing video from USB...&quot;);
+    }
+}
+
+public class UniversalMediaPlayer implements AudioPlayer, VideoPlayer {
+    @Override
+    public void playAudio() {
+        System.out.println(&quot;Playing audio...&quot;);
+    }
+    
+    @Override
+    public void playAudioFromCD() {
+        System.out.println(&quot;Playing audio from CD...&quot;);
+    }
+    
+    @Override
+    public void playAudioFromUSB() {
+        System.out.println(&quot;Playing audio from USB...&quot;);
+    }
+    
+    @Override
+    public void playVideo() {
+        System.out.println(&quot;Playing video...&quot;);
+    }
+    
+    @Override
+    public void playVideoFromDVD() {
+        System.out.println(&quot;Playing video from DVD...&quot;);
+    }
+    
+    @Override
+    public void playVideoFromUSB() {
+        System.out.println(&quot;Playing video from USB...&quot;);
+    }
+}
+</code></pre>
+<h3>TypeScript Example</h3>
+<p><strong>Violating ISP:</strong></p>
+<pre><code class="language-typescript">// Fat interface that forces clients to depend on unused methods
+interface DocumentProcessor {
+    readDocument(): void;
+    writeDocument(): void;
+    printDocument(): void;
+    scanDocument(): void;
+    faxDocument(): void;
+    emailDocument(): void;
+}
+
+// Client that only needs basic document functionality
+class BasicPrinter implements DocumentProcessor {
+    readDocument(): void {
+        console.log(&quot;Reading document...&quot;);
+    }
+    
+    writeDocument(): void {
+        console.log(&quot;Writing document...&quot;);
+    }
+    
+    printDocument(): void {
+        console.log(&quot;Printing document...&quot;);
+    }
+    
+    // Forced to implement unused methods
+    scanDocument(): void {
+        throw new Error(&quot;Basic printer can&#39;t scan!&quot;);
+    }
+    
+    faxDocument(): void {
+        throw new Error(&quot;Basic printer can&#39;t fax!&quot;);
+    }
+    
+    emailDocument(): void {
+        throw new Error(&quot;Basic printer can&#39;t email!&quot;);
+    }
+}
+</code></pre>
+<p><strong>Refactored - Applying ISP:</strong></p>
+<pre><code class="language-typescript">// Segregated interfaces - each focused on specific functionality
+interface DocumentReader {
+    readDocument(): void;
+}
+
+interface DocumentWriter {
+    writeDocument(): void;
+}
+
+interface DocumentPrinter {
+    printDocument(): void;
+}
+
+interface DocumentScanner {
+    scanDocument(): void;
+}
+
+interface DocumentFaxer {
+    faxDocument(): void;
+}
+
+interface DocumentEmailer {
+    emailDocument(): void;
+}
+
+// Clients only implement what they need
+class BasicPrinter implements DocumentReader, DocumentWriter, DocumentPrinter {
+    readDocument(): void {
+        console.log(&quot;Reading document...&quot;);
+    }
+    
+    writeDocument(): void {
+        console.log(&quot;Writing document...&quot;);
+    }
+    
+    printDocument(): void {
+        console.log(&quot;Printing document...&quot;);
+    }
+}
+
+class ScannerPrinter implements DocumentReader, DocumentWriter, DocumentPrinter, DocumentScanner {
+    readDocument(): void {
+        console.log(&quot;Reading document...&quot;);
+    }
+    
+    writeDocument(): void {
+        console.log(&quot;Writing document...&quot;);
+    }
+    
+    printDocument(): void {
+        console.log(&quot;Printing document...&quot;);
+    }
+    
+    scanDocument(): void {
+        console.log(&quot;Scanning document...&quot;);
+    }
+}
+
+class AllInOnePrinter implements DocumentReader, DocumentWriter, DocumentPrinter, DocumentScanner, DocumentFaxer, DocumentEmailer {
+    readDocument(): void {
+        console.log(&quot;Reading document...&quot;);
+    }
+    
+    writeDocument(): void {
+        console.log(&quot;Writing document...&quot;);
+    }
+    
+    printDocument(): void {
+        console.log(&quot;Printing document...&quot;);
+    }
+    
+    scanDocument(): void {
+        console.log(&quot;Scanning document...&quot;);
+    }
+    
+    faxDocument(): void {
+        console.log(&quot;Faxing document...&quot;);
+    }
+    
+    emailDocument(): void {
+        console.log(&quot;Emailing document...&quot;);
+    }
+}
+</code></pre>
+<h2>How This Principle Helps with Code Quality</h2>
+<ol>
+<li><strong>Focused Interfaces</strong>: Each interface has a single, clear purpose</li>
+<li><strong>Reduced Dependencies</strong>: Clients only depend on what they actually use</li>
+<li><strong>Better Maintainability</strong>: Changes to unused methods don&#39;t affect clients</li>
+<li><strong>Improved Readability</strong>: Interfaces are easier to understand and use</li>
+<li><strong>Enhanced Flexibility</strong>: Clients can choose exactly what functionality they need</li>
+</ol>
+<h2>How This Principle Helps with Automated Testing</h2>
+<ol>
+<li><strong>Focused Testing</strong>: Each interface can be tested independently</li>
+<li><strong>Easier Mocking</strong>: Smaller interfaces are easier to mock and test</li>
+<li><strong>Reduced Test Complexity</strong>: Tests only need to cover relevant functionality</li>
+<li><strong>Better Test Coverage</strong>: Each interface can have comprehensive test coverage</li>
+<li><strong>Isolated Testing</strong>: Changes to one interface don&#39;t affect tests for others</li>
+</ol>
+<pre><code class="language-csharp">// Example of testing with ISP
+[Test]
+public void BasicWorker_ImplementsOnlyBasicFunctionality()
+{
+    // Arrange
+    IBasicWorker worker = new BasicWorker();
+    
+    // Act &amp; Assert
+    Assert.DoesNotThrow(() =&gt; worker.Work());
+    Assert.DoesNotThrow(() =&gt; worker.Eat());
+    Assert.DoesNotThrow(() =&gt; worker.Sleep());
+}
+
+[Test]
+public void Developer_ImplementsBasicAndDevelopmentFunctionality()
+{
+    // Arrange
+    IBasicWorker basicWorker = new Developer();
+    IDeveloper developer = new Developer();
+    
+    // Act &amp; Assert
+    Assert.DoesNotThrow(() =&gt; basicWorker.Work());
+    Assert.DoesNotThrow(() =&gt; developer.Code());
+    Assert.DoesNotThrow(() =&gt; developer.Design());
+}
+
+[Test]
+public void FullStackDeveloper_ImplementsAllFunctionality()
+{
+    // Arrange
+    IBasicWorker basicWorker = new FullStackDeveloper();
+    IDeveloper developer = new FullStackDeveloper();
+    ITester tester = new FullStackDeveloper();
+    IDevOps devOps = new FullStackDeveloper();
+    
+    // Act &amp; Assert
+    Assert.DoesNotThrow(() =&gt; basicWorker.Work());
+    Assert.DoesNotThrow(() =&gt; developer.Code());
+    Assert.DoesNotThrow(() =&gt; tester.Test());
+    Assert.DoesNotThrow(() =&gt; devOps.Deploy());
+}
+</code></pre>
+<h2>Summary</h2>
+<p>The Interface Segregation Principle is crucial for creating maintainable and flexible software systems. By ensuring that clients only depend on the interfaces they actually use, we achieve:</p>
+<ul>
+<li><strong>Focused Design</strong>: Interfaces are tailored to specific client needs</li>
+<li><strong>Reduced Coupling</strong>: Clients are not burdened with unnecessary dependencies</li>
+<li><strong>Better Maintainability</strong>: Changes to unused methods don&#39;t affect clients</li>
+<li><strong>Improved Testability</strong>: Smaller, focused interfaces are easier to test</li>
+<li><strong>Enhanced Flexibility</strong>: Clients can choose exactly what functionality they need</li>
+</ul>
+<p>This principle builds upon the Liskov Substitution Principle by ensuring that the interfaces we create are focused and cohesive. It also sets the foundation for the Dependency Inversion Principle, as well-designed interfaces are essential for proper dependency inversion.</p>
+<h2>Exercise 1: Design - Interface Segregation Principle</h2>
+<h3>Objective</h3>
+<p>Design focused, cohesive interfaces that don&#39;t force clients to depend on methods they don&#39;t use, following the Interface Segregation Principle.</p>
+<h3>Task</h3>
+<p>Analyze the e-commerce system and design interfaces that follow ISP principles.</p>
+<ol>
+<li><strong>Identify Interface Needs</strong>: Examine the refactored code from previous exercises and identify where interfaces are needed</li>
+<li><strong>Design Focused Interfaces</strong>: Create small, cohesive interfaces with single responsibilities</li>
+<li><strong>Avoid Fat Interfaces</strong>: Ensure interfaces don&#39;t force clients to implement unused methods</li>
+<li><strong>Plan Interface Composition</strong>: Design how multiple small interfaces can be combined when needed</li>
+</ol>
+<h3>Deliverables</h3>
+<ul>
+<li>Interface design showing focused, cohesive interfaces</li>
+<li>Analysis of client needs for each interface</li>
+<li>Interface composition plan</li>
+<li>Examples of fat interfaces to avoid</li>
+</ul>
+<h3>Getting Started</h3>
+<ol>
+<li>Navigate to the <code>ecom-exercises</code> folder</li>
+<li>Choose your preferred language (C#, Java, Python, or TypeScript)</li>
+<li>Review your refactored code from SRP, OCP, and LSP exercises</li>
+<li>Identify where interfaces would be beneficial</li>
+<li>Create your design without modifying any code</li>
+</ol>
+<hr>
+<h2>Exercise 2: Implementation - Interface Segregation Principle</h2>
+<h3>Objective</h3>
+<p>Implement your design from Exercise 1, ensuring that all existing unit tests continue to pass and clients only depend on the interfaces they actually use.</p>
+<h3>Task</h3>
+<p>Implement the focused interfaces according to your design while maintaining system functionality.</p>
+<ol>
+<li><strong>Create Interfaces</strong>: Implement the focused interfaces from your design</li>
+<li><strong>Refactor Classes</strong>: Modify existing classes to implement only the interfaces they need</li>
+<li><strong>Ensure Segregation</strong>: Verify that clients only depend on the functionality they use</li>
+<li><strong>Maintain Functionality</strong>: Ensure all existing unit tests pass</li>
+<li><strong>Test Interface Usage</strong>: Verify that clients can use only the functionality they require</li>
+</ol>
+<h3>Success Criteria</h3>
+<ul>
+<li>All existing unit tests pass</li>
+<li>The application runs without errors</li>
+<li>Clients only depend on the interfaces they actually use</li>
+<li>Interfaces are focused and cohesive</li>
+<li>The system maintains the same external behavior</li>
+</ul>
+<h3>Getting Started</h3>
+<ol>
+<li>Use your design from Exercise 1 as a guide</li>
+<li>Start by creating the focused interfaces</li>
+<li>Refactor existing classes to implement only what they need</li>
+<li>Run tests frequently to ensure you don&#39;t break existing functionality</li>
+<li>Verify that clients can use only the functionality they require</li>
+</ol>
+<h3>Implementation Best Practices</h3>
+<h4>Git Workflow</h4>
+<ol>
+<li><p><strong>Create a Feature Branch</strong>: Start from main and create a new branch for your ISP refactoring</p>
+<pre><code class="language-bash">git checkout main
+git pull origin main
+git checkout -b feature/isp-refactoring
+</code></pre>
+</li>
+<li><p><strong>Commit Frequently</strong>: Make small, focused commits as you refactor</p>
+<pre><code class="language-bash">git add .
+git commit -m &quot;Create IProductReader interface&quot;
+git commit -m &quot;Create IProductWriter interface&quot;
+git commit -m &quot;Refactor ProductService to implement segregated interfaces&quot;
+git commit -m &quot;Create ICartOperations interface&quot;
+git commit -m &quot;Create ICartCalculations interface&quot;
+</code></pre>
+</li>
+<li><p><strong>Test After Each Change</strong>: Run tests after each refactoring step</p>
+<pre><code class="language-bash"># Run tests to ensure nothing is broken
+dotnet test  # or equivalent for your language
+</code></pre>
+</li>
+</ol>
+<h4>Industry Best Practices</h4>
+<ol>
+<li><strong>Interface Segregation</strong>: Create small, focused interfaces with single responsibilities</li>
+<li><strong>Client-Specific Interfaces</strong>: Design interfaces based on actual client needs</li>
+<li><strong>Interface Composition</strong>: Combine multiple small interfaces when needed</li>
+<li><strong>Fat Interface Detection</strong>: Identify interfaces that force clients to depend on unused methods</li>
+<li><strong>Dependency Minimization</strong>: Ensure clients only depend on what they actually use</li>
+<li><strong>Interface Documentation</strong>: Document the purpose and usage of each interface</li>
+<li><strong>Backward Compatibility</strong>: Maintain compatibility when segregating existing interfaces</li>
+<li><strong>Testing Interfaces</strong>: Create tests that verify interface segregation works correctly</li>
+</ol>
+<h3>Learning Objectives</h3>
+<p>After completing both exercises, you should be able to:</p>
+<ul>
+<li>Design focused, cohesive interfaces</li>
+<li>Avoid fat interfaces that violate ISP</li>
+<li>Implement ISP while maintaining system functionality</li>
+<li>Use interface composition effectively</li>
+<li>Ensure clients only depend on what they use</li>
+</ul>
+<p><strong>Next</strong>: The <a href="../5-Dependency-segregation-principle/README.md">Dependency Inversion Principle</a> builds upon ISP by ensuring that high-level modules depend on abstractions rather than concrete implementations, completing the SOLID principles foundation.</p>
+</div></div></div></main></div><script src="/_next/static/chunks/webpack-07dfb49dd72788a4.js" crossorigin="" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0]);self.__next_f.push([2,null])</script><script>self.__next_f.push([1,"1:HL[\"/_next/static/css/6b40bd379144f5c8.css\",\"style\",{\"crossOrigin\":\"\"}]\n0:\"$L2\"\n"])</script><script>self.__next_f.push([1,"3:I[3728,[],\"\"]\n5:I[9928,[],\"\"]\n6:I[6954,[],\"\"]\n7:I[7264,[],\"\"]\n9:I[8326,[\"326\",\"static/chunks/326-c01c22be8dcac7b1.js\",\"687\",\"static/chunks/app/docs/%5B...slug%5D/page-f5028c860b0f5f1d.js\"],\"\"]\na:T798a,"])</script><script>self.__next_f.push([1,"\u003ch1\u003eInterface Segregation Principle (ISP)\u003c/h1\u003e\n\u003ch2\u003eName\u003c/h2\u003e\n\u003cp\u003e\u003cstrong\u003eInterface Segregation Principle\u003c/strong\u003e - The \u0026quot;I\u0026quot; in SOLID\u003c/p\u003e\n\u003ch2\u003eGoal of the Principle\u003c/h2\u003e\n\u003cp\u003eClients should not be forced to depend on interfaces they do not use. Interfaces should be focused and cohesive, containing only the methods that are relevant to their specific clients. This prevents clients from being burdened with unnecessary dependencies.\u003c/p\u003e\n\u003ch2\u003eTheoretical Foundation\u003c/h2\u003e\n\u003ch3\u003eDependency Minimization Theory\u003c/h3\u003e\n\u003cp\u003eThe Interface Segregation Principle is based on the fundamental software engineering principle that dependencies should be minimized. Every dependency represents a potential point of failure and a constraint on system evolution. By ensuring clients only depend on what they actually use, we minimize these risks.\u003c/p\u003e\n\u003ch3\u003eInterface Design Principles\u003c/h3\u003e\n\u003cp\u003eISP formalizes several key interface design concepts:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eCohesion\u003c/strong\u003e: Interface methods should be related and work toward a common purpose\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eMinimal Interface\u003c/strong\u003e: Interfaces should contain only essential methods\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eClient-Specific Design\u003c/strong\u003e: Interfaces should be designed from the client\u0026#39;s perspective\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eComposition over Inheritance\u003c/strong\u003e: Multiple small interfaces are better than one large interface\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003eCoupling Theory\u003c/h3\u003e\n\u003cp\u003eThe principle directly addresses coupling theory by ensuring that:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eClients are only coupled to functionality they actually use\u003c/li\u003e\n\u003cli\u003eChanges to unused interface methods don\u0026#39;t affect clients\u003c/li\u003e\n\u003cli\u003eSystem components remain loosely coupled\u003c/li\u003e\n\u003cli\u003eDependencies are explicit and intentional\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003eInformation Hiding\u003c/h3\u003e\n\u003cp\u003eISP supports information hiding by ensuring that clients are not exposed to implementation details they don\u0026#39;t need. This reduces the cognitive load on developers and makes systems easier to understand and maintain.\u003c/p\u003e\n\u003ch3\u003eDesign Patterns Foundation\u003c/h3\u003e\n\u003cp\u003eISP is the theoretical foundation for several design patterns:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eAdapter Pattern\u003c/strong\u003e: Adapting interfaces to client needs\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eFacade Pattern\u003c/strong\u003e: Providing simplified interfaces to complex subsystems\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eProxy Pattern\u003c/strong\u003e: Controlling access to interfaces\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eDecorator Pattern\u003c/strong\u003e: Adding behavior without changing interfaces\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003eConsequences of Violating ISP\u003c/h2\u003e\n\u003ch3\u003eUnique ISP-Specific Issues\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003eInterface Pollution\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eClients implementing methods they don\u0026#39;t need (often as empty implementations)\u003c/li\u003e\n\u003cli\u003eConfusion about which methods are actually required\u003c/li\u003e\n\u003cli\u003eDifficulty understanding the true purpose of interfaces\u003c/li\u003e\n\u003cli\u003eReduced code clarity and maintainability\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cstrong\u003eUnnecessary Dependencies\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eChanges to unused methods affect clients unnecessarily\u003c/li\u003e\n\u003cli\u003eClients become coupled to implementation details they don\u0026#39;t need\u003c/li\u003e\n\u003cli\u003eSystem becomes more fragile and harder to maintain\u003c/li\u003e\n\u003cli\u003eDependencies become unclear and difficult to track\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cstrong\u003eTesting and Flexibility Problems\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eClients must mock methods they don\u0026#39;t use\u003c/li\u003e\n\u003cli\u003eTest setup becomes more complex\u003c/li\u003e\n\u003cli\u003eMock objects become bloated and hard to maintain\u003c/li\u003e\n\u003cli\u003eClients cannot easily switch between different implementations\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003eImpact on Static Code Analysis\u003c/h2\u003e\n\u003ch3\u003eISP-Specific Metrics\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003eInterface Complexity Reduction\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eSmaller, focused interfaces reduce cognitive complexity\u003c/li\u003e\n\u003cli\u003eBetter interface cohesion metrics in static analysis tools\u003c/li\u003e\n\u003cli\u003eReduced coupling metrics through focused dependencies\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cstrong\u003eDependency Analysis Enhancement\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eTools can identify unnecessary interface dependencies\u003c/li\u003e\n\u003cli\u003eDetection of fat interfaces with unused methods\u003c/li\u003e\n\u003cli\u003eRecognition of proper interface segregation\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003eISP-Specific Tool Benefits\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003eESLint/TSLint (JavaScript/TypeScript)\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eBetter \u0026quot;no-unused-vars\u0026quot; compliance in interfaces\u003c/li\u003e\n\u003cli\u003eBetter \u0026quot;max-lines-per-function\u0026quot; in interface methods\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cstrong\u003eCheckstyle (Java)\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eBetter \u0026quot;InterfaceIsType\u0026quot; compliance\u003c/li\u003e\n\u003cli\u003eImproved \u0026quot;MethodLength\u0026quot; in interface implementations\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cstrong\u003eFxCop/StyleCop (.NET)\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eFewer \u0026quot;CA1500\u0026quot; (Avoid excessive class coupling) violations\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003eISP-Specific Detection\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003eISP Violation Detection\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eDetection of fat interfaces with too many methods\u003c/li\u003e\n\u003cli\u003eIdentification of clients implementing unused interface methods\u003c/li\u003e\n\u003cli\u003eRecognition of interfaces that could be split\u003c/li\u003e\n\u003cli\u003eDetection of unnecessary interface dependencies\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cstrong\u003eInterface Analysis\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eAnalysis of interface method usage patterns\u003c/li\u003e\n\u003cli\u003eDetection of proper interface segregation\u003c/li\u003e\n\u003cli\u003eRecognition of focused, cohesive interfaces\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003eRole in Improving Software Quality\u003c/h2\u003e\n\u003cp\u003eThe Interface Segregation Principle is essential for creating maintainable and flexible software systems. It ensures that:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eFocused Interfaces\u003c/strong\u003e: Each interface has a single, well-defined purpose\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eReduced Coupling\u003c/strong\u003e: Clients only depend on what they actually use\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eBetter Maintainability\u003c/strong\u003e: Changes to unused methods don\u0026#39;t affect clients\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eImproved Testability\u003c/strong\u003e: Clients can be tested with minimal, focused interfaces\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eEnhanced Flexibility\u003c/strong\u003e: Clients can choose exactly what functionality they need\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003eHow to Apply This Principle\u003c/h2\u003e\n\u003ch3\u003e1. Identify Client Needs\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003eWhat it means\u003c/strong\u003e: Understand what each client actually requires from an interface. Different clients may need different subsets of functionality, and forcing them to depend on unused methods creates unnecessary coupling.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eHow to do it\u003c/strong\u003e:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eAnalyze each class that implements an interface to see which methods it actually uses\u003c/li\u003e\n\u003cli\u003eGroup clients by their usage patterns to identify common needs\u003c/li\u003e\n\u003cli\u003eLook for clients that implement methods with empty bodies or throw \u0026quot;not implemented\u0026quot; exceptions\u003c/li\u003e\n\u003cli\u003eConsider the different contexts where the interface might be used\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cstrong\u003eExample from our code samples\u003c/strong\u003e: In the violating \u003ccode\u003eIWorker\u003c/code\u003e interface, we can see that \u003ccode\u003eBasicWorker\u003c/code\u003e only needs basic functionality (Work, Eat, Sleep) but is forced to implement development methods (Code, Design, Test, Deploy) that it doesn\u0026#39;t use. The refactored solution creates separate interfaces (\u003ccode\u003eIBasicWorker\u003c/code\u003e, \u003ccode\u003eIDeveloper\u003c/code\u003e, \u003ccode\u003eITester\u003c/code\u003e, \u003ccode\u003eIDevOps\u003c/code\u003e) so clients only implement what they need.\u003c/p\u003e\n\u003ch3\u003e2. Split Large Interfaces\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003eWhat it means\u003c/strong\u003e: Break down fat interfaces into smaller, focused interfaces that each serve a specific purpose. This prevents clients from being burdened with methods they don\u0026#39;t need.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eHow to do it\u003c/strong\u003e:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eIdentify groups of related methods within a large interface\u003c/li\u003e\n\u003cli\u003eCreate separate interfaces for each group of related functionality\u003c/li\u003e\n\u003cli\u003eEnsure each new interface has a single, well-defined responsibility\u003c/li\u003e\n\u003cli\u003eUse descriptive names that clearly indicate the interface\u0026#39;s purpose\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cstrong\u003eExample from our code samples\u003c/strong\u003e: The violating \u003ccode\u003eMediaPlayer\u003c/code\u003e interface combines audio and video functionality. The refactored solution splits it into \u003ccode\u003eAudioPlayer\u003c/code\u003e and \u003ccode\u003eVideoPlayer\u003c/code\u003e interfaces, allowing clients to implement only the functionality they need. A basic audio player no longer needs to implement video methods it can\u0026#39;t support.\u003c/p\u003e\n\u003ch3\u003e3. Use Composition\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003eWhat it means\u003c/strong\u003e: When clients need functionality from multiple interfaces, combine them through composition rather than creating one large interface. This allows clients to pick and choose exactly what they need.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eHow to do it\u003c/strong\u003e:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eCreate multiple small, focused interfaces\u003c/li\u003e\n\u003cli\u003eAllow classes to implement multiple interfaces when they need multiple capabilities\u003c/li\u003e\n\u003cli\u003eUse interface inheritance to build more complex interfaces from simpler ones\u003c/li\u003e\n\u003cli\u003eDesign interfaces to be composable and work well together\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cstrong\u003eExample from our code samples\u003c/strong\u003e: The refactored worker solution allows \u003ccode\u003eFullStackDeveloper\u003c/code\u003e to implement multiple interfaces (\u003ccode\u003eIBasicWorker\u003c/code\u003e, \u003ccode\u003eIDeveloper\u003c/code\u003e, \u003ccode\u003eITester\u003c/code\u003e, \u003ccode\u003eIDevOps\u003c/code\u003e) to get all the functionality it needs, while \u003ccode\u003eBasicWorker\u003c/code\u003e only implements \u003ccode\u003eIBasicWorker\u003c/code\u003e. This composition approach gives clients exactly the capabilities they need without forcing unused dependencies.\u003c/p\u003e\n\u003ch3\u003e4. Avoid Empty Implementations\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003eWhat it means\u003c/strong\u003e: Don\u0026#39;t force clients to implement methods they don\u0026#39;t need by providing empty implementations or throwing \u0026quot;not implemented\u0026quot; exceptions. This is a clear sign that the interface is too large.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eHow to do it\u003c/strong\u003e:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eIf you find yourself writing empty method implementations, the interface likely violates ISP\u003c/li\u003e\n\u003cli\u003eLook for methods that throw \u0026quot;NotImplementedException\u0026quot; or similar exceptions\u003c/li\u003e\n\u003cli\u003eConsider splitting the interface to eliminate the need for empty implementations\u003c/li\u003e\n\u003cli\u003eDesign interfaces so that every method is meaningful for every implementing class\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cstrong\u003eExample from our code samples\u003c/strong\u003e: The violating \u003ccode\u003eBasicWorker\u003c/code\u003e class throws \u0026quot;NotImplementedException\u0026quot; for development methods it can\u0026#39;t perform. The refactored solution eliminates this problem by creating separate interfaces, so \u003ccode\u003eBasicWorker\u003c/code\u003e only implements methods it can actually perform.\u003c/p\u003e\n\u003ch3\u003e5. Design for Specific Use Cases\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003eWhat it means\u003c/strong\u003e: Create interfaces tailored to specific client needs rather than trying to create one interface that serves all possible use cases. This leads to more focused and useful interfaces.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eHow to do it\u003c/strong\u003e:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eDesign interfaces from the client\u0026#39;s perspective, not the implementer\u0026#39;s perspective\u003c/li\u003e\n\u003cli\u003eConsider the specific scenarios where each interface will be used\u003c/li\u003e\n\u003cli\u003eCreate interfaces that are cohesive and work well together\u003c/li\u003e\n\u003cli\u003eAvoid the temptation to add \u0026quot;just in case\u0026quot; methods to interfaces\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cstrong\u003eExample from our code samples\u003c/strong\u003e: The refactored document processor solution creates specific interfaces (\u003ccode\u003eDocumentReader\u003c/code\u003e, \u003ccode\u003eDocumentWriter\u003c/code\u003e, \u003ccode\u003eDocumentPrinter\u003c/code\u003e, \u003ccode\u003eDocumentScanner\u003c/code\u003e, \u003ccode\u003eDocumentFaxer\u003c/code\u003e, \u003ccode\u003eDocumentEmailer\u003c/code\u003e) that each serve specific use cases. A basic printer only needs to implement the interfaces it can actually support, making the design much cleaner and more maintainable.\u003c/p\u003e\n\u003ch2\u003eExamples of Violations and Refactoring\u003c/h2\u003e\n\u003ch3\u003eC# Example\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003eViolating ISP:\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-csharp\"\u003e// Fat interface that forces clients to depend on unused methods\npublic interface IWorker\n{\n    void Work();\n    void Eat();\n    void Sleep();\n    void Code();\n    void Design();\n    void Test();\n    void Deploy();\n}\n\n// Client that only needs basic worker functionality\npublic class BasicWorker : IWorker\n{\n    public void Work()\n    {\n        Console.WriteLine(\u0026quot;Basic worker working...\u0026quot;);\n    }\n    \n    public void Eat()\n    {\n        Console.WriteLine(\u0026quot;Basic worker eating...\u0026quot;);\n    }\n    \n    public void Sleep()\n    {\n        Console.WriteLine(\u0026quot;Basic worker sleeping...\u0026quot;);\n    }\n    \n    // Forced to implement unused methods\n    public void Code()\n    {\n        throw new NotImplementedException(\u0026quot;Basic worker can\u0026#39;t code!\u0026quot;);\n    }\n    \n    public void Design()\n    {\n        throw new NotImplementedException(\u0026quot;Basic worker can\u0026#39;t design!\u0026quot;);\n    }\n    \n    public void Test()\n    {\n        throw new NotImplementedException(\u0026quot;Basic worker can\u0026#39;t test!\u0026quot;);\n    }\n    \n    public void Deploy()\n    {\n        throw new NotImplementedException(\u0026quot;Basic worker can\u0026#39;t deploy!\u0026quot;);\n    }\n}\n\n// Client that only needs development functionality\npublic class Developer : IWorker\n{\n    public void Work()\n    {\n        Console.WriteLine(\u0026quot;Developer working...\u0026quot;);\n    }\n    \n    public void Eat()\n    {\n        Console.WriteLine(\u0026quot;Developer eating...\u0026quot;);\n    }\n    \n    public void Sleep()\n    {\n        Console.WriteLine(\u0026quot;Developer sleeping...\u0026quot;);\n    }\n    \n    public void Code()\n    {\n        Console.WriteLine(\u0026quot;Developer coding...\u0026quot;);\n    }\n    \n    public void Design()\n    {\n        Console.WriteLine(\u0026quot;Developer designing...\u0026quot;);\n    }\n    \n    public void Test()\n    {\n        Console.WriteLine(\u0026quot;Developer testing...\u0026quot;);\n    }\n    \n    public void Deploy()\n    {\n        Console.WriteLine(\u0026quot;Developer deploying...\u0026quot;);\n    }\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003eRefactored - Applying ISP:\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-csharp\"\u003e// Segregated interfaces - each focused on specific functionality\npublic interface IBasicWorker\n{\n    void Work();\n    void Eat();\n    void Sleep();\n}\n\npublic interface IDeveloper\n{\n    void Code();\n    void Design();\n}\n\npublic interface ITester\n{\n    void Test();\n}\n\npublic interface IDevOps\n{\n    void Deploy();\n}\n\n// Clients only implement what they need\npublic class BasicWorker : IBasicWorker\n{\n    public void Work()\n    {\n        Console.WriteLine(\u0026quot;Basic worker working...\u0026quot;);\n    }\n    \n    public void Eat()\n    {\n        Console.WriteLine(\u0026quot;Basic worker eating...\u0026quot;);\n    }\n    \n    public void Sleep()\n    {\n        Console.WriteLine(\u0026quot;Basic worker sleeping...\u0026quot;);\n    }\n}\n\npublic class Developer : IBasicWorker, IDeveloper\n{\n    public void Work()\n    {\n        Console.WriteLine(\u0026quot;Developer working...\u0026quot;);\n    }\n    \n    public void Eat()\n    {\n        Console.WriteLine(\u0026quot;Developer eating...\u0026quot;);\n    }\n    \n    public void Sleep()\n    {\n        Console.WriteLine(\u0026quot;Developer sleeping...\u0026quot;);\n    }\n    \n    public void Code()\n    {\n        Console.WriteLine(\u0026quot;Developer coding...\u0026quot;);\n    }\n    \n    public void Design()\n    {\n        Console.WriteLine(\u0026quot;Developer designing...\u0026quot;);\n    }\n}\n\npublic class FullStackDeveloper : IBasicWorker, IDeveloper, ITester, IDevOps\n{\n    public void Work()\n    {\n        Console.WriteLine(\u0026quot;Full-stack developer working...\u0026quot;);\n    }\n    \n    public void Eat()\n    {\n        Console.WriteLine(\u0026quot;Full-stack developer eating...\u0026quot;);\n    }\n    \n    public void Sleep()\n    {\n        Console.WriteLine(\u0026quot;Full-stack developer sleeping...\u0026quot;);\n    }\n    \n    public void Code()\n    {\n        Console.WriteLine(\u0026quot;Full-stack developer coding...\u0026quot;);\n    }\n    \n    public void Design()\n    {\n        Console.WriteLine(\u0026quot;Full-stack developer designing...\u0026quot;);\n    }\n    \n    public void Test()\n    {\n        Console.WriteLine(\u0026quot;Full-stack developer testing...\u0026quot;);\n    }\n    \n    public void Deploy()\n    {\n        Console.WriteLine(\u0026quot;Full-stack developer deploying...\u0026quot;);\n    }\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3\u003eJava Example\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003eViolating ISP:\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-java\"\u003e// Fat interface that forces clients to depend on unused methods\npublic interface MediaPlayer {\n    void playAudio();\n    void playVideo();\n    void playAudioFromCD();\n    void playVideoFromDVD();\n    void playAudioFromUSB();\n    void playVideoFromUSB();\n}\n\n// Client that only needs audio functionality\npublic class AudioPlayer implements MediaPlayer {\n    @Override\n    public void playAudio() {\n        System.out.println(\u0026quot;Playing audio...\u0026quot;);\n    }\n    \n    @Override\n    public void playVideo() {\n        throw new UnsupportedOperationException(\u0026quot;Audio player can\u0026#39;t play video!\u0026quot;);\n    }\n    \n    @Override\n    public void playAudioFromCD() {\n        System.out.println(\u0026quot;Playing audio from CD...\u0026quot;);\n    }\n    \n    @Override\n    public void playVideoFromDVD() {\n        throw new UnsupportedOperationException(\u0026quot;Audio player can\u0026#39;t play video from DVD!\u0026quot;);\n    }\n    \n    @Override\n    public void playAudioFromUSB() {\n        System.out.println(\u0026quot;Playing audio from USB...\u0026quot;);\n    }\n    \n    @Override\n    public void playVideoFromUSB() {\n        throw new UnsupportedOperationException(\u0026quot;Audio player can\u0026#39;t play video from USB!\u0026quot;);\n    }\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003eRefactored - Applying ISP:\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-java\"\u003e// Segregated interfaces - each focused on specific functionality\npublic interface AudioPlayer {\n    void playAudio();\n    void playAudioFromCD();\n    void playAudioFromUSB();\n}\n\npublic interface VideoPlayer {\n    void playVideo();\n    void playVideoFromDVD();\n    void playVideoFromUSB();\n}\n\n// Clients only implement what they need\npublic class BasicAudioPlayer implements AudioPlayer {\n    @Override\n    public void playAudio() {\n        System.out.println(\u0026quot;Playing audio...\u0026quot;);\n    }\n    \n    @Override\n    public void playAudioFromCD() {\n        System.out.println(\u0026quot;Playing audio from CD...\u0026quot;);\n    }\n    \n    @Override\n    public void playAudioFromUSB() {\n        System.out.println(\u0026quot;Playing audio from USB...\u0026quot;);\n    }\n}\n\npublic class BasicVideoPlayer implements VideoPlayer {\n    @Override\n    public void playVideo() {\n        System.out.println(\u0026quot;Playing video...\u0026quot;);\n    }\n    \n    @Override\n    public void playVideoFromDVD() {\n        System.out.println(\u0026quot;Playing video from DVD...\u0026quot;);\n    }\n    \n    @Override\n    public void playVideoFromUSB() {\n        System.out.println(\u0026quot;Playing video from USB...\u0026quot;);\n    }\n}\n\npublic class UniversalMediaPlayer implements AudioPlayer, VideoPlayer {\n    @Override\n    public void playAudio() {\n        System.out.println(\u0026quot;Playing audio...\u0026quot;);\n    }\n    \n    @Override\n    public void playAudioFromCD() {\n        System.out.println(\u0026quot;Playing audio from CD...\u0026quot;);\n    }\n    \n    @Override\n    public void playAudioFromUSB() {\n        System.out.println(\u0026quot;Playing audio from USB...\u0026quot;);\n    }\n    \n    @Override\n    public void playVideo() {\n        System.out.println(\u0026quot;Playing video...\u0026quot;);\n    }\n    \n    @Override\n    public void playVideoFromDVD() {\n        System.out.println(\u0026quot;Playing video from DVD...\u0026quot;);\n    }\n    \n    @Override\n    public void playVideoFromUSB() {\n        System.out.println(\u0026quot;Playing video from USB...\u0026quot;);\n    }\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3\u003eTypeScript Example\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003eViolating ISP:\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-typescript\"\u003e// Fat interface that forces clients to depend on unused methods\ninterface DocumentProcessor {\n    readDocument(): void;\n    writeDocument(): void;\n    printDocument(): void;\n    scanDocument(): void;\n    faxDocument(): void;\n    emailDocument(): void;\n}\n\n// Client that only needs basic document functionality\nclass BasicPrinter implements DocumentProcessor {\n    readDocument(): void {\n        console.log(\u0026quot;Reading document...\u0026quot;);\n    }\n    \n    writeDocument(): void {\n        console.log(\u0026quot;Writing document...\u0026quot;);\n    }\n    \n    printDocument(): void {\n        console.log(\u0026quot;Printing document...\u0026quot;);\n    }\n    \n    // Forced to implement unused methods\n    scanDocument(): void {\n        throw new Error(\u0026quot;Basic printer can\u0026#39;t scan!\u0026quot;);\n    }\n    \n    faxDocument(): void {\n        throw new Error(\u0026quot;Basic printer can\u0026#39;t fax!\u0026quot;);\n    }\n    \n    emailDocument(): void {\n        throw new Error(\u0026quot;Basic printer can\u0026#39;t email!\u0026quot;);\n    }\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003eRefactored - Applying ISP:\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-typescript\"\u003e// Segregated interfaces - each focused on specific functionality\ninterface DocumentReader {\n    readDocument(): void;\n}\n\ninterface DocumentWriter {\n    writeDocument(): void;\n}\n\ninterface DocumentPrinter {\n    printDocument(): void;\n}\n\ninterface DocumentScanner {\n    scanDocument(): void;\n}\n\ninterface DocumentFaxer {\n    faxDocument(): void;\n}\n\ninterface DocumentEmailer {\n    emailDocument(): void;\n}\n\n// Clients only implement what they need\nclass BasicPrinter implements DocumentReader, DocumentWriter, DocumentPrinter {\n    readDocument(): void {\n        console.log(\u0026quot;Reading document...\u0026quot;);\n    }\n    \n    writeDocument(): void {\n        console.log(\u0026quot;Writing document...\u0026quot;);\n    }\n    \n    printDocument(): void {\n        console.log(\u0026quot;Printing document...\u0026quot;);\n    }\n}\n\nclass ScannerPrinter implements DocumentReader, DocumentWriter, DocumentPrinter, DocumentScanner {\n    readDocument(): void {\n        console.log(\u0026quot;Reading document...\u0026quot;);\n    }\n    \n    writeDocument(): void {\n        console.log(\u0026quot;Writing document...\u0026quot;);\n    }\n    \n    printDocument(): void {\n        console.log(\u0026quot;Printing document...\u0026quot;);\n    }\n    \n    scanDocument(): void {\n        console.log(\u0026quot;Scanning document...\u0026quot;);\n    }\n}\n\nclass AllInOnePrinter implements DocumentReader, DocumentWriter, DocumentPrinter, DocumentScanner, DocumentFaxer, DocumentEmailer {\n    readDocument(): void {\n        console.log(\u0026quot;Reading document...\u0026quot;);\n    }\n    \n    writeDocument(): void {\n        console.log(\u0026quot;Writing document...\u0026quot;);\n    }\n    \n    printDocument(): void {\n        console.log(\u0026quot;Printing document...\u0026quot;);\n    }\n    \n    scanDocument(): void {\n        console.log(\u0026quot;Scanning document...\u0026quot;);\n    }\n    \n    faxDocument(): void {\n        console.log(\u0026quot;Faxing document...\u0026quot;);\n    }\n    \n    emailDocument(): void {\n        console.log(\u0026quot;Emailing document...\u0026quot;);\n    }\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch2\u003eHow This Principle Helps with Code Quality\u003c/h2\u003e\n\u003col\u003e\n\u003cli\u003e\u003cstrong\u003eFocused Interfaces\u003c/strong\u003e: Each interface has a single, clear purpose\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eReduced Dependencies\u003c/strong\u003e: Clients only depend on what they actually use\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eBetter Maintainability\u003c/strong\u003e: Changes to unused methods don\u0026#39;t affect clients\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eImproved Readability\u003c/strong\u003e: Interfaces are easier to understand and use\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eEnhanced Flexibility\u003c/strong\u003e: Clients can choose exactly what functionality they need\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch2\u003eHow This Principle Helps with Automated Testing\u003c/h2\u003e\n\u003col\u003e\n\u003cli\u003e\u003cstrong\u003eFocused Testing\u003c/strong\u003e: Each interface can be tested independently\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eEasier Mocking\u003c/strong\u003e: Smaller interfaces are easier to mock and test\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eReduced Test Complexity\u003c/strong\u003e: Tests only need to cover relevant functionality\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eBetter Test Coverage\u003c/strong\u003e: Each interface can have comprehensive test coverage\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eIsolated Testing\u003c/strong\u003e: Changes to one interface don\u0026#39;t affect tests for others\u003c/li\u003e\n\u003c/ol\u003e\n\u003cpre\u003e\u003ccode class=\"language-csharp\"\u003e// Example of testing with ISP\n[Test]\npublic void BasicWorker_ImplementsOnlyBasicFunctionality()\n{\n    // Arrange\n    IBasicWorker worker = new BasicWorker();\n    \n    // Act \u0026amp; Assert\n    Assert.DoesNotThrow(() =\u0026gt; worker.Work());\n    Assert.DoesNotThrow(() =\u0026gt; worker.Eat());\n    Assert.DoesNotThrow(() =\u0026gt; worker.Sleep());\n}\n\n[Test]\npublic void Developer_ImplementsBasicAndDevelopmentFunctionality()\n{\n    // Arrange\n    IBasicWorker basicWorker = new Developer();\n    IDeveloper developer = new Developer();\n    \n    // Act \u0026amp; Assert\n    Assert.DoesNotThrow(() =\u0026gt; basicWorker.Work());\n    Assert.DoesNotThrow(() =\u0026gt; developer.Code());\n    Assert.DoesNotThrow(() =\u0026gt; developer.Design());\n}\n\n[Test]\npublic void FullStackDeveloper_ImplementsAllFunctionality()\n{\n    // Arrange\n    IBasicWorker basicWorker = new FullStackDeveloper();\n    IDeveloper developer = new FullStackDeveloper();\n    ITester tester = new FullStackDeveloper();\n    IDevOps devOps = new FullStackDeveloper();\n    \n    // Act \u0026amp; Assert\n    Assert.DoesNotThrow(() =\u0026gt; basicWorker.Work());\n    Assert.DoesNotThrow(() =\u0026gt; developer.Code());\n    Assert.DoesNotThrow(() =\u0026gt; tester.Test());\n    Assert.DoesNotThrow(() =\u0026gt; devOps.Deploy());\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch2\u003eSummary\u003c/h2\u003e\n\u003cp\u003eThe Interface Segregation Principle is crucial for creating maintainable and flexible software systems. By ensuring that clients only depend on the interfaces they actually use, we achieve:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eFocused Design\u003c/strong\u003e: Interfaces are tailored to specific client needs\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eReduced Coupling\u003c/strong\u003e: Clients are not burdened with unnecessary dependencies\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eBetter Maintainability\u003c/strong\u003e: Changes to unused methods don\u0026#39;t affect clients\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eImproved Testability\u003c/strong\u003e: Smaller, focused interfaces are easier to test\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eEnhanced Flexibility\u003c/strong\u003e: Clients can choose exactly what functionality they need\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eThis principle builds upon the Liskov Substitution Principle by ensuring that the interfaces we create are focused and cohesive. It also sets the foundation for the Dependency Inversion Principle, as well-designed interfaces are essential for proper dependency inversion.\u003c/p\u003e\n\u003ch2\u003eExercise 1: Design - Interface Segregation Principle\u003c/h2\u003e\n\u003ch3\u003eObjective\u003c/h3\u003e\n\u003cp\u003eDesign focused, cohesive interfaces that don\u0026#39;t force clients to depend on methods they don\u0026#39;t use, following the Interface Segregation Principle.\u003c/p\u003e\n\u003ch3\u003eTask\u003c/h3\u003e\n\u003cp\u003eAnalyze the e-commerce system and design interfaces that follow ISP principles.\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e\u003cstrong\u003eIdentify Interface Needs\u003c/strong\u003e: Examine the refactored code from previous exercises and identify where interfaces are needed\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eDesign Focused Interfaces\u003c/strong\u003e: Create small, cohesive interfaces with single responsibilities\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eAvoid Fat Interfaces\u003c/strong\u003e: Ensure interfaces don\u0026#39;t force clients to implement unused methods\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003ePlan Interface Composition\u003c/strong\u003e: Design how multiple small interfaces can be combined when needed\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch3\u003eDeliverables\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eInterface design showing focused, cohesive interfaces\u003c/li\u003e\n\u003cli\u003eAnalysis of client needs for each interface\u003c/li\u003e\n\u003cli\u003eInterface composition plan\u003c/li\u003e\n\u003cli\u003eExamples of fat interfaces to avoid\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003eGetting Started\u003c/h3\u003e\n\u003col\u003e\n\u003cli\u003eNavigate to the \u003ccode\u003eecom-exercises\u003c/code\u003e folder\u003c/li\u003e\n\u003cli\u003eChoose your preferred language (C#, Java, Python, or TypeScript)\u003c/li\u003e\n\u003cli\u003eReview your refactored code from SRP, OCP, and LSP exercises\u003c/li\u003e\n\u003cli\u003eIdentify where interfaces would be beneficial\u003c/li\u003e\n\u003cli\u003eCreate your design without modifying any code\u003c/li\u003e\n\u003c/ol\u003e\n\u003chr\u003e\n\u003ch2\u003eExercise 2: Implementation - Interface Segregation Principle\u003c/h2\u003e\n\u003ch3\u003eObjective\u003c/h3\u003e\n\u003cp\u003eImplement your design from Exercise 1, ensuring that all existing unit tests continue to pass and clients only depend on the interfaces they actually use.\u003c/p\u003e\n\u003ch3\u003eTask\u003c/h3\u003e\n\u003cp\u003eImplement the focused interfaces according to your design while maintaining system functionality.\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e\u003cstrong\u003eCreate Interfaces\u003c/strong\u003e: Implement the focused interfaces from your design\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eRefactor Classes\u003c/strong\u003e: Modify existing classes to implement only the interfaces they need\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eEnsure Segregation\u003c/strong\u003e: Verify that clients only depend on the functionality they use\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eMaintain Functionality\u003c/strong\u003e: Ensure all existing unit tests pass\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eTest Interface Usage\u003c/strong\u003e: Verify that clients can use only the functionality they require\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch3\u003eSuccess Criteria\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eAll existing unit tests pass\u003c/li\u003e\n\u003cli\u003eThe application runs without errors\u003c/li\u003e\n\u003cli\u003eClients only depend on the interfaces they actually use\u003c/li\u003e\n\u003cli\u003eInterfaces are focused and cohesive\u003c/li\u003e\n\u003cli\u003eThe system maintains the same external behavior\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003eGetting Started\u003c/h3\u003e\n\u003col\u003e\n\u003cli\u003eUse your design from Exercise 1 as a guide\u003c/li\u003e\n\u003cli\u003eStart by creating the focused interfaces\u003c/li\u003e\n\u003cli\u003eRefactor existing classes to implement only what they need\u003c/li\u003e\n\u003cli\u003eRun tests frequently to ensure you don\u0026#39;t break existing functionality\u003c/li\u003e\n\u003cli\u003eVerify that clients can use only the functionality they require\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch3\u003eImplementation Best Practices\u003c/h3\u003e\n\u003ch4\u003eGit Workflow\u003c/h4\u003e\n\u003col\u003e\n\u003cli\u003e\u003cp\u003e\u003cstrong\u003eCreate a Feature Branch\u003c/strong\u003e: Start from main and create a new branch for your ISP refactoring\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-bash\"\u003egit checkout main\ngit pull origin main\ngit checkout -b feature/isp-refactoring\n\u003c/code\u003e\u003c/pre\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cp\u003e\u003cstrong\u003eCommit Frequently\u003c/strong\u003e: Make small, focused commits as you refactor\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-bash\"\u003egit add .\ngit commit -m \u0026quot;Create IProductReader interface\u0026quot;\ngit commit -m \u0026quot;Create IProductWriter interface\u0026quot;\ngit commit -m \u0026quot;Refactor ProductService to implement segregated interfaces\u0026quot;\ngit commit -m \u0026quot;Create ICartOperations interface\u0026quot;\ngit commit -m \u0026quot;Create ICartCalculations interface\u0026quot;\n\u003c/code\u003e\u003c/pre\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cp\u003e\u003cstrong\u003eTest After Each Change\u003c/strong\u003e: Run tests after each refactoring step\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-bash\"\u003e# Run tests to ensure nothing is broken\ndotnet test  # or equivalent for your language\n\u003c/code\u003e\u003c/pre\u003e\n\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch4\u003eIndustry Best Practices\u003c/h4\u003e\n\u003col\u003e\n\u003cli\u003e\u003cstrong\u003eInterface Segregation\u003c/strong\u003e: Create small, focused interfaces with single responsibilities\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eClient-Specific Interfaces\u003c/strong\u003e: Design interfaces based on actual client needs\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eInterface Composition\u003c/strong\u003e: Combine multiple small interfaces when needed\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eFat Interface Detection\u003c/strong\u003e: Identify interfaces that force clients to depend on unused methods\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eDependency Minimization\u003c/strong\u003e: Ensure clients only depend on what they actually use\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eInterface Documentation\u003c/strong\u003e: Document the purpose and usage of each interface\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eBackward Compatibility\u003c/strong\u003e: Maintain compatibility when segregating existing interfaces\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eTesting Interfaces\u003c/strong\u003e: Create tests that verify interface segregation works correctly\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch3\u003eLearning Objectives\u003c/h3\u003e\n\u003cp\u003eAfter completing both exercises, you should be able to:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eDesign focused, cohesive interfaces\u003c/li\u003e\n\u003cli\u003eAvoid fat interfaces that violate ISP\u003c/li\u003e\n\u003cli\u003eImplement ISP while maintaining system functionality\u003c/li\u003e\n\u003cli\u003eUse interface composition effectively\u003c/li\u003e\n\u003cli\u003eEnsure clients only depend on what they use\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cstrong\u003eNext\u003c/strong\u003e: The \u003ca href=\"../5-Dependency-segregation-principle/README.md\"\u003eDependency Inversion Principle\u003c/a\u003e builds upon ISP by ensuring that high-level modules depend on abstractions rather than concrete implementations, completing the SOLID principles foundation.\u003c/p\u003e\n"])</script><script>self.__next_f.push([1,"2:[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/6b40bd379144f5c8.css\",\"precedence\":\"next\",\"crossOrigin\":\"\"}]],[\"$\",\"$L3\",null,{\"buildId\":\"Mi_IUBpRsd6BRYXmSnup_\",\"assetPrefix\":\"\",\"initialCanonicalUrl\":\"/docs/1-SOLID-Principles/4-Interface-segregation-principle/README\",\"initialTree\":[\"\",{\"children\":[\"docs\",{\"children\":[[\"slug\",\"1-SOLID-Principles/4-Interface-segregation-principle/README\",\"c\"],{\"children\":[\"__PAGE__?{\\\"slug\\\":[\\\"1-SOLID-Principles\\\",\\\"4-Interface-segregation-principle\\\",\\\"README\\\"]}\",{}]}]}]},\"$undefined\",\"$undefined\",true],\"initialHead\":[false,\"$L4\"],\"globalErrorComponent\":\"$5\",\"children\":[null,[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[[\"$\",\"head\",null,{\"children\":[[\"$\",\"link\",null,{\"rel\":\"preconnect\",\"href\":\"https://fonts.googleapis.com\"}],[\"$\",\"link\",null,{\"rel\":\"preconnect\",\"href\":\"https://fonts.gstatic.com\",\"crossOrigin\":\"anonymous\"}],[\"$\",\"link\",null,{\"href\":\"https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700\u0026display=swap\",\"rel\":\"stylesheet\"}]]}],[\"$\",\"body\",null,{\"className\":\"antialiased\",\"children\":[\"$\",\"$L6\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\"],\"loading\":\"$undefined\",\"loadingStyles\":\"$undefined\",\"hasLoading\":false,\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"template\":[\"$\",\"$L7\",null,{}],\"templateStyles\":\"$undefined\",\"notFound\":[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":\"404\"}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],\"notFoundStyles\":[],\"childProp\":{\"current\":[\"$\",\"$L6\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"docs\",\"children\"],\"loading\":\"$undefined\",\"loadingStyles\":\"$undefined\",\"hasLoading\":false,\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"template\":[\"$\",\"$L7\",null,{}],\"templateStyles\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\",\"childProp\":{\"current\":[\"$\",\"$L6\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"docs\",\"children\",[\"slug\",\"1-SOLID-Principles/4-Interface-segregation-principle/README\",\"c\"],\"children\"],\"loading\":\"$undefined\",\"loadingStyles\":\"$undefined\",\"hasLoading\":false,\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"template\":[\"$\",\"$L7\",null,{}],\"templateStyles\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\",\"childProp\":{\"current\":[\"$L8\",[\"$\",\"div\",null,{\"className\":\"flex min-h-screen bg-gray-50\",\"children\":[[\"$\",\"aside\",null,{\"className\":\"sidebar\",\"children\":[\"$\",\"div\",null,{\"className\":\"sidebar-nav\",\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/\",\"className\":\"text-lg font-semibold text-gray-900 mb-4 block hover:text-blue-600\",\"children\":\"← Engineering 101\"}],[\"$\",\"h2\",null,{\"className\":\"text-lg font-semibold text-gray-900 mb-4\",\"children\":\"Course Content\"}],[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/1-SOLID-Principles\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles\",\"className\":\"sidebar-item\",\"children\":\"1-SOLID-Principles\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/1-SOLID-Principles/0-README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/0-README\",\"className\":\"sidebar-item\",\"children\":\"0-README\"}],false]}],[\"$\",\"li\",\"/docs/1-SOLID-Principles/1-Single-class-reponsibility-principle\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/1-Single-class-reponsibility-principle\",\"className\":\"sidebar-item\",\"children\":\"1-Single-class-reponsibility-principle\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/1-SOLID-Principles/1-Single-class-reponsibility-principle/README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/1-Single-class-reponsibility-principle/README\",\"className\":\"sidebar-item\",\"children\":\"README\"}],false]}]]}]}]]}],[\"$\",\"li\",\"/docs/1-SOLID-Principles/2-Open-closed-principle\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/2-Open-closed-principle\",\"className\":\"sidebar-item\",\"children\":\"2-Open-closed-principle\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/1-SOLID-Principles/2-Open-closed-principle/README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/2-Open-closed-principle/README\",\"className\":\"sidebar-item\",\"children\":\"README\"}],false]}]]}]}]]}],[\"$\",\"li\",\"/docs/1-SOLID-Principles/3-Liskov-substitution-principle\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/3-Liskov-substitution-principle\",\"className\":\"sidebar-item\",\"children\":\"3-Liskov-substitution-principle\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/1-SOLID-Principles/3-Liskov-substitution-principle/README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/3-Liskov-substitution-principle/README\",\"className\":\"sidebar-item\",\"children\":\"README\"}],false]}]]}]}]]}],[\"$\",\"li\",\"/docs/1-SOLID-Principles/4-Interface-segregation-principle\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/4-Interface-segregation-principle\",\"className\":\"sidebar-item\",\"children\":\"4-Interface-segregation-principle\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/1-SOLID-Principles/4-Interface-segregation-principle/README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/4-Interface-segregation-principle/README\",\"className\":\"sidebar-item\",\"children\":\"README\"}],false]}]]}]}]]}],[\"$\",\"li\",\"/docs/1-SOLID-Principles/5-Dependency-segregation-principle\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/5-Dependency-segregation-principle\",\"className\":\"sidebar-item\",\"children\":\"5-Dependency-segregation-principle\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/1-SOLID-Principles/5-Dependency-segregation-principle/README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/5-Dependency-segregation-principle/README\",\"className\":\"sidebar-item\",\"children\":\"README\"}],false]}]]}]}]]}],[\"$\",\"li\",\"/docs/1-SOLID-Principles/reference-application\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/reference-application\",\"className\":\"sidebar-item\",\"children\":\"reference-application\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/1-SOLID-Principles/reference-application/CI-README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/reference-application/CI-README\",\"className\":\"sidebar-item\",\"children\":\"CI-README\"}],false]}],[\"$\",\"li\",\"/docs/1-SOLID-Principles/reference-application/Dotnet\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/reference-application/Dotnet\",\"className\":\"sidebar-item\",\"children\":\"Dotnet\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/1-SOLID-Principles/reference-application/Dotnet/README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/reference-application/Dotnet/README\",\"className\":\"sidebar-item\",\"children\":\"README\"}],false]}]]}]}]]}],[\"$\",\"li\",\"/docs/1-SOLID-Principles/reference-application/Java\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/reference-application/Java\",\"className\":\"sidebar-item\",\"children\":\"Java\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/1-SOLID-Principles/reference-application/Java/README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/reference-application/Java/README\",\"className\":\"sidebar-item\",\"children\":\"README\"}],false]}]]}]}]]}],[\"$\",\"li\",\"/docs/1-SOLID-Principles/reference-application/Python\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/reference-application/Python\",\"className\":\"sidebar-item\",\"children\":\"Python\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/1-SOLID-Principles/reference-application/Python/.pytest_cache\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/reference-application/Python/.pytest_cache\",\"className\":\"sidebar-item\",\"children\":\".pytest_cache\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/1-SOLID-Principles/reference-application/Python/.pytest_cache/README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/reference-application/Python/.pytest_cache/README\",\"className\":\"sidebar-item\",\"children\":\"README\"}],false]}]]}]}]]}],[\"$\",\"li\",\"/docs/1-SOLID-Principles/reference-application/Python/README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/reference-application/Python/README\",\"className\":\"sidebar-item\",\"children\":\"README\"}],false]}]]}]}]]}],[\"$\",\"li\",\"/docs/1-SOLID-Principles/reference-application/README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/reference-application/README\",\"className\":\"sidebar-item\",\"children\":\"README\"}],false]}],[\"$\",\"li\",\"/docs/1-SOLID-Principles/reference-application/TypeScript\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/reference-application/TypeScript\",\"className\":\"sidebar-item\",\"children\":\"TypeScript\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/1-SOLID-Principles/reference-application/TypeScript/README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/1-SOLID-Principles/reference-application/TypeScript/README\",\"className\":\"sidebar-item\",\"children\":\"README\"}],false]}]]}]}]]}]]}]}]]}]]}]}]]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design\",\"className\":\"sidebar-item\",\"children\":\"2-Domain-Driven-Design\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/0-README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/0-README\",\"className\":\"sidebar-item\",\"children\":\"0-README\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/1-Bounded-Contexts\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/1-Bounded-Contexts\",\"className\":\"sidebar-item\",\"children\":\"1-Bounded-Contexts\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/1-Bounded-Contexts/README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/1-Bounded-Contexts/README\",\"className\":\"sidebar-item\",\"children\":\"README\"}],false]}]]}]}]]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/1-introduction-to-the-domain\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/1-introduction-to-the-domain\",\"className\":\"sidebar-item\",\"children\":\"1-introduction-to-the-domain\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/2-Ubiquitous-Language\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/2-Ubiquitous-Language\",\"className\":\"sidebar-item\",\"children\":\"2-Ubiquitous-Language\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/2-Ubiquitous-Language/README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/2-Ubiquitous-Language/README\",\"className\":\"sidebar-item\",\"children\":\"README\"}],false]}]]}]}]]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/3-Domain-Models\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/3-Domain-Models\",\"className\":\"sidebar-item\",\"children\":\"3-Domain-Models\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/3-Domain-Models/README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/3-Domain-Models/README\",\"className\":\"sidebar-item\",\"children\":\"README\"}],false]}]]}]}]]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/4-Context-Mapping\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/4-Context-Mapping\",\"className\":\"sidebar-item\",\"children\":\"4-Context-Mapping\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/4-Context-Mapping/README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/4-Context-Mapping/README\",\"className\":\"sidebar-item\",\"children\":\"README\"}],false]}]]}]}]]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/5-Strategic-Patterns\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/5-Strategic-Patterns\",\"className\":\"sidebar-item\",\"children\":\"5-Strategic-Patterns\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/5-Strategic-Patterns/README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/5-Strategic-Patterns/README\",\"className\":\"sidebar-item\",\"children\":\"README\"}],false]}]]}]}]]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples\",\"className\":\"sidebar-item\",\"children\":\"code-samples\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/README\",\"className\":\"sidebar-item\",\"children\":\"README\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/csharp\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/csharp\",\"className\":\"sidebar-item\",\"children\":\"csharp\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/csharp/02-order-entity\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/csharp/02-order-entity\",\"className\":\"sidebar-item\",\"children\":\"02-order-entity\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/csharp/03-money-value-object\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/csharp/03-money-value-object\",\"className\":\"sidebar-item\",\"children\":\"03-money-value-object\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/csharp/04-email-address-value-object\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/csharp/04-email-address-value-object\",\"className\":\"sidebar-item\",\"children\":\"04-email-address-value-object\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/csharp/05-pricing-service\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/csharp/05-pricing-service\",\"className\":\"sidebar-item\",\"children\":\"05-pricing-service\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/csharp/06-customer-module\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/csharp/06-customer-module\",\"className\":\"sidebar-item\",\"children\":\"06-customer-module\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/csharp/07-order-tests\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/csharp/07-order-tests\",\"className\":\"sidebar-item\",\"children\":\"07-order-tests\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/csharp/08-money-tests\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/csharp/08-money-tests\",\"className\":\"sidebar-item\",\"children\":\"08-money-tests\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/csharp/09-pricing-service-tests\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/csharp/09-pricing-service-tests\",\"className\":\"sidebar-item\",\"children\":\"09-pricing-service-tests\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/csharp/11-testing-anti-patterns\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/csharp/11-testing-anti-patterns\",\"className\":\"sidebar-item\",\"children\":\"11-testing-anti-patterns\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/csharp/12-testing-best-practices\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/csharp/12-testing-best-practices\",\"className\":\"sidebar-item\",\"children\":\"12-testing-best-practices\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/csharp/13-domain-modeling-best-practices\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/csharp/13-domain-modeling-best-practices\",\"className\":\"sidebar-item\",\"children\":\"13-domain-modeling-best-practices\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/csharp/README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/csharp/README\",\"className\":\"sidebar-item\",\"children\":\"README\"}],false]}]]}]}]]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/introduction-to-the-domain\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/introduction-to-the-domain\",\"className\":\"sidebar-item\",\"children\":\"introduction-to-the-domain\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/java\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/java\",\"className\":\"sidebar-item\",\"children\":\"java\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/java/02-money-value-object\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/java/02-money-value-object\",\"className\":\"sidebar-item\",\"children\":\"02-money-value-object\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/java/03-inventory-service\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/java/03-inventory-service\",\"className\":\"sidebar-item\",\"children\":\"03-inventory-service\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/java/03-order-entity\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/java/03-order-entity\",\"className\":\"sidebar-item\",\"children\":\"03-order-entity\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/java/04-email-address-value-object\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/java/04-email-address-value-object\",\"className\":\"sidebar-item\",\"children\":\"04-email-address-value-object\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/java/04-order-tests\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/java/04-order-tests\",\"className\":\"sidebar-item\",\"children\":\"04-order-tests\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/java/05-pricing-service\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/java/05-pricing-service\",\"className\":\"sidebar-item\",\"children\":\"05-pricing-service\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/java/06-customer-module\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/java/06-customer-module\",\"className\":\"sidebar-item\",\"children\":\"06-customer-module\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/java/07-order-tests\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/java/07-order-tests\",\"className\":\"sidebar-item\",\"children\":\"07-order-tests\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/java/08-money-tests\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/java/08-money-tests\",\"className\":\"sidebar-item\",\"children\":\"08-money-tests\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/java/09-pricing-service-tests\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/java/09-pricing-service-tests\",\"className\":\"sidebar-item\",\"children\":\"09-pricing-service-tests\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/java/11-testing-anti-patterns\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/java/11-testing-anti-patterns\",\"className\":\"sidebar-item\",\"children\":\"11-testing-anti-patterns\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/java/12-testing-best-practices\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/java/12-testing-best-practices\",\"className\":\"sidebar-item\",\"children\":\"12-testing-best-practices\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/java/13-domain-modeling-best-practices\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/java/13-domain-modeling-best-practices\",\"className\":\"sidebar-item\",\"children\":\"13-domain-modeling-best-practices\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/java/README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/java/README\",\"className\":\"sidebar-item\",\"children\":\"README\"}],false]}]]}]}]]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/python\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/python\",\"className\":\"sidebar-item\",\"children\":\"python\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/python/02-money-value-object\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/python/02-money-value-object\",\"className\":\"sidebar-item\",\"children\":\"02-money-value-object\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/python/03-order-entity\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/python/03-order-entity\",\"className\":\"sidebar-item\",\"children\":\"03-order-entity\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/python/04-email-address-value-object\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/python/04-email-address-value-object\",\"className\":\"sidebar-item\",\"children\":\"04-email-address-value-object\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/python/05-pricing-service\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/python/05-pricing-service\",\"className\":\"sidebar-item\",\"children\":\"05-pricing-service\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/python/06-customer-module\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/python/06-customer-module\",\"className\":\"sidebar-item\",\"children\":\"06-customer-module\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/python/07-order-tests\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/python/07-order-tests\",\"className\":\"sidebar-item\",\"children\":\"07-order-tests\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/python/08-money-tests\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/python/08-money-tests\",\"className\":\"sidebar-item\",\"children\":\"08-money-tests\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/python/09-pricing-service-tests\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/python/09-pricing-service-tests\",\"className\":\"sidebar-item\",\"children\":\"09-pricing-service-tests\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/python/11-testing-anti-patterns\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/python/11-testing-anti-patterns\",\"className\":\"sidebar-item\",\"children\":\"11-testing-anti-patterns\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/python/12-testing-best-practices\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/python/12-testing-best-practices\",\"className\":\"sidebar-item\",\"children\":\"12-testing-best-practices\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/python/13-domain-modeling-best-practices\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/python/13-domain-modeling-best-practices\",\"className\":\"sidebar-item\",\"children\":\"13-domain-modeling-best-practices\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/python/README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/python/README\",\"className\":\"sidebar-item\",\"children\":\"README\"}],false]}]]}]}]]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/typescript\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/typescript\",\"className\":\"sidebar-item\",\"children\":\"typescript\"}],[\"$\",\"div\",null,{\"className\":\"ml-4 mt-1\",\"children\":[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/typescript/02-money-value-object\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/typescript/02-money-value-object\",\"className\":\"sidebar-item\",\"children\":\"02-money-value-object\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/typescript/03-order-entity\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/typescript/03-order-entity\",\"className\":\"sidebar-item\",\"children\":\"03-order-entity\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/typescript/04-email-address-value-object\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/typescript/04-email-address-value-object\",\"className\":\"sidebar-item\",\"children\":\"04-email-address-value-object\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/typescript/05-pricing-service\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/typescript/05-pricing-service\",\"className\":\"sidebar-item\",\"children\":\"05-pricing-service\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/typescript/06-customer-module\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/typescript/06-customer-module\",\"className\":\"sidebar-item\",\"children\":\"06-customer-module\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/typescript/07-order-tests\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/typescript/07-order-tests\",\"className\":\"sidebar-item\",\"children\":\"07-order-tests\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/typescript/08-money-tests\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/typescript/08-money-tests\",\"className\":\"sidebar-item\",\"children\":\"08-money-tests\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/typescript/09-pricing-service-tests\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/typescript/09-pricing-service-tests\",\"className\":\"sidebar-item\",\"children\":\"09-pricing-service-tests\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/typescript/11-testing-anti-patterns\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/typescript/11-testing-anti-patterns\",\"className\":\"sidebar-item\",\"children\":\"11-testing-anti-patterns\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/typescript/12-testing-best-practices\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/typescript/12-testing-best-practices\",\"className\":\"sidebar-item\",\"children\":\"12-testing-best-practices\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/typescript/13-domain-modeling-best-practices\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/typescript/13-domain-modeling-best-practices\",\"className\":\"sidebar-item\",\"children\":\"13-domain-modeling-best-practices\"}],false]}],[\"$\",\"li\",\"/docs/2-Domain-Driven-Design/code-samples/typescript/README\",{\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/docs/2-Domain-Driven-Design/code-samples/typescript/README\",\"className\":\"sidebar-item\",\"children\":\"README\"}],false]}]]}]}]]}]]}]}]]}]]}]}]]}]]}]]}]}],[\"$\",\"main\",null,{\"className\":\"main-content\",\"children\":[\"$\",\"div\",null,{\"className\":\"content-wrapper\",\"children\":[[\"$\",\"div\",null,{\"className\":\"page-header\",\"children\":[\"$\",\"h1\",null,{\"className\":\"page-title\",\"children\":\"README\"}]}],[\"$\",\"div\",null,{\"className\":\"prose prose-lg max-w-none\",\"children\":[\"$\",\"div\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"$a\"}}]}]]}]}]]}],null],\"segment\":\"__PAGE__?{\\\"slug\\\":[\\\"1-SOLID-Principles\\\",\\\"4-Interface-segregation-principle\\\",\\\"README\\\"]}\"},\"styles\":[]}],\"segment\":[\"slug\",\"1-SOLID-Principles/4-Interface-segregation-principle/README\",\"c\"]},\"styles\":[]}],\"segment\":\"docs\"},\"styles\":[]}]}]]}],null]}]]\n"])</script><script>self.__next_f.push([1,"4:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"title\",\"1\",{\"children\":\"Engineering 101\"}],[\"$\",\"meta\",\"2\",{\"name\":\"description\",\"content\":\"SOLID + DDD training site\"}],[\"$\",\"meta\",\"3\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\n8:null\n"])</script></body></html>
