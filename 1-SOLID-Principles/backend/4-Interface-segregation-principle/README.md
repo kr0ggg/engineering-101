@@ -3,6 +3,8 @@
 ## Name
 **Interface Segregation Principle** - The "I" in SOLID
 
+> **🎨 React Developers**: This is the backend-focused version. For React.js/TypeScript-specific content, see the [Frontend Edition](../../frontend/4-Interface-segregation-principle/README.md).
+
 ## Goal of the Principle
 Clients should not be forced to depend on interfaces they do not use. Interfaces should be focused and cohesive, containing only the methods that are relevant to their specific clients. This prevents clients from being burdened with unnecessary dependencies.
 

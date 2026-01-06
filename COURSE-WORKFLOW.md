@@ -52,24 +52,45 @@ Each section contains multiple exercises that build upon each other. You'll work
 
 The SOLID principles are five design principles that make software designs more understandable, flexible, and maintainable. Each exercise builds on the previous one, allowing you to progressively improve your code design skills.
 
+### Course Tracks
+
+The SOLID Principles course is organized into two tracks:
+
+1. **🖥️ Backend Development Track** - For server-side developers
+2. **🎨 Frontend Development Track** - For React.js/TypeScript developers
+
+Choose the track that matches your development focus. Both tracks cover the same principles but with language and framework-specific examples.
+
 ### Exercise Structure
 
 You'll work through 5 exercises, each focusing on one SOLID principle:
 
-1. **Single Responsibility Principle (SRP)** - Each class should have one reason to change
+1. **Single Responsibility Principle (SRP)** - Each class/component should have one reason to change
 2. **Open/Closed Principle (OCP)** - Open for extension, closed for modification
-3. **Liskov Substitution Principle (LSP)** - Derived classes must be substitutable for their base classes
+3. **Liskov Substitution Principle (LSP)** - Derived classes/components must be substitutable for their base classes/components
 4. **Interface Segregation Principle (ISP)** - Clients should not depend on interfaces they don't use
 5. **Dependency Inversion Principle (DIP)** - Depend on abstractions, not concretions
 
-### Setting Up the Reference Application
+---
 
-Before starting the exercises, you need to set up and run the reference application. This e-commerce application intentionally violates all SOLID principles, providing you with real code to refactor.
+## Backend Development Track
+
+### Overview
+
+For developers working with server-side applications, APIs, and backend services.
+
+**Get Started**: [Backend Track README](./MarkDown/1-SOLID-Principles/backend/README.md)
+
+### Setting Up the Backend Reference Application
+
+Before starting the exercises, you need to set up and run the reference application. This e-commerce backend application intentionally violates all SOLID principles, providing you with real code to refactor.
+
+**Location**: `MarkDown/1-SOLID-Principles/backend/reference-application/`
 
 #### Prerequisites
 
 **Required Software:**
-- **Docker** - For PostgreSQL database (required for all languages)
+- **Docker** - For PostgreSQL database (required for all backend languages)
   - Download: https://docs.docker.com/get-docker/
   - Ensure Docker Desktop is running before starting
 
@@ -89,7 +110,7 @@ Before starting the exercises, you need to set up and run the reference applicat
   - Python 3.8 or later
   - Download: https://www.python.org/downloads/
 
-- **TypeScript**:
+- **TypeScript (Node.js)**:
   - Node.js 16+ and npm
   - Download: https://nodejs.org/
 
@@ -97,7 +118,7 @@ Before starting the exercises, you need to set up and run the reference applicat
 
 1. **Start the PostgreSQL Database**:
    ```bash
-   cd MarkDown/1-SOLID-Principles/reference-application
+   cd MarkDown/1-SOLID-Principles/backend/reference-application
    docker-compose up -d postgres
    ```
    
@@ -121,25 +142,25 @@ Before starting the exercises, you need to set up and run the reference applicat
    
    **For C# (.NET)**:
    ```bash
-   cd MarkDown/1-SOLID-Principles/reference-application/Dotnet
+   cd MarkDown/1-SOLID-Principles/backend/reference-application/Dotnet
    ./build-and-test.sh
    ```
    
    **For Java**:
    ```bash
-   cd MarkDown/1-SOLID-Principles/reference-application/Java
+   cd MarkDown/1-SOLID-Principles/backend/reference-application/Java
    ./build-and-test.sh
    ```
    
    **For Python**:
    ```bash
-   cd MarkDown/1-SOLID-Principles/reference-application/Python
+   cd MarkDown/1-SOLID-Principles/backend/reference-application/Python
    ./build-and-test.sh
    ```
    
-   **For TypeScript**:
+   **For TypeScript (Node.js)**:
    ```bash
-   cd MarkDown/1-SOLID-Principles/reference-application/TypeScript
+   cd MarkDown/1-SOLID-Principles/backend/reference-application/TypeScript
    ./build-and-test.sh
    ```
 
@@ -175,7 +196,7 @@ If you want to browse the database:
 
 When you're done working:
 ```bash
-cd MarkDown/1-SOLID-Principles/reference-application
+cd MarkDown/1-SOLID-Principles/backend/reference-application
 docker-compose down
 ```
 
@@ -210,20 +231,20 @@ docker-compose down
 **During Development** (run frequently):
 ```bash
 # C#
-cd MarkDown/1-SOLID-Principles/reference-application/Dotnet
+cd MarkDown/1-SOLID-Principles/backend/reference-application/Dotnet
 dotnet test
 
 # Java
-cd MarkDown/1-SOLID-Principles/reference-application/Java
+cd MarkDown/1-SOLID-Principles/backend/reference-application/Java
 mvn test
 
 # Python
-cd MarkDown/1-SOLID-Principles/reference-application/Python
+cd MarkDown/1-SOLID-Principles/backend/reference-application/Python
 source venv/bin/activate  # if not already activated
 pytest tests/
 
-# TypeScript
-cd MarkDown/1-SOLID-Principles/reference-application/TypeScript
+# TypeScript (Node.js)
+cd MarkDown/1-SOLID-Principles/backend/reference-application/TypeScript
 npm test
 ```
 
@@ -233,23 +254,184 @@ npm test
 ./build-and-test.sh
 ```
 
-### Working Through SOLID Principles
+### Working Through Backend SOLID Principles
 
-Follow the course material in `MarkDown/1-SOLID-Principles/` to work through each exercise:
+Follow the course material in `MarkDown/1-SOLID-Principles/backend/` to work through each exercise:
 
-1. **Single Responsibility Principle** - `1-Single-class-reponsibility-principle/`
-2. **Open/Closed Principle** - `2-Open-closed-principle/`
-3. **Liskov Substitution Principle** - `3-Liskov-substitution-principle/`
-4. **Interface Segregation Principle** - `4-Interface-segregation-principle/`
-5. **Dependency Inversion Principle** - `5-Dependency-segregation-principle/`
+1. **Single Responsibility Principle** - `backend/1-Single-class-reponsibility-principle/`
+2. **Open/Closed Principle** - `backend/2-Open-closed-principle/`
+3. **Liskov Substitution Principle** - `backend/3-Liskov-substitution-principle/`
+4. **Interface Segregation Principle** - `backend/4-Interface-segregation-principle/`
+5. **Dependency Inversion Principle** - `backend/5-Dependency-segregation-principle/`
 
 **Key Points**:
-- Create a branch for each exercise (e.g., `exercise-1-single-responsibility`)
+- Create a branch for each exercise (e.g., `backend-exercise-1-single-responsibility`)
 - Each exercise builds on the previous one
 - Work in your chosen language throughout all exercises
 - **All tests must pass** after each refactoring
 - You may need to refactor tests and create new ones as you apply SOLID principles
 - Since this is your fork, manage branches and merges as you see fit
+
+---
+
+## Frontend Development Track (React.js/TypeScript)
+
+### Overview
+
+For developers building Single Page Applications (SPAs) with React.js and TypeScript.
+
+**Get Started**: [Frontend Track README](./MarkDown/1-SOLID-Principles/frontend/README.md)
+
+### Exercise Structure
+
+You'll work through 5 exercises, each focusing on one SOLID principle in React:
+
+1. **Single Responsibility Principle (SRP)** - Refactor mono-components into focused components/hooks
+2. **Open/Closed Principle (OCP)** - Make components extensible via props and composition
+3. **Liskov Substitution Principle (LSP)** - Ensure component substitutability
+4. **Interface Segregation Principle (ISP)** - Segregate fat prop interfaces
+5. **Dependency Inversion Principle (DIP)** - Abstract dependencies in React
+
+### Setting Up the React Reference Application
+
+Before starting the exercises, you need to set up the React reference application. This React application intentionally violates all SOLID principles, providing you with real React code to refactor.
+
+**Location**: `MarkDown/1-SOLID-Principles/frontend/reference-application/React/`
+
+#### Prerequisites
+
+**Required Software:**
+- **Node.js 18+** and npm
+  - Download: https://nodejs.org/
+- **Git** for version control
+
+#### Initial Setup Steps
+
+1. **Navigate to React Application**:
+   ```bash
+   cd MarkDown/1-SOLID-Principles/frontend/reference-application/React
+   ```
+
+2. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Run Development Server**:
+   ```bash
+   npm run dev
+   ```
+   
+   The application will be available at `http://localhost:5173` (or similar port)
+
+4. **Run Tests**:
+   ```bash
+   npm test
+   ```
+   
+   All tests should pass initially (they test the violating code)
+
+5. **Verify Application Works**:
+   - Open the application in your browser
+   - Navigate through different pages
+   - See SOLID violations in action
+
+#### Understanding the React Reference Application
+
+The React reference application is an **E-commerce Product Management Dashboard** that:
+- Manages products, shopping cart, and user profiles
+- Has components that intentionally violate all SOLID principles
+- Includes comprehensive tests that verify current behavior
+- Uses React 18+ with TypeScript
+
+**Key Points:**
+- The code is intentionally poorly designed to give you practice refactoring
+- All existing tests must continue to pass after your refactoring
+- You may need to refactor tests as you apply SOLID principles
+- You should create additional tests as you break down components
+
+**Violating Components:**
+- `ProductDashboard.tsx` - Violates SRP (mono-component)
+- `UserProfile.tsx` - Violates ISP (fat props)
+- `Button.tsx` - Violates OCP (hard-coded)
+- `ProductList.tsx` - Violates OCP (not extensible)
+- `EmailInput.tsx` / `NumberInput.tsx` - Violate LSP (break contracts)
+- `useProductData.ts` / `api.ts` - Violate DIP (direct dependencies)
+
+### Testing Requirements
+
+**Critical**: After each exercise, all unit tests must pass. This ensures your refactoring maintains existing functionality.
+
+#### Test Strategy
+
+1. **Run Tests Frequently**:
+   - Run tests after each significant refactoring step
+   - Don't wait until the end of an exercise
+   - Catch issues early when they're easier to fix
+
+2. **Tests May Need Refactoring**:
+   - As you break down components and apply SOLID principles, tests may need updates
+   - Test structure should reflect your new component organization
+   - Update test names and organization to match refactored code
+
+3. **Create New Tests**:
+   - As you extract new components and hooks, create tests for them
+   - Test new interfaces and abstractions you create
+   - Ensure new code has adequate test coverage
+
+4. **Test Behavior, Not Implementation**:
+   - Focus on testing component behavior, not internal implementation
+   - Tests should verify components work correctly
+   - Avoid tests that are too tightly coupled to implementation details
+
+#### Running Tests
+
+**During Development** (run frequently):
+```bash
+cd MarkDown/1-SOLID-Principles/frontend/reference-application/React
+npm test
+```
+
+**Watch Mode** (for continuous testing):
+```bash
+npm test -- --watch
+```
+
+**With Coverage**:
+```bash
+npm test -- --coverage
+```
+
+**Full Build and Test** (before committing):
+```bash
+cd MarkDown/1-SOLID-Principles/frontend/reference-application/React
+./build-and-test.sh
+```
+
+### Working Through Frontend SOLID Principles
+
+Follow the course material in `MarkDown/1-SOLID-Principles/frontend/` to work through each exercise:
+
+1. **Single Responsibility Principle** - `frontend/1-Single-class-reponsibility-principle/`
+2. **Open/Closed Principle** - `frontend/2-Open-closed-principle/`
+3. **Liskov Substitution Principle** - `frontend/3-Liskov-substitution-principle/`
+4. **Interface Segregation Principle** - `frontend/4-Interface-segregation-principle/`
+5. **Dependency Inversion Principle** - `frontend/5-Dependency-segregation-principle/`
+
+**Key Points**:
+- Create a branch for each exercise (e.g., `frontend-exercise-1-single-responsibility`)
+- Each exercise builds on the previous one
+- Work with React/TypeScript throughout all exercises
+- **All tests must pass** after each refactoring
+- You may need to refactor tests and create new ones as you apply SOLID principles
+- Since this is your fork, manage branches and merges as you see fit
+
+**React-Specific Considerations**:
+- Focus on component composition
+- Use custom hooks for logic separation
+- Apply TypeScript interfaces for prop types
+- Test components with React Testing Library
+- Maintain component functionality while improving structure
 
 ---
 

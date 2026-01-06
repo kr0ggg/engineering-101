@@ -3,6 +3,8 @@
 ## Name
 **Liskov Substitution Principle** - The "L" in SOLID
 
+> **🎨 React Developers**: This is the backend-focused version. For React.js/TypeScript-specific content, see the [Frontend Edition](../../frontend/3-Liskov-substitution-principle/README.md).
+
 ## Goal of the Principle
 Objects of a superclass should be replaceable with objects of its subclasses without affecting the correctness of the program. Derived classes must be substitutable for their base classes, maintaining the same behavior and contracts.
 

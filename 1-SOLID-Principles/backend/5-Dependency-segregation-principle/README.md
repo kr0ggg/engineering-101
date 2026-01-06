@@ -3,6 +3,8 @@
 ## Name
 **Dependency Inversion Principle** - The "D" in SOLID
 
+> **🎨 React Developers**: This is the backend-focused version. For React.js/TypeScript-specific content, see the [Frontend Edition](../../frontend/5-Dependency-segregation-principle/README.md).
+
 ## Goal of the Principle
 High-level modules should not depend on low-level modules. Both should depend on abstractions. Abstractions should not depend on details. Details should depend on abstractions. This principle inverts the traditional dependency hierarchy, making systems more flexible and maintainable.
 

@@ -3,6 +3,8 @@
 ## Name
 **Single Responsibility Principle** - The "S" in SOLID
 
+> **🎨 React Developers**: This is the backend-focused version. For React.js/TypeScript-specific content, see the [Frontend Edition](../../frontend/1-Single-class-reponsibility-principle/README.md).
+
 ## Goal of the Principle
 A class should have only one reason to change, meaning it should have only one job or responsibility. Each class should encapsulate a single concept or functionality, making the code more maintainable, testable, and understandable.
 

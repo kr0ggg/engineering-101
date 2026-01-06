@@ -3,6 +3,8 @@
 ## Name
 **Open/Closed Principle** - The "O" in SOLID
 
+> **🎨 React Developers**: This is the backend-focused version. For React.js/TypeScript-specific content, see the [Frontend Edition](../../frontend/2-Open-closed-principle/README.md).
+
 ## Goal of the Principle
 Software entities (classes, modules, functions, etc.) should be open for extension but closed for modification. This means you should be able to add new functionality without changing existing code, promoting stability and reducing the risk of introducing bugs.
 
