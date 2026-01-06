@@ -282,6 +282,17 @@ For developers building Single Page Applications (SPAs) with React.js and TypeSc
 
 **Get Started**: [Frontend Track README](./MarkDown/1-SOLID-Principles/frontend/README.md)
 
+### Learning Resources
+
+The frontend track includes comprehensive learning materials:
+
+- **[Frontend Track README](./MarkDown/1-SOLID-Principles/frontend/README.md)** - Main overview and navigation
+- **[Learning Path](./MarkDown/1-SOLID-Principles/frontend/LEARNING-PATH.md)** - Step-by-step guide through all exercises (10-15 hours)
+- **[Quick Reference Guide](./MarkDown/1-SOLID-Principles/frontend/REACT-SOLID-QUICK-REFERENCE.md)** - Before/after code examples for all principles
+- **[React Additions Summary](./MarkDown/1-SOLID-Principles/frontend/REACT-ADDITIONS-SUMMARY.md)** - Executive summary of React-specific content
+
+**Recommended**: Start with the [Learning Path](./MarkDown/1-SOLID-Principles/frontend/LEARNING-PATH.md) for a structured approach.
+
 ### Exercise Structure
 
 You'll work through 5 exercises, each focusing on one SOLID principle in React:
@@ -306,6 +317,22 @@ Before starting the exercises, you need to set up the React reference applicatio
 - **Git** for version control
 
 #### Initial Setup Steps
+
+**Option 1: Using the Start Script (Recommended)**
+
+1. **Run the start script** from the frontend folder:
+   ```bash
+   cd MarkDown/1-SOLID-Principles/frontend
+   ./start-app.sh
+   ```
+   
+   This script will:
+   - Navigate to the React application
+   - Install dependencies if needed
+   - Start the development server
+   - Display the URL where the app is running
+
+**Option 2: Manual Setup**
 
 1. **Navigate to React Application**:
    ```bash
@@ -336,27 +363,49 @@ Before starting the exercises, you need to set up the React reference applicatio
    - Navigate through different pages
    - See SOLID violations in action
 
-#### Understanding the React Reference Application
+##### Understanding the React Reference Application
 
 The React reference application is an **E-commerce Product Management Dashboard** that:
 - Manages products, shopping cart, and user profiles
 - Has components that intentionally violate all SOLID principles
 - Includes comprehensive tests that verify current behavior
 - Uses React 18+ with TypeScript
+- Built with Vite for fast development and building
 
 **Key Points:**
 - The code is intentionally poorly designed to give you practice refactoring
 - All existing tests must continue to pass after your refactoring
 - You may need to refactor tests as you apply SOLID principles
 - You should create additional tests as you break down components
+- The application uses React Router for navigation between pages
 
 **Violating Components:**
-- `ProductDashboard.tsx` - Violates SRP (mono-component)
-- `UserProfile.tsx` - Violates ISP (fat props)
-- `Button.tsx` - Violates OCP (hard-coded)
-- `ProductList.tsx` - Violates OCP (not extensible)
-- `EmailInput.tsx` / `NumberInput.tsx` - Violate LSP (break contracts)
-- `useProductData.ts` / `api.ts` - Violate DIP (direct dependencies)
+- `ProductDashboard.tsx` - Violates SRP (mono-component doing everything)
+- `UserProfile.tsx` - Violates ISP (fat props interface with unused props)
+- `Button.tsx` - Violates OCP (hard-coded, cannot extend without modification)
+- `ProductList.tsx` - Violates OCP (not extensible via props/composition)
+- `EmailInput.tsx` / `NumberInput.tsx` - Violate LSP (break base Input component contract)
+- `useProductData.ts` / `api.ts` - Violate DIP (direct dependency on fetch API)
+
+**Application Structure:**
+```
+src/
+├── App.tsx                    # Main app with routing
+├── components/
+│   ├── ProductDashboard.tsx   # SRP violation
+│   ├── UserProfile.tsx        # ISP violation
+│   ├── Button.tsx             # OCP violation
+│   ├── ProductList.tsx        # OCP violation
+│   ├── Input.tsx              # Base component
+│   ├── EmailInput.tsx         # LSP violation
+│   └── NumberInput.tsx        # LSP violation
+├── hooks/
+│   └── useProductData.ts      # DIP violation
+├── services/
+│   └── api.ts                 # DIP violation
+└── types/
+    └── index.ts               # TypeScript type definitions
+```
 
 ### Testing Requirements
 
@@ -408,15 +457,44 @@ cd MarkDown/1-SOLID-Principles/frontend/reference-application/React
 ./build-and-test.sh
 ```
 
+**Build for Production**:
+```bash
+npm run build
+```
+
+**Preview Production Build**:
+```bash
+npm run preview
+```
+
 ### Working Through Frontend SOLID Principles
 
 Follow the course material in `MarkDown/1-SOLID-Principles/frontend/` to work through each exercise:
 
-1. **Single Responsibility Principle** - `frontend/1-Single-class-reponsibility-principle/`
-2. **Open/Closed Principle** - `frontend/2-Open-closed-principle/`
-3. **Liskov Substitution Principle** - `frontend/3-Liskov-substitution-principle/`
-4. **Interface Segregation Principle** - `frontend/4-Interface-segregation-principle/`
-5. **Dependency Inversion Principle** - `frontend/5-Dependency-segregation-principle/`
+1. **Single Responsibility Principle** - [`frontend/1-Single-class-reponsibility-principle/`](./MarkDown/1-SOLID-Principles/frontend/1-Single-class-reponsibility-principle/README.md)
+   - **Exercise**: Refactor `ProductDashboard.tsx` (mono-component)
+   - **Time**: 2-3 hours
+   - **Focus**: Extract components and hooks for single responsibilities
+
+2. **Open/Closed Principle** - [`frontend/2-Open-closed-principle/`](./MarkDown/1-SOLID-Principles/frontend/2-Open-closed-principle/README.md)
+   - **Exercise**: Make `Button.tsx` and `ProductList.tsx` extensible
+   - **Time**: 2-3 hours
+   - **Focus**: Props, composition, render props, HOCs
+
+3. **Liskov Substitution Principle** - [`frontend/3-Liskov-substitution-principle/`](./MarkDown/1-SOLID-Principles/frontend/3-Liskov-substitution-principle/README.md)
+   - **Exercise**: Fix `EmailInput.tsx` and `NumberInput.tsx` component contracts
+   - **Time**: 1-2 hours
+   - **Focus**: Component substitutability and consistent behavior
+
+4. **Interface Segregation Principle** - [`frontend/4-Interface-segregation-principle/`](./MarkDown/1-SOLID-Principles/frontend/4-Interface-segregation-principle/README.md)
+   - **Exercise**: Segregate `UserProfile.tsx` fat props interface
+   - **Time**: 2-3 hours
+   - **Focus**: Minimal, focused prop interfaces
+
+5. **Dependency Inversion Principle** - [`frontend/5-Dependency-segregation-principle/`](./MarkDown/1-SOLID-Principles/frontend/5-Dependency-segregation-principle/README.md)
+   - **Exercise**: Abstract dependencies in `useProductData.ts` and `api.ts`
+   - **Time**: 2-3 hours
+   - **Focus**: Service interfaces, dependency injection
 
 **Key Points**:
 - Create a branch for each exercise (e.g., `frontend-exercise-1-single-responsibility`)
@@ -425,6 +503,7 @@ Follow the course material in `MarkDown/1-SOLID-Principles/frontend/` to work th
 - **All tests must pass** after each refactoring
 - You may need to refactor tests and create new ones as you apply SOLID principles
 - Since this is your fork, manage branches and merges as you see fit
+- **Total estimated time**: 10-15 hours for all exercises
 
 **React-Specific Considerations**:
 - Focus on component composition
@@ -432,6 +511,20 @@ Follow the course material in `MarkDown/1-SOLID-Principles/frontend/` to work th
 - Apply TypeScript interfaces for prop types
 - Test components with React Testing Library
 - Maintain component functionality while improving structure
+- Use the [Quick Reference Guide](./MarkDown/1-SOLID-Principles/frontend/REACT-SOLID-QUICK-REFERENCE.md) for pattern lookup
+
+### Available npm Scripts
+
+The React reference application includes the following scripts:
+
+- `npm run dev` - Start development server (hot reload)
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build locally
+- `npm test` - Run tests once
+- `npm test -- --watch` - Run tests in watch mode
+- `npm test -- --coverage` - Run tests with coverage report
+- `npm run lint` - Run ESLint
+- `npm run type-check` - Check TypeScript types without building
 
 ---
 
